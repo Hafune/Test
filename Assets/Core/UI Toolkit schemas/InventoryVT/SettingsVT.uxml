@@ -20,6 +20,7 @@
             <Core.FocusableToggle label="SSAO" name="SSAO" class="focusable-label" style="margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0;" />
             <Core.FocusableToggle label="#shadows" name="Shadows" class="focusable-label" style="margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0;" />
             <Core.FocusableSlider label="#drawing_distance" value="0.5" high-value="1" name="DrawingDistance" class="focusable-label slider" />
+            <Core.FocusableSlider label="#render_scale" value="0.5" high-value="1" name="RenderScale" class="focusable-label slider" />
         </ui:VisualElement>
     </Core.FocusableNodeElement>
     <ui:VisualElement class="text-color-base text-font-base navigation-bar">

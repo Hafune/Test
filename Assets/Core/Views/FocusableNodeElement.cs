@@ -7,19 +7,34 @@ namespace Core
     {
         public bool IsActive { get; private set; } = true;
 
+        public FocusableNodeElement()
+        {
+            RegisterCallback<PointerDownEvent>(evt =>
+            {
+                evt.PreventDefault();
+                evt.StopPropagation();
+            });
+            RegisterCallback<PointerUpEvent>(evt =>
+            {
+                evt.PreventDefault();
+                evt.StopPropagation();
+            });
+        }
+
         public void SetActive(bool active)
         {
             IsActive = active;
+            pickingMode = active ? PickingMode.Position : PickingMode.Ignore;
             RefreshFocusableRecursive(this);
         }
-        
+
         private void RefreshFocusableRecursive(VisualElement ele)
         {
             foreach (var child in ele.Children())
             {
                 if (child is FocusableNodeElement)
                     return;
-                
+
                 RefreshFocusableRecursive(child);
 
                 if (child is not IFocusableElement element)
@@ -28,7 +43,7 @@ namespace Core
                 element.FocusableElement.SetActive(IsActive);
             }
         }
-        
+
         #region UXML
 
         [Preserve]

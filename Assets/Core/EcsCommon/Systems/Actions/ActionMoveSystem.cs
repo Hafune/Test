@@ -1,6 +1,7 @@
 ﻿using Core.Components;
 using Leopotam.EcsLite;
 using Leopotam.EcsLite.Di;
+using Lib;
 using UnityEngine;
 
 namespace Core.Systems
@@ -48,7 +49,7 @@ namespace Core.Systems
             float speed = _pools.MoveSpeedValue.Get(entity).value;
 
             var desiredVelocity = inputDirection * speed;
-            rigidbody.velocity = desiredVelocity;
+            rigidbody.velocity = desiredVelocity.ToVector3XZ();
         }
 
         public override void Cancel(int entity)

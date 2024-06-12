@@ -1,9 +1,11 @@
+using System;
 using System.Collections.Generic;
 using System.Reflection;
 using UnityEngine;
 
 namespace Core.Lib
 {
+    [Obsolete("Найти замену рефлексии в рантайме")]
     public class RestoreStateOnDisable : MonoBehaviour
     {
         [SerializeField] private Component _component;

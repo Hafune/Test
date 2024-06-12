@@ -1,3 +1,4 @@
+using System;
 using Core.Services;
 using Reflex;
 using UnityEngine;
@@ -28,7 +29,15 @@ namespace Core
             var audioSourceService = _context.Resolve<AudioSourceService>();
             var selectSourcePrefab = uiSfx.SelectSourceContainer.GetComponent<AudioSource>();
 
-            _target.RegisterCallback<FocusEvent>(_ => audioSourceService.PlayOneShotUI(selectSourcePrefab));
+            try
+            {
+                _target.RegisterCallback<FocusEvent>(_ => audioSourceService.PlayOneShotUI(selectSourcePrefab));
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+                throw;
+            }
         }
     }
 }

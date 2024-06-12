@@ -60,7 +60,7 @@ namespace Core.Services
             _globalStateService = _context.Resolve<GlobalStateService>();
             _mapConstructorService = _context.Resolve<MapConstructorService>();
             _playerInputs = _context.Resolve<PlayerInputs.PlayerActions>();
-            _joystick = _context.Resolve<FloatingJoystick>();
+            _joystick = _context.Resolve<Joystick>();
             _virtualCamera = _context.Resolve<CinemachineVirtualCamera>();
             _transposer = _virtualCamera.GetCinemachineComponent<CinemachineTransposer>();
             _eventActionStartRevivePool =

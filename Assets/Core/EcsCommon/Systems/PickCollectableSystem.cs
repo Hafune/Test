@@ -1,4 +1,5 @@
 using Core.Components;
+using Core.Generated;
 using Core.Services;
 using Leopotam.EcsLite;
 using Leopotam.EcsLite.Di;
@@ -11,22 +12,18 @@ namespace Core.Systems
     {
         private readonly EcsFilterInject<Inc<ActiveArea<CollectableAreaComponent>>> _filter;
 
+        private readonly EcsFilterInject<Inc<ItemsStackValueComponent, TransformComponent>> _itemsStackFilter;
         private readonly EcsFilterInject<Inc<CollectableGemComponent>> _collectableGemFilter;
         private readonly EcsFilterInject<Inc<CollectableKeySilverComponent>> _collectableKeySilverFilter;
         private readonly EcsFilterInject<Inc<CollectableKeyGoldComponent>> _collectableKeyGoldFilter;
 
-        // private readonly EcsFilterInject<
-        //     Inc<
-        //         PlayerUniqueTag
-        //     >,
-        //     Exc<InProgressTag<ActionDeathComponent>>> _playerFilter;
+        private readonly EcsFilterInject<
+            Inc<
+                PlayerUniqueTag
+            >,
+            Exc<InProgressTag<ActionDeathComponent>>> _playerFilter;
 
-        private readonly EcsPoolInject<CollectableGemComponent> _collectableGemPool;
-        private readonly EcsPoolInject<CollectableKeySilverComponent> _collectableKeySilverPool;
-        private readonly EcsPoolInject<CollectableKeyGoldComponent> _collectableKeyGoldPool;
-
-        private readonly EcsPoolInject<EventRemoveEntity> _eventRemoveEntityPool;
-
+        private readonly ComponentPools _pools;
         private readonly GemService _gemService;
         private readonly KeySilverService _keySilverService;
         private readonly KeyGoldService _keyGoldService;
@@ -46,28 +43,33 @@ namespace Core.Systems
 
         private void UpdateEntity(int entity)
         {
-            // var playerEntity = _playerFilter.Value.GetFirst();
-
-            if (_collectableGemFilter.Value.HasEntity(entity))
+            if (_itemsStackFilter.Value.HasEntity(entity))
             {
-                var gem = _collectableGemPool.Value.Get(entity);
+                var playerEntity = _playerFilter.Value.GetFirst();
+                var stack = _pools.ItemsStackValue.Get(playerEntity);
+                stack.items.Add(_pools.Transform.Get(entity).convertToEntity.TemplateId);
+                stack.itemsStackClient.Update(stack.items);
+            }
+            else if (_collectableGemFilter.Value.HasEntity(entity))
+            {
+                var gem = _pools.CollectableGem.Get(entity);
                 _gemService.TryChangeValue(gem.count);
                 _gemService.AddCollected(gem.instance.InstanceUuid);
             }
             else if (_collectableKeySilverFilter.Value.HasEntity(entity))
             {
-                var key = _collectableKeySilverPool.Value.Get(entity);
+                var key = _pools.CollectableKeySilver.Get(entity);
                 _keySilverService.TryChangeValue(1);
                 _keySilverService.AddCollected(key.instance.InstanceUuid);
             }
             else if (_collectableKeyGoldFilter.Value.HasEntity(entity))
             {
-                var key = _collectableKeyGoldPool.Value.Get(entity);
+                var key = _pools.CollectableKeyGold.Get(entity);
                 _keyGoldService.TryChangeValue(1);
                 _keyGoldService.AddCollected(key.instance.InstanceUuid);
             }
 
-            _eventRemoveEntityPool.Value.AddIfNotExist(entity);
+            _pools.EventRemoveEntity.AddIfNotExist(entity);
         }
     }
 }

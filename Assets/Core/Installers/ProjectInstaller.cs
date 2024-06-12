@@ -33,12 +33,11 @@ public class ProjectInstaller : Installer
 
         var projectDependencies = context.Instantiate(_projectDependencies);
         projectDependencies.BindInstances(context);
-
+        
         _initializableServices = new InitializableServices();
         var world = new EcsWorld();
         var componentPools = new ComponentPools(world);
 
-        // context.BindInstanceAs(_initializableServices.Add(new AbilitiesService()));
         context.BindInstanceAs(_initializableServices.Add(new ActionSystemsService()));
         context.BindInstanceAs(_initializableServices.Add(new DialogService()));
         context.BindInstanceAs(_initializableServices.Add(new GemService()));
@@ -46,10 +45,12 @@ public class ProjectInstaller : Installer
         context.BindInstanceAs(_initializableServices.Add(new KeyGoldService()));
         context.BindInstanceAs(_initializableServices.Add(new KeySilverService()));
         context.BindInstanceAs(_initializableServices.Add(new PoolService()));
+        context.BindInstanceAs(_initializableServices.Add(new SceneCheckpointsService()));
         context.BindInstanceAs(_initializableServices.Add(new SdkService()));
         context.BindInstanceAs(_initializableServices.Add(new TutorialsService()));
         context.BindInstanceAs(_initializableServices.Add(new UiInputsService()));
         context.BindInstanceAs(componentPools);
+        context.BindInstanceAs((Joystick)context.Resolve<FloatingJoystick>());
         context.BindInstanceAs(new BossHitPointBarService());
         context.BindInstanceAs(new GlobalStateService());
         context.BindInstanceAs(new DarkScreenService());

@@ -4,7 +4,7 @@
     <Style src="project://database/Assets/Core/UI%20Toolkit%20schemas/CommonStyles/TextColorBase.uss?fileID=7433441132597879392&amp;guid=f5a2fd541c0c679418222f1986708dd1&amp;type=3#TextColorBase" />
     <Style src="project://database/Assets/Core/UI%20Toolkit%20schemas/CommonStyles/TextFontBase.uss?fileID=7433441132597879392&amp;guid=38a94273c510b1447bb6532a65e8d29a&amp;type=3#TextFontBase" />
     <ui:VisualElement class="text-color-base text-font-base" style="flex-grow: 1;">
-        <ui:VisualElement style="background-image: url(&quot;project://database/Assets/Additionals/Tower/Assets/Texture2D/SpriteAtlasTexture-BattleHead%20(Group%200)-1024x512-fmt12.png?fileID=21300028&amp;guid=4ad0658a819913447988414d3b06bb34&amp;type=3#bg&quot;); width: 673px; height: 173px; margin-top: 20px; margin-left: 30px;">
+        <ui:VisualElement style="background-image: url(&quot;project://database/Assets/Additionals/Tower/Assets/Texture2D/SpriteAtlasTexture-BattleHead%20(Group%200)-1024x512-fmt12.png?fileID=21300028&amp;guid=4ad0658a819913447988414d3b06bb34&amp;type=3#bg&quot;); width: 673px; height: 173px; margin-top: 20px; margin-left: 30px; display: none;">
             <ui:VisualElement style="background-image: url(&quot;project://database/Assets/Additionals/Tower/Assets/Texture2D/SpriteAtlasTexture-BattleHead%20(Group%200)-1024x512-fmt12.png?fileID=21300008&amp;guid=4ad0658a819913447988414d3b06bb34&amp;type=3#face&quot;); position: absolute; width: 102px; height: 110px; top: 24px; left: 30px;" />
             <ui:VisualElement style="flex-grow: 1; position: absolute; top: 4px; left: 4px; width: 73px; height: 151px; overflow: hidden;">
                 <ui:VisualElement name="ManaBarWheel" usage-hints="DynamicTransform" style="position: relative; width: 151px; height: 151px; background-image: url(&quot;project://database/Assets/Additionals/Tower/Assets/Texture2D/SpriteAtlasTexture-BattleHead%20(Group%200)-1024x512-fmt12.png?fileID=21300036&amp;guid=4ad0658a819913447988414d3b06bb34&amp;type=3#powerline&quot;);" />
@@ -81,11 +81,11 @@
             </ui:VisualElement>
         </ui:VisualElement>
         <ui:VisualElement style="position: absolute; justify-content: flex-start; flex-grow: 1; left: 0; bottom: 0; flex-direction: column; align-items: center;">
-            <ui:VisualElement style="flex-direction: row;">
+            <ui:VisualElement style="flex-direction: row; display: none;">
                 <ui:VisualElement style="background-image: url(&quot;project://database/Assets/Additionals/Tower/Assets/Resources_not_load/propsicon/goldKey.png?fileID=21300000&amp;guid=ea6dc2262029e5d4ba7b03db78fca81c&amp;type=3#goldKey&quot;); width: 40.92193px; height: 35.92388px; flex-direction: row; margin-right: 10px;" />
                 <ui:Label text="123" display-tooltip-when-elided="true" name="GoldKeyCount" enable-rich-text="false" style="font-size: 24px; -unity-font-style: bold;" />
             </ui:VisualElement>
-            <ui:VisualElement style="flex-direction: row;">
+            <ui:VisualElement name="VisualElement" style="flex-direction: row; display: none;">
                 <ui:VisualElement style="background-image: url(&quot;project://database/Assets/Additionals/Tower/Assets/Resources_not_load/propsicon/sliverKey.png?fileID=21300000&amp;guid=d6fac6147bf9d6c43b8baa84670317ff&amp;type=3#sliverKey&quot;); width: 40.92193px; height: 35.92388px; flex-direction: row; margin-right: 10px;" />
                 <ui:Label text="123" display-tooltip-when-elided="true" name="SilverKeyCount" enable-rich-text="false" style="font-size: 24px; -unity-font-style: bold;" />
             </ui:VisualElement>

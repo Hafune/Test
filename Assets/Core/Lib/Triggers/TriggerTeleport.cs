@@ -6,6 +6,6 @@ namespace Core.Lib
     {
         [SerializeField] private Transform _destination;
 
-        private void OnTriggerEnter2D(Collider2D col) => col.attachedRigidbody.position = _destination.position;
+        private void OnTriggerEnter(Collider col) => col.attachedRigidbody.position = _destination.position;
     }
 }

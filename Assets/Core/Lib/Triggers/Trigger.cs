@@ -28,7 +28,7 @@ namespace Core.Lib
 
         private void OnEnable() => _isCompleted = false;
 
-        private void OnTriggerEnter2D(Collider2D _)
+        private void OnTriggerEnter(Collider _)
         {
             if (_isCompleted)
                 return;

@@ -5,10 +5,10 @@ using VInspector;
 
 namespace Core.Lib
 {
-    [RequireComponent(typeof(Collider2D))]
+    [RequireComponent(typeof(Collider))]
     public class TriggerActiveChildren : MonoBehaviour, ITrigger
     {
-        [SerializeField, HideInInspector] private Collider2D _collider;
+        [SerializeField, HideInInspector] private Collider _collider;
         [SerializeField] private float _executionDelay;
         [SerializeField] private bool _changeParent;
 
@@ -17,7 +17,7 @@ namespace Core.Lib
 
         private WaitForSeconds _delayWait;
 
-        private void OnValidate() => _collider = GetComponent<Collider2D>();
+        private void OnValidate() => _collider = GetComponent<Collider>();
 
         private void Awake()
         {
@@ -27,7 +27,7 @@ namespace Core.Lib
                 child.gameObject.SetActive(false);
         }
 
-        private void OnTriggerEnter2D(Collider2D _)
+        private void OnTriggerEnter(Collider _)
         {
             _collider.enabled = false;
 

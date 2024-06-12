@@ -168,6 +168,7 @@ namespace Core.Generated
         public readonly EcsPool<EventStartRecalculateValue<HitPointMaxValueComponent>> EventStartRecalculateHitPointMaxValue;
         public readonly EcsPool<EventStartRecalculateValue<HitPointPercentValueComponent>> EventStartRecalculateHitPointPercentValue;
         public readonly EcsPool<EventStartRecalculateValue<HitPointValueComponent>> EventStartRecalculateHitPointValue;
+        public readonly EcsPool<EventStartRecalculateValue<ItemsStackValueComponent>> EventStartRecalculateItemsStackValue;
         public readonly EcsPool<EventStartRecalculateValue<LivesValueComponent>> EventStartRecalculateLivesValue;
         public readonly EcsPool<EventStartRecalculateValue<ManaPointMaxValueComponent>> EventStartRecalculateManaPointMaxValue;
         public readonly EcsPool<EventStartRecalculateValue<ManaPointValueComponent>> EventStartRecalculateManaPointValue;
@@ -234,6 +235,7 @@ namespace Core.Generated
         public readonly EcsPool<InProgressTag<ThroughProjectileSlotTag>> InProgressThroughProjectileSlot;
         public readonly EcsPool<InProgressTag<TouchWallTag>> InProgressTouchWall;
         public readonly EcsPool<InvulnerabilityLifetimeComponent> InvulnerabilityLifetime;
+        public readonly EcsPool<ItemsStackValueComponent> ItemsStackValue;
         public readonly EcsPool<LifetimeComponent> Lifetime;
         public readonly EcsPool<LivesValueComponent> LivesValue;
         public readonly EcsPool<LookOnTargetComponent> LookOnTarget;
@@ -452,6 +454,7 @@ namespace Core.Generated
             EventStartRecalculateHitPointMaxValue = world.GetPool<EventStartRecalculateValue<HitPointMaxValueComponent>>();
             EventStartRecalculateHitPointPercentValue = world.GetPool<EventStartRecalculateValue<HitPointPercentValueComponent>>();
             EventStartRecalculateHitPointValue = world.GetPool<EventStartRecalculateValue<HitPointValueComponent>>();
+            EventStartRecalculateItemsStackValue = world.GetPool<EventStartRecalculateValue<ItemsStackValueComponent>>();
             EventStartRecalculateLivesValue = world.GetPool<EventStartRecalculateValue<LivesValueComponent>>();
             EventStartRecalculateManaPointMaxValue = world.GetPool<EventStartRecalculateValue<ManaPointMaxValueComponent>>();
             EventStartRecalculateManaPointValue = world.GetPool<EventStartRecalculateValue<ManaPointValueComponent>>();
@@ -518,6 +521,7 @@ namespace Core.Generated
             InProgressThroughProjectileSlot = world.GetPool<InProgressTag<ThroughProjectileSlotTag>>();
             InProgressTouchWall = world.GetPool<InProgressTag<TouchWallTag>>();
             InvulnerabilityLifetime = world.GetPool<InvulnerabilityLifetimeComponent>();
+            ItemsStackValue = world.GetPool<ItemsStackValueComponent>();
             Lifetime = world.GetPool<LifetimeComponent>();
             LivesValue = world.GetPool<LivesValueComponent>();
             LookOnTarget = world.GetPool<LookOnTargetComponent>();

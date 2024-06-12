@@ -16,5 +16,11 @@ public class MapStartPosition : MonoConstruct
     {
         var sceneName = SceneManager.GetActiveScene().name;
         var position = transform.position;
+        _context.Resolve<GlobalTeleportService>().SetStartPosition(sceneName, position);
+        
+        if (_dontSaveProgress)
+            return;
+        
+        _context.Resolve<SceneCheckpointsService>().SetPositionAsCheckpointIfEmpty(sceneName, position);
     }
 }

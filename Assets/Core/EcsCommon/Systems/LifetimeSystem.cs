@@ -8,8 +8,6 @@ namespace Core.Systems
 {
     public class LifetimeSystem : IEcsRunSystem
     {
-        private EcsWorldInject _world;
-
         private readonly EcsFilterInject<Inc<LifetimeComponent>> _filter;
 
         private readonly EcsPoolInject<EventRemoveEntity> _eventRemovePool;

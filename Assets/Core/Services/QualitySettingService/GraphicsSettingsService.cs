@@ -121,11 +121,11 @@ namespace Core
             _serviceData.drawingDistance = percent;
             _serviceData.settingWasChanged = true;
             OnDrawingDistanceChange?.Invoke(percent);
-            _virtualCamera.m_Lens.FarClipPlane = _minDistance + (_baseDistance - _minDistance) * percent;
-
-            RenderSettings.fogStartDistance =
-                _minFogStartDistance + (_baseFogStartDistance - _minFogStartDistance) * percent;
-            RenderSettings.fogEndDistance = _minFogEndDistance + (_baseFogEndDistance - _minFogEndDistance) * percent;
+            // _virtualCamera.m_Lens.FarClipPlane = _minDistance + (_baseDistance - _minDistance) * percent;
+            //
+            // RenderSettings.fogStartDistance =
+            //     _minFogStartDistance + (_baseFogStartDistance - _minFogStartDistance) * percent;
+            // RenderSettings.fogEndDistance = _minFogEndDistance + (_baseFogEndDistance - _minFogEndDistance) * percent;
 
             if (dirty)
                 _playerDataService.SetDirty(this);
@@ -153,7 +153,7 @@ namespace Core
         {
             public bool SSAO = true;
             public bool shadows = true;
-            public float drawingDistance;
+            public float drawingDistance = 1f;
             public float renderScale = 1f;
 
             public bool settingWasChanged;

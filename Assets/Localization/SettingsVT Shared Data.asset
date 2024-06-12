@@ -59,6 +59,10 @@ MonoBehaviour:
     m_Key: drawing_distance
     m_Metadata:
       m_Items: []
+  - m_Id: 77930572663123968
+    m_Key: render_scale
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
@@ -67,6 +71,7 @@ MonoBehaviour:
     version: 2
     RefIds:
     - rid: 7680036174789345288
-      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables,
+        asm: Unity.Localization}
       data:
         m_CustomEpoch: 1699624146262

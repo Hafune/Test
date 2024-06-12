@@ -25,7 +25,6 @@ namespace Core
         private ServiceData _serviceData = new();
         private PlayerDataService _playerDataService;
         private Context _context;
-        private CinemachineConfiner2D _cameraConfiner;
         private bool _isNewMap;
 
         protected override void Construct(Context context) => _context = context;
@@ -43,8 +42,6 @@ namespace Core
                 _serviceData = new();
                 _playerDataService.SetDirty(this);
             };
-
-            _cameraConfiner = _context.Resolve<CinemachineVirtualCamera>().GetComponent<CinemachineConfiner2D>();
         }
 
         public void SetBeginCreating() => IsMapCreated = false;
@@ -67,7 +64,6 @@ namespace Core
 
             IsMapCreated = true;
             OnMapCreated?.Invoke();
-            _cameraConfiner.InvalidateCache();
         }
 
         public bool TryGetData(out LevelData data)

@@ -40,6 +40,8 @@ namespace LurkingNinja.MyGame.Internationalization
 			public static long @sfx_volume_key = 40527335593242624;
 			public static string @drawing_distance => LocalizationSettings.StringDatabase.GetLocalizedString(NAME, 54999192136478720);
 			public static long @drawing_distance_key = 54999192136478720;
+			public static string @render_scale => LocalizationSettings.StringDatabase.GetLocalizedString(NAME, 77930572663123968);
+			public static long @render_scale_key = 77930572663123968;
 
         }
     }

@@ -106,7 +106,7 @@ namespace Core
                 //Обработка коллектебелс
                 .Add(new PickCollectableSystem(_context))
 
-                //Притягивание
+                //Притягивание колектаблов
                 .Add(new MagnetSystem())
 
                 // .Add(new ScanHierarchyForNestedEntitiesSystem(_context))

@@ -23,30 +23,7 @@ namespace Core.Systems
                 InProgressTag<ActionMoveComponent>,
                 MoveDirectionComponent,
                 PlayerControllerTag
-            >,
-            Exc<LStickTag>> _moveCompleteFilter;
-
-        private readonly EcsFilterInject<
-            Inc<
-                ButtonLightAttackTag,
-                ShotTriggerComponent,
-                PlayerControllerTag
-            >,
-            Exc<
-                EventStartProgress<ShotTriggerComponent>,
-                InProgressTag<ShotTriggerComponent>
-            >> _lightAttackFilter;
-
-        private readonly EcsFilterInject<
-            Inc<
-                EventButtonCanceled<ButtonLightAttackTag>,
-                InProgressTag<ShotTriggerComponent>,
-                ShotTriggerComponent,
-                PlayerControllerTag
-            >,
-            Exc<
-                EventCancelProgress<ShotTriggerComponent>
-            >> _lightAttackCancelFilter;
+            >> _moveCompleteFilter;
 
         private readonly EcsFilterInject<
             Inc<
@@ -55,20 +32,20 @@ namespace Core.Systems
                 InProgressTag<PlayerInputMemoryComponent>
             >> _inputMemoryFilter;
 
-        private readonly PlayerInputs.PlayerActions _playerActions;
+        private readonly Joystick _joystick;
         private const float InputMemoryTime = .3f;
 
         private readonly ComponentPools _pools;
 
         public PlayerControllerSystem(Context context) =>
-            _playerActions = context.Resolve<PlayerInputs.PlayerActions>();
+            _joystick = context.Resolve<Joystick>();
 
         public void Run(IEcsSystems systems)
         {
             foreach (var i in _moveStreamingFilter.Value)
             {
                 ref var move = ref _pools.MoveDirection.Get(i);
-                move.direction = _playerActions.LeftStick.ReadValue<Vector2>();
+                move.direction = _joystick.Direction;
 
                 if (!_pools.InProgressActionMove.Has(i) && move.direction != Vector2.zero)
                     _pools.EventStartActionMove.Add(i);
@@ -76,36 +53,12 @@ namespace Core.Systems
 
             foreach (var i in _moveCompleteFilter.Value)
             {
+                if (_joystick.Direction != Vector2.zero)
+                    continue;
+                
                 _pools.MoveDirection.Get(i).direction = Vector2.zero;
                 _pools.EventActionComplete.AddIfNotExist(i);
             }
-
-            foreach (var i in _lightAttackFilter.Value)
-                _pools.EventStartProgressShotTrigger.Add(i);
-
-            foreach (var i in _lightAttackCancelFilter.Value)
-                _pools.EventCancelProgressShotTrigger.Add(i);
-
-            // foreach (var i in _jumpFilter.Value)
-            //     AddIfReadyElseRemember(i, _pools.EventStartActionJump.AddIfNotExist);
-            //
-            // foreach (var i in _useHealingFilter.Value)
-            //     AddIfReadyElseRemember(i, _pools.EventStartActionUseHealingPotion.AddIfNotExist);
-            //
-            // foreach (var i in _strongAttackFilter.Value)
-            //     AddIfReadyElseRemember(i, _pools.EventStartActionStrongAttack1.AddIfNotExist);
-            //
-            // foreach (var i in _specialAttackFilter.Value)
-            //     AddIfReadyElseRemember(i, _pools.EventStartActionSpecialAttack.AddIfNotExist);
-            //
-            // foreach (var i in _specialDownAttackFilter.Value)
-            //     _pools.EventStartActionSpecialDownAttack.Add(i);
-            //
-            // foreach (var i in _specialForwardKickAttackFilter.Value)
-            //     _pools.EventStartActionSpecialForwardKickAttack.Add(i);
-            //
-            // foreach (var i in _dashFilter.Value)
-            //     _pools.EventStartActionDash.Add(i);
 
             foreach (var i in _inputMemoryFilter.Value)
             {

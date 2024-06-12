@@ -12,7 +12,6 @@ namespace Core.Services
         public event Action<Action> OnNeedShowBedMenuInBattlefield;
         public event Action<Action> OnNeedShowBedMenuInHub;
 
-        [SerializeField] private SceneField _hubScene;
         private Action _closeCallback;
         private Context _context;
         private AddressableService _addressableService;
@@ -21,7 +20,6 @@ namespace Core.Services
         private PlayerStateService _playerStateService;
         private ServiceData _serviceData = new();
         private TooltipService _tooltipService;
-        private HubService _hudService;
         private Vector2 _contactTeleportPosition;
         private bool _hasContact;
 
@@ -37,7 +35,6 @@ namespace Core.Services
             _sceneCheckpointsService = _context.Resolve<SceneCheckpointsService>();
             _addressableService = _context.Resolve<AddressableService>();
             _tooltipService = _context.Resolve<TooltipService>();
-            _hudService = _context.Resolve<HubService>();
 
             _context.Resolve<PlayerStateService>().OnResetLevelProgress += () =>
             {
@@ -49,9 +46,6 @@ namespace Core.Services
 
         public void InTouch(Vector2 returnPosition)
         {
-            if (!_hudService.HasRestartOption)
-                return;
-
             _hasContact = true;
             _contactTeleportPosition = returnPosition;
             _tooltipService.ShowBedTooltip();
@@ -59,9 +53,6 @@ namespace Core.Services
 
         public void OutOfTouch()
         {
-            if (!_hudService.HasRestartOption)
-                return;
-
             _hasContact = false;
             _tooltipService.HideTooltip();
         }
@@ -74,10 +65,7 @@ namespace Core.Services
             _closeCallback = closeCallback;
             _tooltipService.HideTooltip();
 
-            if (_hubScene == SceneManager.GetActiveScene().name)
-                OnNeedShowBedMenuInHub!(BeforeClose);
-            else
-                OnNeedShowBedMenuInBattlefield!(BeforeClose);
+            OnNeedShowBedMenuInBattlefield!(BeforeClose);
 
             return true;
         }
@@ -106,8 +94,6 @@ namespace Core.Services
             _serviceData.scenes[_serviceData.lastBattlefieldScene].lastUsedTeleportPosition = _contactTeleportPosition;
             _playerDataService.SetDirty(this);
         }
-
-        public void LoadHubScene() => _addressableService.LoadSceneAsync(_hubScene);
 
         public void LoadLastBattlefieldScene()
         {

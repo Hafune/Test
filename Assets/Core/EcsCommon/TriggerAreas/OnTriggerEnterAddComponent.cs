@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.Assertions;
 using Voody.UniLeo.Lite;
 
-public class OnTriggerEnter2DAddComponent : MonoConstruct, ITriggerDispatcherTarget2D
+public class OnTriggerEnterAddComponent : MonoConstruct, ITriggerDispatcherTarget
 {
     [SerializeField] private BaseMonoProvider _monoProvider;
     [SerializeField] private ConvertToEntity _entityRef;
@@ -33,13 +33,13 @@ public class OnTriggerEnter2DAddComponent : MonoConstruct, ITriggerDispatcherTar
         _monoProvider.Attach(_entityRef.RawEntity, _world, true);
     }
 
-    public void OnTriggerEnter2D(Collider2D _)
+    public void OnTriggerEnter(Collider _)
     {
         if (++_contactCount == 1 && _entityRef.RawEntity != -1)
             _monoProvider.Attach(_entityRef.RawEntity, _world, true);
     }
 
-    public void OnTriggerExit2D(Collider2D _)
+    public void OnTriggerExit(Collider _)
     {
         if (--_contactCount == 0 && _removeWithExit && _entityRef.RawEntity != -1)
             _monoProvider.Remove(_entityRef.RawEntity, _world);
