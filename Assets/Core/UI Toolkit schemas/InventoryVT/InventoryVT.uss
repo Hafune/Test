@@ -1,0 +1,142 @@
+.item {
+    flex-direction: row;
+    align-items: center;
+    padding-left: 0;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 24px;
+}
+
+.item-icon {
+    width: 48px;
+    height: 48px;
+    margin-right: 5px;
+    min-width: 48px;
+    min-height: 48px;
+}
+
+.item-used-icon {
+    margin-right: 5px;
+    background-color: rgb(143, 70, 229);
+    width: 8px;
+    height: 100%;
+    margin-left: 0;
+}
+
+.item-title {
+    font-size: 26px;
+}
+
+.item-cost {
+    font-size: 24px;
+    right: 0;
+    position: absolute;
+}
+
+.my-scroll-view .unity-scroller--vertical {
+    align-items: center;
+}
+
+.my-scroll-view #unity-low-button {
+    background-image: url("project://database/Assets/Additionals/Graphy%20-%20Ultimate%20Stats%20Monitor/Textures/Rounded_Rect_10px.png?fileID=21300000&guid=c4f7f8debbcf3cf4faf280628cab55f9&type=3#Rounded_Rect_10px");
+    background-color: rgba(0, 0, 0, 0);
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;
+    -unity-background-image-tint-color: rgb(255, 255, 255);
+    width: 16px;
+    height: 16px;
+}
+
+.my-scroll-view #unity-high-button {
+    background-image: url("project://database/Assets/Additionals/Graphy%20-%20Ultimate%20Stats%20Monitor/Textures/Rounded_Rect_10px.png?fileID=21300000&guid=c4f7f8debbcf3cf4faf280628cab55f9&type=3#Rounded_Rect_10px");
+    background-color: rgba(0, 0, 0, 0);
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;
+    -unity-background-image-tint-color: rgb(255, 255, 255);
+    width: 16px;
+    height: 16px;
+}
+
+.my-scroll-view #unity-slider {
+    width: 13px;
+}
+
+.my-scroll-view #unity-dragger {
+    background-color: rgb(210, 210, 210);
+    width: 12px;
+    left: 6px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.my-scroll-view #unity-tracker {
+    width: 12px;
+    border-left-color: rgba(0, 0, 0, 0);
+    border-right-color: rgba(0, 0, 0, 0);
+    border-top-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgba(0, 0, 0, 0);
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.column-section {
+    flex-grow: 1;
+    flex-basis: 0;
+    margin-right: 50px;
+    margin-left: 50px;
+    max-width: 540px;
+}
+
+.enhancement {
+    width: 100%;
+    transition-duration: 0.15s;
+    border-bottom-width: 2px;
+    border-left-color: rgba(0, 0, 0, 0);
+    border-right-color: rgba(0, 0, 0, 0);
+    border-top-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgb(11, 42, 73);
+}
+
+.enhancement-selected {
+    width: 120%;
+}
+
+.enegy-locked-space {
+    flex-grow: 1;
+    align-items: center;
+    width: 300px;
+    max-width: 100%;
+    max-height: 20%;
+    min-height: 20%;
+    background-color: rgb(61, 72, 77);
+    justify-content: center;
+    border-top-width: 1px;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;
+    border-left-color: rgba(255, 255, 255, 0.5);
+    border-right-color: rgba(255, 255, 255, 0.5);
+    border-top-color: rgba(255, 255, 255, 0.5);
+    border-bottom-color: rgba(255, 255, 255, 0.5);
+}
+
+.energy-locked-icon {
+    background-image: url("project://database/Assets/Core/UI%20Toolkit%20schemas/InventoryVT/Sprites/home_menu_lock.png?fileID=2800000&guid=69b13d0781c26f9419f0480928d5fe66&type=3#home_menu_lock");
+    width: 44px;
+    height: 61px;
+    -unity-background-image-tint-color: rgb(0, 0, 0);
+}

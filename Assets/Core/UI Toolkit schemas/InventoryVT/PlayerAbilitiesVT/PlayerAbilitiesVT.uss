@@ -1,0 +1,39 @@
+.item-wrapper {
+    width: 50%;
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+}
+
+.abilities-tab {
+    flex-grow: 1;
+    margin-top: 70px;
+    margin-right: 50px;
+    margin-left: 50px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.scroll-view {
+    flex-grow: 1;
+    max-width: 60%;
+    margin-right: 50px;
+    min-width: 60%;
+}
+
+.scroll-view .unity-scroll-view__content-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.abilities-tab__description-container {
+    top: 100px;
+    min-height: 50%;
+    background-image: url("project://database/Assets/Additionals/Tower/Assets/Texture2D/SpriteAtlasTexture-Share%20(Group%201)-2048x512-fmt12.png?fileID=21300000&guid=8d998c8656643084da4576c5d024f42c&type=3#box");
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    flex-grow: 1;
+}

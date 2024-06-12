@@ -1,0 +1,33 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False" gen-cs-file="c6e7d124f3286da479a05a68826f89dc">
+    <ui:Template name="InventoryVT" src="project://database/Assets/Core/UI%20Toolkit%20schemas/InventoryVT/InventoryVT.uxml?fileID=9197481963319205126&amp;guid=5ad075d85583ce84cb8d815e9714d007&amp;type=3#InventoryVT" />
+    <ui:Template name="PlayerAbilitiesVT" src="project://database/Assets/Core/UI%20Toolkit%20schemas/InventoryVT/PlayerAbilitiesVT/PlayerAbilitiesVT.uxml?fileID=9197481963319205126&amp;guid=adaf05aa6327b3144bfe53ca728deb08&amp;type=3#PlayerAbilitiesVT" />
+    <ui:Template name="WeaponsTabVT" src="project://database/Assets/Core/UI%20Toolkit%20schemas/InventoryVT/WeaponsTabVT/WeaponsTabVT.uxml?fileID=9197481963319205126&amp;guid=aa5aeff7f2844ed4894d0656f3a5c3fc&amp;type=3#WeaponsTabVT" />
+    <ui:Template name="SetteingsVT" src="project://database/Assets/Core/UI%20Toolkit%20schemas/InventoryVT/SettingsVT.uxml?fileID=9197481963319205126&amp;guid=6f2ab87057af97741b9d407812169ecf&amp;type=3#SettingsVT" />
+    <ui:Template name="PopConfirmVT" src="project://database/Assets/Core/UI%20Toolkit%20schemas/PopConfirmVT/PopConfirmVT.uxml?fileID=9197481963319205126&amp;guid=d3cbd3d7d1c7ea447912d2eec10dec4c&amp;type=3#PopConfirmVT" />
+    <Style src="project://database/Assets/Core/UI%20Toolkit%20schemas/InventoryVT/GameMenuHeadVT.uss?fileID=7433441132597879392&amp;guid=f9ef067194f70a445ba44f172f446a79&amp;type=3#GameMenuHeadVT" />
+    <Style src="project://database/Assets/Core/UI%20Toolkit%20schemas/CommonStyles/TitleBackground.uss?fileID=7433441132597879392&amp;guid=0f2432af235148243978f2cea839f490&amp;type=3#TitleBackground" />
+    <Style src="project://database/Assets/Core/UI%20Toolkit%20schemas/CommonStyles/TextFontBase.uss?fileID=7433441132597879392&amp;guid=38a94273c510b1447bb6532a65e8d29a&amp;type=3#TextFontBase" />
+    <Style src="project://database/Assets/Core/UI%20Toolkit%20schemas/CommonStyles/TextColorBase.uss?fileID=7433441132597879392&amp;guid=f5a2fd541c0c679418222f1986708dd1&amp;type=3#TextColorBase" />
+    <ui:VisualElement name="GameMenu" class="text-font-base text-color-base" style="flex-grow: 1; padding-left: 10px; padding-right: 10px; padding-top: 10px; padding-bottom: 10px; background-color: rgb(0, 0, 0); background-image: url(&quot;project://database/Assets/Core/UI%20Toolkit%20schemas/InventoryVT/Sprites/GameMenuBg.png?fileID=21300000&amp;guid=9a3edb6c3e8c2c143ab63033d7449120&amp;type=3#GameMenuBg&quot;);">
+        <ui:VisualElement class="background-image" />
+        <ui:VisualElement name="Header" style="border-left-width: 0; border-right-width: 0; border-top-width: 0; border-bottom-width: 2px; border-top-left-radius: 0; border-bottom-left-radius: 0; border-top-right-radius: 0; border-bottom-right-radius: 0; border-left-color: rgb(255, 255, 255); border-right-color: rgb(255, 255, 255); border-top-color: rgb(255, 255, 255); border-bottom-color: rgb(255, 255, 255); margin-bottom: 10px; flex-direction: row; padding-left: 5px; padding-right: 5px; padding-top: 5px; padding-bottom: 5px; max-height: 108px; min-height: 108px; align-items: center; flex-grow: 1;">
+            <Core.InputSprites.LeftTriggerInputSpriteElement class="input-icon" />
+            <ui:VisualElement style="flex-direction: row; flex-grow: 1; width: 80%; align-self: stretch;">
+                <ui:VisualElement name="Chips" class="icon chips chips-selected" />
+                <ui:VisualElement name="Equipment" class="icon equipment" />
+                <ui:VisualElement name="Skills" class="icon skills" />
+                <ui:VisualElement name="Settings" class="icon settings" />
+            </ui:VisualElement>
+            <Core.InputSprites.RightTriggerInputSpriteElement class="input-icon" />
+        </ui:VisualElement>
+        <ui:VisualElement style="padding-left: 50px; position: absolute; top: 126px;">
+            <ui:VisualElement class="title-bg" style="position: absolute; width: 380px;" />
+            <ui:Label tabindex="-1" text="#tab_title" parse-escape-sequences="true" display-tooltip-when-elided="true" name="TabTitle" style="font-size: 48px; -unity-font-style: bold; text-shadow: 3px 3px 1px rgba(0, 0, 0, 0.5); -unity-text-align: lower-left;" />
+        </ui:VisualElement>
+        <ui:Instance template="InventoryVT" name="InventoryVT" style="flex-grow: 1;" />
+        <ui:Instance template="PlayerAbilitiesVT" name="PlayerAbilitiesVT" style="display: none; flex-grow: 1;" />
+        <ui:Instance template="WeaponsTabVT" name="WeaponsTabVT" style="display: none; flex-grow: 1;" />
+        <ui:Instance template="SetteingsVT" name="SettingsVT" style="display: none; flex-grow: 1;" />
+    </ui:VisualElement>
+    <ui:Instance template="PopConfirmVT" name="PopConfirmVT" style="position: absolute; left: 0; top: 0; right: 0; bottom: 0;" />
+</ui:UXML>

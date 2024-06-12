@@ -1,0 +1,35 @@
+.slider {
+    border-top-width: 1px;
+    border-right-width: 0;
+    border-bottom-width: 1px;
+    border-left-width: 0;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    min-width: 650px;
+}
+
+.slider:focus {
+    border-left-color: rgb(224, 224, 224);
+    border-right-color: rgb(224, 224, 224);
+    border-top-color: rgb(224, 224, 224);
+    border-bottom-color: rgb(224, 224, 224);
+}
+
+.slider .unity-base-field__input {
+    max-width: 350px;
+    min-width: 350px;
+}
+
+.font-size {
+    font-size: 30px;
+}
+
+.settings-container {
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+}

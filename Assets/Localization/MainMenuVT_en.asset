@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: MainMenuVT_en
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: 6eab9a4e565d62d4bafae94594dd53ea, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 18748174336
+    m_Localized: New game
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7716617220096
+    m_Localized: Settings
+    m_Metadata:
+      m_Items: []
+  - m_Id: 523431652782080
+    m_Localized: Close
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20671590907408384
+    m_Localized: Submit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20729196652949504
+    m_Localized: Up
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20729438114836480
+    m_Localized: Down
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25381305746878464
+    m_Localized: Continue
+    m_Metadata:
+      m_Items: []
+  - m_Id: 50098875942989824
+    m_Localized: Are you sure you want to delete the player's data?
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

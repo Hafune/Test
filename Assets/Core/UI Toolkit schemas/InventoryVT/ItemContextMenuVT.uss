@@ -1,0 +1,40 @@
+.button-icon {
+    max-width: 48px;
+    max-height: 48px;
+    width: 48px;
+    height: 48px;
+}
+
+.button-text {
+    font-size: 24px;
+    -unity-font-style: bold;
+    width: 150px;
+    -unity-text-align: upper-center;
+}
+
+.button {
+    flex-direction: row;
+    align-items: center;
+    border-left-color: rgb(255, 255, 255);
+    border-right-color: rgb(255, 255, 255);
+    border-top-color: rgb(255, 255, 255);
+    border-bottom-color: rgb(255, 255, 255);
+    border-left-width: 2px;
+    border-right-width: 2px;
+    border-top-width: 2px;
+    border-bottom-width: 2px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: rgb(103, 103, 103);
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.options-text {
+    -unity-font-style: bold;
+    font-size: 24px;
+}

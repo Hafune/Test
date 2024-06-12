@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: MagicGemMenuVT Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: MagicGemMenuVT
+  m_TableCollectionNameGuidString: f9421d973fc1f154d8991d76b1d83fa9
+  m_Entries:
+  - m_Id: 7684929253376
+    m_Key: attack_gem_title
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7879687565312
+    m_Key: defence_gem_title
+    m_Metadata:
+      m_Items: []
+  - m_Id: 58238342688768
+    m_Key: hitpoint_gem_title
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8026819555328
+    m_Key: attack_gem_description
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9035742605312
+    m_Key: defence_gem_description
+    m_Metadata:
+      m_Items: []
+  - m_Id: 58415992434688
+    m_Key: hitpoint_gem_description
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9868832043008
+    m_Key: submit
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 6731278994263244802
+  references:
+    version: 2
+    RefIds:
+    - rid: 6731278994263244802
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1714293444650

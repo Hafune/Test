@@ -1,0 +1,40 @@
+.my_text {
+    color: rgb(231, 231, 231);
+    font-size: 24px;
+    text-shadow: 2px 1.7px 0 rgba(0, 0, 0, 0.47);
+    letter-spacing: 0;
+    word-spacing: 0;
+    -unity-paragraph-spacing: 0;
+    -unity-text-outline-width: 0.5px;
+    -unity-font-style: bold;
+}
+
+.button {
+    width: 48px;
+    height: 48px;
+}
+
+.un_success {
+    opacity: 0;
+    translate: 20px 0;
+    transition-duration: 0.5s;
+    width: 48px;
+    height: 48px;
+    -unity-background-scale-mode: scale-to-fit;
+}
+
+.success {
+    opacity: 1;
+    translate: 0 0;
+}
+
+.combo {
+    transition-duration: 0.5s;
+    opacity: 0;
+    height: 0;
+}
+
+.combo_visible {
+    opacity: 1;
+    height: 48px;
+}

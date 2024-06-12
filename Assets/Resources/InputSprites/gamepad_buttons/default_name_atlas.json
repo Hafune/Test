@@ -1,0 +1,164 @@
+{
+    "frames": [
+        {
+            "filename": "button_xbox_digital_a_5-standart",
+            "frame": {
+                "w": 48,
+                "h": 48,
+                "x": 0,
+                "y": 0
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "button_xbox_digital_b_5-standart",
+            "frame": {
+                "w": 48,
+                "h": 48,
+                "x": 0,
+                "y": 48
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "button_xbox_digital_x_5-standart",
+            "frame": {
+                "w": 48,
+                "h": 48,
+                "x": 0,
+                "y": 96
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "button_xbox_digital_y_5-standart",
+            "frame": {
+                "w": 48,
+                "h": 48,
+                "x": 0,
+                "y": 144
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "button_xboxone_dpad_dark_3-standart",
+            "frame": {
+                "w": 48,
+                "h": 48,
+                "x": 0,
+                "y": 192
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "button_xboxone_dpad_light_4-standart",
+            "frame": {
+                "w": 48,
+                "h": 48,
+                "x": 0,
+                "y": 240
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "button_xboxone_dpad_light_2-standart",
+            "frame": {
+                "w": 48,
+                "h": 48,
+                "x": 0,
+                "y": 288
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "button_xboxone_dpad_light_1-standart",
+            "frame": {
+                "w": 48,
+                "h": 48,
+                "x": 0,
+                "y": 336
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "button_xbox_digital_bumper_light_2_standart",
+            "frame": {
+                "w": 48,
+                "h": 48,
+                "x": 0,
+                "y": 384
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "button_xbox_digital_bumper_light_1_standart",
+            "frame": {
+                "w": 48,
+                "h": 48,
+                "x": 0,
+                "y": 432
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "button_xbox_digital_menu_2_standart",
+            "frame": {
+                "w": 48,
+                "h": 48,
+                "x": 0,
+                "y": 480
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "button_xbox_digital_view_2_standart",
+            "frame": {
+                "w": 48,
+                "h": 48,
+                "x": 0,
+                "y": 528
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        }
+    ],
+    "meta": {
+        "description": "Atlas generado con Atlas Packer Gamma V2",
+        "web": "https://gammafp.github.io/atlas-packer-phaser/"
+    }
+}

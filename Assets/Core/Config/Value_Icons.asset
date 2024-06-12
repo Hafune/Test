@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ea7f47e75514279ae803b731ec0809b, type: 3}
+  m_Name: Value_Icons
+  m_EditorClassIdentifier: 
+  _store:
+    serializedKvps:
+    - Key: 700808044
+      Value: {fileID: 21300022, guid: 6639c7b3751ef8846b03af67b6422935, type: 3}
+      index: 0
+      isKeyRepeated: 0
+    - Key: 822657926
+      Value: {fileID: 21300022, guid: 6639c7b3751ef8846b03af67b6422935, type: 3}
+      index: 1
+      isKeyRepeated: 0
+    - Key: -1320460936
+      Value: {fileID: 21300008, guid: 6639c7b3751ef8846b03af67b6422935, type: 3}
+      index: 2
+      isKeyRepeated: 0
+    - Key: -821317637
+      Value: {fileID: 21300046, guid: 6639c7b3751ef8846b03af67b6422935, type: 3}
+      index: 3
+      isKeyRepeated: 0
+    - Key: -28929299
+      Value: {fileID: 21300036, guid: 6639c7b3751ef8846b03af67b6422935, type: 3}
+      index: 4
+      isKeyRepeated: 0
+    - Key: 418378254
+      Value: {fileID: 21300006, guid: 6639c7b3751ef8846b03af67b6422935, type: 3}
+      index: 5
+      isKeyRepeated: 0
+    - Key: -15864309
+      Value: {fileID: 21300000, guid: 3bf3b208cdbd04443aaa1fb513d6794a, type: 3}
+      index: 6
+      isKeyRepeated: 0
+    - Key: -259302127
+      Value: {fileID: 21300000, guid: 3bf3b208cdbd04443aaa1fb513d6794a, type: 3}
+      index: 7
+      isKeyRepeated: 0
+    - Key: -387419326
+      Value: {fileID: 21300000, guid: 3bf3b208cdbd04443aaa1fb513d6794a, type: 3}
+      index: 8
+      isKeyRepeated: 0
+    - Key: 1065830303
+      Value: {fileID: 21300000, guid: 64c470b34b0074044bbd7b50b9c875c1, type: 3}
+      index: 9
+      isKeyRepeated: 0
+    - Key: 2017009763
+      Value: {fileID: 21300000, guid: 64c470b34b0074044bbd7b50b9c875c1, type: 3}
+      index: 10
+      isKeyRepeated: 0
+    dividerPos: 0.33

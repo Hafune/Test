@@ -1,0 +1,68 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: EnhancementDescriptions Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: EnhancementDescriptions
+  m_TableCollectionNameGuidString: 406e9f879e1f6724f8f30bde1df0c125
+  m_Entries:
+  - m_Id: 148964536320
+    m_Key: damage
+    m_Metadata:
+      m_Items: []
+  - m_Id: 58377334863589376
+    m_Key: damage_percent
+    m_Metadata:
+      m_Items: []
+  - m_Id: 58377344653094912
+    m_Key: hp
+    m_Metadata:
+      m_Items: []
+  - m_Id: 58377489599852544
+    m_Key: hp_percent
+    m_Metadata:
+      m_Items: []
+  - m_Id: 58377561930625024
+    m_Key: "crit_chan\u0441e"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 58377626413854720
+    m_Key: crit_damage
+    m_Metadata:
+      m_Items: []
+  - m_Id: 60902605701410816
+    m_Key: defence
+    m_Metadata:
+      m_Items: []
+  - m_Id: 65537046251991040
+    m_Key: shock_wave
+    m_Metadata:
+      m_Items: []
+  - m_Id: 65669099794624512
+    m_Key: damage_orb
+    m_Metadata:
+      m_Items: []
+  - m_Id: 60841149727404032
+    m_Key: through_projectile
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 7680035975541293059
+  references:
+    version: 2
+    RefIds:
+    - rid: 7680035975541293059
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1698833232853

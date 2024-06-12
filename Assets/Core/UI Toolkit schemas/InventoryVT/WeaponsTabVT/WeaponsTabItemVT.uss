@@ -1,0 +1,54 @@
+.weapons-tab__item-container {
+    height: 100px;
+    flex-direction: row;
+    border-left-color: rgba(255, 255, 255, 0);
+    border-right-color: rgba(255, 255, 255, 0);
+    border-top-color: rgba(255, 255, 255, 0);
+    border-bottom-color: rgba(255, 255, 255, 0);
+    border-top-width: 1px;
+    border-right-width: 0;
+    border-bottom-width: 1px;
+    border-left-width: 0;
+    margin-right: 20px;
+}
+
+.weapons-tab__item-icon {
+    width: 100px;
+    height: 100px;
+    -unity-background-scale-mode: scale-to-fit;
+    margin-right: 20px;
+}
+
+.weapons-tab__item-info-container {
+    flex-grow: 1;
+    flex-direction: row;
+    align-self: center;
+    justify-content: space-between;
+}
+
+.weapons-tab__item-title {
+    -unity-text-align: middle-center;
+    font-size: 40px;
+    -unity-font-style: bold;
+}
+
+.weapons-tab__item-gem-icon {
+    flex-grow: 1;
+    background-image: url("project://database/Assets/Additionals/Tower/Assets/Texture2D/SpriteAtlasTexture-Share%20(Group%201)-2048x512-fmt12.png?fileID=21300016&guid=8d998c8656643084da4576c5d024f42c&type=3#magic");
+    width: 45px;
+    height: 54px;
+    -unity-background-scale-mode: scale-to-fit;
+}
+
+.weapons-tab__item-gem-count {
+    -unity-font-style: bold;
+    font-size: 30px;
+}
+
+.weapons-tab__item-used-icon {
+    margin-right: 5px;
+    background-color: rgb(143, 70, 229);
+    width: 16px;
+    height: 100%;
+    margin-left: 0;
+}

@@ -1,0 +1,17 @@
+.window {
+    background-image: url('project://database/Assets/Additionals/Tower/Assets/Texture2D/SpriteAtlasTexture-BattleHead%20(Group%200)-1024x512-fmt12.png?fileID=21300018&guid=4ad0658a819913447988414d3b06bb34&type=3#propbg');
+    -unity-slice-scale: 2px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+}
+
+.option {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+}
+
+.option:focus {
+    background-color: rgb(0, 159, 207);
+}

@@ -1,0 +1,9 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False" gen-cs-file="0da8cb43b190c6b4eb70b3d072a20560">
+    <Style src="project://database/Assets/Core/UI%20Toolkit%20schemas/HudVT/ActionSlotVT.uss?fileID=7433441132597879392&amp;guid=e2214b4f80ebed44e8d7e8031ecbaf2f&amp;type=3#ActionSlotVT" />
+    <ui:VisualElement class="action-container">
+        <ui:VisualElement class="action-icon-container">
+            <ui:VisualElement name="ActionIcon" class="action-icon" style="background-image: resource(&apos;Icons/Abilities/dash-icon&apos;);" />
+            <ui:VisualElement name="ActionReload" class="action-reload-progress" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

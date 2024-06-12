@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15ec25ff21794562b090fc274a6755ab, type: 3}
+  m_Name: Transparent Shader Queue
+  m_EditorClassIdentifier: 
+  _list:
+  - {fileID: 2100000, guid: e7670a6e59fabf240b431b84bd59a925, type: 2}
+  - {fileID: 2100000, guid: d85c787ed9c41d448a1ee8d72bb730c6, type: 2}
+  - {fileID: 2100000, guid: 9f4e9ad4a49f5c14d846602c3c58bac7, type: 2}
+  - {fileID: 2100000, guid: c93ef53e3bd73094b97589ea2e9564f9, type: 2}
+  - {fileID: 2100000, guid: b3f5ba6ec7dd70849b37cf9371b9c5aa, type: 2}
+  - {fileID: 2100000, guid: e4adab27326b0f446a5b3ae6c8bca53d, type: 2}
+  - {fileID: 2100000, guid: 2dad401e78fba8e4fae00872586af5f6, type: 2}
+  - {fileID: 2100000, guid: 7de065373b1cd1948a9a0d28e464313f, type: 2}
+  - {fileID: 2100000, guid: 96c4ab66562dd434490c94a6d5ae9c9e, type: 2}
+  - {fileID: 2100000, guid: 209d468991279f84482316274e5dd6ed, type: 2}
+  - {fileID: 2100000, guid: 3203499fb5a37a1499f93ddde7e48047, type: 2}
+  _resetList: []

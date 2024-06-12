@@ -1,0 +1,122 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Dialog_3_IN_1_en
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: 43d5990386c591d4da275418564f4287, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 69868351488
+    m_Localized: "icon=Devil1_Sao2_3\ntitle=devil\nYou know, Eris, I was once a powerful
+      mage.\nAnd my name was Cain.\n--\nicon=Devil1_Sao2_3\ntitle=devil\nI lived
+      in a beautiful city, surrounded by friends and respect.\n--\nicon=Devil1_Sao2_3\ntitle=devil\nI
+      conducted various studies, for the benefit of people, of course.\n--\nicon=Erza_Trick\ntitle=lachesis\nWhat
+      a sweetheart.\n--\nicon=Devil1_Sao2_3\ntitle=devil\nOh, I was a real star!\n--\nicon=Devil1_Sao2_3\ntitle=devil\nOne
+      day I faced an incredible threat. \nA terrible monster attacked our city.\n--\nicon=Devil1_Sao2_3\ntitle=devil\nIts
+      power was unimaginable. \nNo one could withstand it.\n--\nicon=Devil1_Sao2_3\ntitle=devil\nWell,
+      except for me, of course.\n--\nicon=Devil1_Sao2_3\ntitle=devil\nI knew I had
+      to do something.\n--\nicon=Devil1_Sao2_3\ntitle=devil\nIn that desperate battle,
+      I used all my strength and knowledge, and timing it right, I used a powerful
+      artifact that began to suck everything in.\n--\nicon=Devil1_Sao2_3\ntitle=devil\nAnd
+      I did it!\nThe monster was consumed!\n--\nicon=Devil1_Sao2_3\ntitle=devil\nBut
+      in the last moment, that beast grabbed me.\nAnd now I am here!\nEntertaining
+      lost souls.\n--\nicon=Erza_Trick\ntitle=lachesis\nSo I'm lucky.\nWithout you,
+      it would be much more boring.\n--\nicon=Erza_Trick\ntitle=lachesis\nLet's go.\nI
+      want to see the one who runs this floor."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 500364746584064
+    m_Localized: 'icon=devilloli1_normal
+
+      title=lilit
+
+      Do we have guests?
+
+      How
+      wonderful, I haven''t had guests for dinner in a long time!
+
+      --
+
+      icon=devilloli1_normal
+
+      title=lilit
+
+      Wait,
+      your face looks familiar.
+
+      --
+
+      icon=Erza_Trick
+
+      title=lachesis
+
+      Very
+      possible.
+
+      --
+
+      icon=devilloli1_normal
+
+      title=lilit
+
+      Have
+      I seduced you before?
+
+      --
+
+      icon=Erza_Trick
+
+      title=lachesis
+
+      I
+      rarely dealt with junior demons.
+
+      And you are not my type.
+
+      --
+
+      icon=devilloli1_normal
+
+      title=lilit
+
+      Junior
+      demons?!
+
+      Pathetic wretch!
+
+      I will kill you again and again!
+
+      --
+
+      icon=Erza_Trick
+
+      title=lachesis
+
+      Good
+      attitude.
+
+      --
+
+      icon=Devil1_Sao2_3
+
+      title=devil
+
+      I love
+      it when girls fight!'
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

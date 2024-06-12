@@ -1,0 +1,7 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False" gen-cs-file="156b4aa476f86bb449ca6271fa338549">
+    <Style src="project://database/Assets/Core/UI%20Toolkit%20schemas/WardrobeVT/WardrobeItemVT.uss?fileID=7433441132597879392&amp;guid=81c4708be771a4e4bb7af36b3074b522&amp;type=3#WardrobeItemVT" />
+    <Core.FocusableVisualElement name="Item" class="container">
+        <ui:VisualElement name="Selected" style="position: absolute; top: 0; right: 0; background-image: url(&apos;project://database/Assets/Additionals/Tower/Assets/Texture2D/SpriteAtlasTexture-BattleHead%20(Group%200)-1024x512-fmt12.png?fileID=21300024&amp;guid=4ad0658a819913447988414d3b06bb34&amp;type=3#bufferlevelbg&apos;); width: 30px; height: 30px; display: none;" />
+        <ui:VisualElement name="Icon" style="flex-grow: 1; -unity-background-scale-mode: scale-to-fit;" />
+    </Core.FocusableVisualElement>
+</ui:UXML>

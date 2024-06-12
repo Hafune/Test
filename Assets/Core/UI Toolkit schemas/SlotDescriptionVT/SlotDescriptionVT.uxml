@@ -1,0 +1,19 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False" gen-cs-file="40ac1893d79c0c84fa513c4b6917ec8b">
+    <Style src="project://database/Assets/Core/UI%20Toolkit%20schemas/SlotDescriptionVT/SlotDescriptionVT.uss?fileID=7433441132597879392&amp;guid=cfbbed9000496714db8ee7f2b4224f16&amp;type=3#SlotDescriptionVT" />
+    <Style src="project://database/Assets/Core/UI%20Toolkit%20schemas/CommonStyles/TextColorBase.uss?fileID=7433441132597879392&amp;guid=f5a2fd541c0c679418222f1986708dd1&amp;type=3#TextColorBase" />
+    <Style src="project://database/Assets/Core/UI%20Toolkit%20schemas/CommonStyles/TextFontBase.uss?fileID=7433441132597879392&amp;guid=38a94273c510b1447bb6532a65e8d29a&amp;type=3#TextFontBase" />
+    <Core.SlotDescriptionElement name="MainContainer" class="text-color-base text-font-base">
+        <ui:VisualElement name="Container" class="slot-description__container">
+            <ui:VisualElement name="Row" class="slot-description__row">
+                <ui:VisualElement class="slot-description__icon-name-container">
+                    <ui:VisualElement name="ValueIcon" class="slot-description__value-icon" />
+                    <ui:Label tabindex="-1" text="Label" parse-escape-sequences="true" display-tooltip-when-elided="true" name="ValueName" class="slot-description__value-name" />
+                </ui:VisualElement>
+                <ui:Label tabindex="-1" text="123" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Value" class="slot-description__value" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="TagContainer">
+            <ui:Label tabindex="-1" text="Label" parse-escape-sequences="true" display-tooltip-when-elided="true" name="TagText" class="slot-description__tag-descroption" />
+        </ui:VisualElement>
+    </Core.SlotDescriptionElement>
+</ui:UXML>

@@ -1,0 +1,77 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False" gen-cs-file="4a0f652946b21ac4d835d7970e851611">
+    <Style src="project://database/Assets/Core/UI%20Toolkit%20schemas/InventoryVT/InventoryPlayerStatesVT.uss?fileID=7433441132597879392&amp;guid=5275e998746f2324a8d21e7409cbd16d&amp;type=3#InventoryPlayerStatesVT" />
+    <Style src="project://database/Assets/Core/UI%20Toolkit%20schemas/CommonStyles/TextColorBase.uss?fileID=7433441132597879392&amp;guid=f5a2fd541c0c679418222f1986708dd1&amp;type=3#TextColorBase" />
+    <Style src="project://database/Assets/Core/UI%20Toolkit%20schemas/CommonStyles/TextFontBase.uss?fileID=7433441132597879392&amp;guid=38a94273c510b1447bb6532a65e8d29a&amp;type=3#TextFontBase" />
+    <Style src="project://database/Assets/Core/UI%20Toolkit%20schemas/CommonStyles/TitleBackground.uss?fileID=7433441132597879392&amp;guid=0f2432af235148243978f2cea839f490&amp;type=3#TitleBackground" />
+    <ui:VisualElement class="text-color-base text-font-base" style="flex-grow: 1; flex-basis: 1px;">
+        <ui:VisualElement style="position: relative;">
+            <ui:VisualElement class="title-bg" style="width: 50%;" />
+            <ui:Label tabindex="-1" text="#status" parse-escape-sequences="true" display-tooltip-when-elided="true" style="font-size: 40px; -unity-font-style: bold; -unity-font-definition: initial; -unity-font: url(&quot;project://database/Assets/Additionals/Tower/Assets/Font/Cambria%20Math.ttf?fileID=12800000&amp;guid=2deb3e250adbe3d4e9d0aa9f71187462&amp;type=3#Cambria Math&quot;); text-shadow: 3px 3px 1px rgba(0, 0, 0, 0.5); -unity-text-align: lower-left; margin-top: 0; padding-top: 0; margin-left: 0;" />
+        </ui:VisualElement>
+        <ui:VisualElement style="flex-direction: row; margin-bottom: 10px;">
+            <ui:VisualElement class="energy-container">
+                <ui:Label tabindex="-1" text="#energy_used" parse-escape-sequences="true" display-tooltip-when-elided="true" class="state_value" />
+                <ui:Label tabindex="-1" text=": " parse-escape-sequences="true" display-tooltip-when-elided="true" class="state_value" />
+                <ui:Label tabindex="-1" text="Label" parse-escape-sequences="true" display-tooltip-when-elided="true" name="EnergyUsed" class="state_value" />
+                <ui:Label tabindex="-1" text="/" parse-escape-sequences="true" display-tooltip-when-elided="true" class="state_value" />
+                <ui:Label tabindex="-1" text="Label" parse-escape-sequences="true" display-tooltip-when-elided="true" name="EnergyTotal" class="state_value" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement style="flex-direction: column; margin-bottom: 10px;">
+            <ui:VisualElement class="state_container">
+                <ui:VisualElement class="label_container">
+                    <ui:Label text="#hp" display-tooltip-when-elided="true" class="state_value" style="width: 60px;" />
+                    <ui:ProgressBar high-value="1" value="0.5" name="HpBar" class="hit-point-bar bar" />
+                </ui:VisualElement>
+                <ui:VisualElement style="flex-direction: row;">
+                    <ui:Label text="2341" display-tooltip-when-elided="true" name="Hp" class="state_value" />
+                    <ui:Label text="/" display-tooltip-when-elided="true" class="state_value" />
+                    <ui:Label text="5431" display-tooltip-when-elided="true" name="HpMax" class="state_value" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement class="state_container">
+                <ui:VisualElement class="label_container">
+                    <ui:Label text="#mp" display-tooltip-when-elided="true" class="state_value" style="width: 60px;" />
+                    <ui:ProgressBar high-value="1" value="0.5" name="MpBar" class="hit-point-bar mana-point-bar bar" />
+                </ui:VisualElement>
+                <ui:VisualElement style="flex-direction: row;">
+                    <ui:Label text="2341" display-tooltip-when-elided="true" name="Mp" class="state_value" />
+                    <ui:Label text="/" display-tooltip-when-elided="true" class="state_value" />
+                    <ui:Label text="5431" display-tooltip-when-elided="true" name="MpMax" class="state_value" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement class="state_container">
+                <ui:VisualElement class="label_container">
+                    <ui:VisualElement class="state_icon" style="background-image: url(&quot;project://database/Assets/Additionals/Tower/Assets/Texture2D/SpriteAtlasTexture-PlayerInfo%20(Group%200)-2048x1024-fmt12.png?fileID=21300022&amp;guid=6639c7b3751ef8846b03af67b6422935&amp;type=3#ATK&quot;);" />
+                    <ui:Label text="#atk" display-tooltip-when-elided="true" class="state_value" />
+                </ui:VisualElement>
+                <ui:Label text="123%" display-tooltip-when-elided="true" name="Damage" class="state_value" />
+            </ui:VisualElement>
+            <ui:VisualElement class="state_container">
+                <ui:VisualElement class="label_container">
+                    <ui:VisualElement class="state_icon" style="background-image: url(&quot;project://database/Assets/Additionals/Tower/Assets/Texture2D/SpriteAtlasTexture-PlayerInfo%20(Group%200)-2048x1024-fmt12.png?fileID=21300008&amp;guid=6639c7b3751ef8846b03af67b6422935&amp;type=3#def&quot;);" />
+                    <ui:Label text="#def" display-tooltip-when-elided="true" class="state_value" />
+                </ui:VisualElement>
+                <ui:Label text="123%" display-tooltip-when-elided="true" name="Defence" class="state_value" />
+            </ui:VisualElement>
+            <ui:VisualElement class="state_container">
+                <ui:VisualElement class="label_container">
+                    <ui:VisualElement class="state_icon" style="background-image: url(&quot;project://database/Assets/Additionals/Tower/Assets/Texture2D/SpriteAtlasTexture-PlayerInfo%20(Group%200)-2048x1024-fmt12.png?fileID=21300046&amp;guid=6639c7b3751ef8846b03af67b6422935&amp;type=3#POW&quot;);" />
+                    <ui:Label text="#crch" display-tooltip-when-elided="true" class="state_value" />
+                </ui:VisualElement>
+                <ui:Label text="123%" display-tooltip-when-elided="true" name="CriticalChanse" class="state_value" />
+            </ui:VisualElement>
+            <ui:VisualElement class="state_container">
+                <ui:VisualElement class="label_container">
+                    <ui:VisualElement class="state_icon" style="background-image: url(&quot;project://database/Assets/Additionals/Tower/Assets/Texture2D/SpriteAtlasTexture-PlayerInfo%20(Group%200)-2048x1024-fmt12.png?fileID=21300036&amp;guid=6639c7b3751ef8846b03af67b6422935&amp;type=3#Crit&quot;);" />
+                    <ui:Label text="#crd" display-tooltip-when-elided="true" class="state_value" />
+                </ui:VisualElement>
+                <ui:Label text="1.59" display-tooltip-when-elided="true" name="CriticalDamage" class="state_value" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement style="flex-direction: row; align-items: center;">
+            <ui:VisualElement style="background-image: url(&quot;project://database/Assets/Additionals/Tower/Assets/Texture2D/SpriteAtlasTexture-Share%20(Group%201)-2048x512-fmt12.png?fileID=21300016&amp;guid=8d998c8656643084da4576c5d024f42c&amp;type=3#magic&quot;); width: 45px; height: 54px; flex-direction: row; margin-right: 10px; -unity-background-scale-mode: scale-to-fit;" />
+            <ui:Label text="123" display-tooltip-when-elided="true" name="GemCount" enable-rich-text="false" style="font-size: 24px; -unity-font-style: bold;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

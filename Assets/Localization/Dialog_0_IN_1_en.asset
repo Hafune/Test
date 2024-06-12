@@ -1,0 +1,142 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Dialog_0_IN_1_en
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: 482fada50ea2f1349a36755b3b7c7e7f, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 8634307576492032
+    m_Localized: "icon=Devil1_Sao2_3\ntitle=devil\nOh, who do I see! A new guest
+      in our beautiful tower. Welcome!\n--\nicon=Erza_Trick\ntitle=lachesis\nYou...\n--\nicon=Devil1_Sao2_3\ntitle=devil\nI
+      am your friend and comrade!\nYour support and hope!\nI will be your guide in
+      this place, full of horror and fun.\n--\nicon=Erza_Trick\ntitle=lachesis\nFun.\n--\nicon=Devil1_Sao2_3\ntitle=devil\nAnd
+      horror!\n--\nicon=Erza_Trick\ntitle=lachesis\nWonderful.\n--\nicon=Devil1_Sao2_3\ntitle=devil\n...\n.......\n--\nicon=Devil1_Sao2_3\ntitle=devil\nHere
+      you will either go mad, or die, or most likely both. \nBut until then, we will
+      have great fun!\n--\nicon=Erza_Trick\ntitle=lachesis\nYou seem to be enjoying
+      yourself a lot.\n--\nicon=Devil1_Sao2_3\ntitle=devil\nOf course! Every new
+      guest is a new source of entertainment. \n--\nicon=Devil1_Sao2_3\ntitle=devil\nGet
+      ready, because no one leaves here unsatisfied, and no one leaves at all!\n--\nicon=Devil1_Sao2_3\ntitle=devil\nBut
+      I promise, you will have fun... as long as it lasts.\n--\nicon=Erza_Trick\ntitle=lachesis\nAlright.
+      Let's see what you have to offer.\n--\nicon=Devil1_Sao2_3\ntitle=devil\n..."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10949132314898432
+    m_Localized: 'icon=Devil1_Sao2_3
+
+      title=devil
+
+      Meet them - these
+      are your new friends!
+
+      You will see them very often.
+
+      --
+
+      icon=Devil1_Sao2_3
+
+      title=devil
+
+      Literally
+      after every death!
+
+      --
+
+      icon=Erza_Trick
+
+      title=lachesis
+
+      Let''s
+      go meet them.
+
+      --
+
+      icon=Devil1_Sao2_3
+
+      title=devil
+
+      ....
+
+      --
+
+      icon=Devil1_Sao2_3
+
+      title=devil
+
+      Aren''t
+      you starting to go crazy a little too early?'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11349092818644992
+    m_Localized: "icon=Boss_Cockroach_1\ntitle=cockroach\nWaaah! What a beauty!\n--\nicon=Devil1_Sao2_3\ntitle=devil\nMeet
+      my old acquaintance. \nThe king of the local rabble, the oversized cockroach!\n--\nicon=Boss_Cockroach_1\ntitle=cockroach\nCome
+      here, babe!\n--\nicon=Devil1_Sao2_3\ntitle=devil\nHe's a connoisseur of beautiful
+      women.\n--\nicon=Boss_Cockroach_1\ntitle=cockroach\nI want to take a bite out
+      of you!\n--\nicon=Devil1_Sao2_3\ntitle=devil\nAnd a true gourmet.\n--\nicon=Erza_Trick\ntitle=lachesis\nI
+      figured as much.\n--\nicon=Devil1_Sao2_3\ntitle=devil\nDon't be sad if you
+      can't win, we'll just start a new round.\n--\nicon=Erza_Trick\ntitle=lachesis\nI
+      won't.\n--\nicon=Erza_Trick\ntitle=lachesis\nLet him try to take a bite if
+      he can.\n--\nicon=Boss_Cockroach_1\ntitle=cockroach\nYesssss!!!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11545512381149184
+    m_Localized: 'icon=Devil1_Sao2_3
+
+      title=devil
+
+      You''re a good fighter!
+
+      --
+
+      icon=Devil1_Sao2_3
+
+      title=devil
+
+      Not
+      many of my wards could get an audience with the King, let alone leave him alive.
+
+      --
+
+      icon=Erza_Trick
+
+      title=lachesis
+
+      A
+      good opponent, perhaps I''ll visit him again when he reincarnates.
+
+      --
+
+      icon=Erza_Trick
+
+      title=lachesis
+
+      Shall
+      we move on?
+
+      --
+
+      icon=Devil1_Sao2_3
+
+      title=devil
+
+      Of
+      course, of course!
+
+      No need to rush, we have all the time in the world.'
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

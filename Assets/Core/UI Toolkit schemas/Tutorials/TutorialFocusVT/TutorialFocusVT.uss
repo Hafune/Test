@@ -1,0 +1,20 @@
+.fade {
+    background-image: url("project://database/Assets/Sprites/2x2-white.png?fileID=2800000&guid=2bc89f68d2a106d4eb22aae918caba4d&type=3#2x2-white");
+}
+
+.tint {
+    -unity-background-image-tint-color: rgba(0, 0, 0, 0);
+}
+
+.transition {
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+}
+
+.tint-shadow {
+    -unity-background-image-tint-color: rgba(0, 0, 0, 0.71);
+}
+
+.text-size {
+    font-size: 32px;
+}

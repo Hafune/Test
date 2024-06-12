@@ -1,0 +1,366 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Dialog_4_IN_1_en
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: 7936e3d37c6921c498d1e222c15ff7c9, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 160494678016
+    m_Localized: 'icon=Devil1_Sao2_3
+
+      title=devil
+
+      You won...
+
+      --
+
+      icon=Devil1_Sao2_3
+
+      title=devil
+
+      You
+      won....... and not just like that...
+
+      --
+
+      icon=Devil1_Sao2_3
+
+      title=devil
+
+      No
+      one has gone this far before you...
+
+      --
+
+      icon=Erza_Trick
+
+      title=lachesis
+
+      I
+      know.
+
+      --
+
+      icon=Devil1_Sao2_3
+
+      title=devil
+
+      ... you
+      are just kidding me, right?
+
+      --
+
+      icon=Devil1_Sao2_3
+
+      title=devil
+
+      You
+      are just a very strong warrior who managed to reach the top of the tower!!
+
+      --
+
+      icon=Erza_Trick
+
+      title=lachesis
+
+      Cain
+      Mocker.
+
+      Once upon a time, there was Cain Mocker, known for his sharp
+      mind and even sharper tongue.
+
+      --
+
+      icon=Erza_Trick
+
+      title=lachesis
+
+      You
+      were a mage, exploring the secrets of dark magic and tempting fate with your
+      daring experiments.
+
+      --
+
+      icon=Erza_Trick
+
+      title=lachesis
+
+      Your
+      sharp tongue and your luck made you famous among friends and enemies.
+
+      --
+
+      icon=Erza_Trick
+
+      title=lachesis
+
+      And
+      one day, in search of eternal life and power, you brought disaster to your
+      hometown.
+
+      --
+
+      icon=Erza_Trick
+
+      title=lachesis
+
+      You
+      summoned a demon that you couldn''t control!
+
+      --
+
+      icon=Devil1_Sao2_3
+
+      title=devil
+
+      It
+      was an accident, I made a mistake somewhere.
+
+      --
+
+      icon=Erza_Trick
+
+      title=lachesis
+
+      I
+      know.
+
+      --
+
+      icon=Erza_Trick
+
+      title=lachesis
+
+      Your summoning
+      coincided with a summoning on the other side of the world, where a truly sinister
+      sorcerer lived.
+
+      --
+
+      icon=Erza_Trick
+
+      title=lachesis
+
+      It
+      so happened that the sorcerer on the other side spent all his power summoning
+      the monster.
+
+      And you "stole" it.
+
+      --
+
+      icon=Devil1_Sao2_3
+
+      title=devil
+
+      Oh.
+
+      --
+
+      icon=Erza_Trick
+
+      title=lachesis
+
+      And
+      seeing what you had done, you didn''t run away.
+
+      --
+
+      icon=Erza_Trick
+
+      title=lachesis
+
+      Like
+      many would have done.
+
+      --
+
+      icon=Erza_Trick
+
+      title=lachesis
+
+      You
+      killed that monster and died yourself.
+
+      And your dream came true, you
+      are practically immortal.
+
+      --
+
+      icon=Devil1_Sao2_3
+
+      title=devil
+
+      Yeah,
+      not the kind of eternal life I wanted.
+
+      --
+
+      icon=Erza_Trick
+
+      title=lachesis
+
+      Cain.
+      You already understand everything.
+
+      --
+
+      icon=Erza_Trick
+
+      title=lachesis
+
+      We
+      are not going anywhere.
+
+      --
+
+      icon=Erza_Trick
+
+      title=lachesis
+
+      We
+      will stay. Because we had so much fun, didn''t we?
+
+      --
+
+      icon=Erza_Trick
+
+      title=lachesis
+
+      After
+      all, how can I leave this place, I have to look after it.
+
+      After this
+      tower.
+
+      --
+
+      icon=Erza_Trick
+
+      title=lachesis
+
+      My tower.
+
+      --
+
+      icon=Devil1_Sao2_3
+
+      title=devil
+
+      I
+      suspected.
+
+      But didn''t believe it!
+
+      --
+
+      icon=Devil1_Sao2_3
+
+      title=devil
+
+      So
+      why are you here?
+
+      My mistress.
+
+      --
+
+      icon=Erza_Trick
+
+      title=lachesis
+
+      I
+      was bored and decided to check on my domain.
+
+      --
+
+      icon=Devil1_Sao2_3
+
+      title=devil
+
+      I
+      hope you are pleased with your faithful guide!
+
+      --
+
+      icon=Erza_Trick
+
+      title=lachesis
+
+      Of
+      course.
+
+      It was fun with you.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 439037042782208
+    m_Localized: 'icon=Devil1_Sao2_3
+
+      title=devil
+
+      This is General Asterion.
+
+      --
+
+      icon=Devil1_Sao2_3
+
+      title=devil
+
+      You
+      are strong, no doubt about that.
+
+      But I''m afraid neither your body nor
+      your mind can withstand such a duel.
+
+      --
+
+      icon=Boss_Minotaur1_normal
+
+      title=asterion
+
+      To
+      what do I owe this meeting?
+
+      --
+
+      icon=Erza_Trick
+
+      title=lachesis
+
+      I
+      wish to test you!
+
+      --
+
+      icon=Boss_Minotaur1_normal
+
+      title=asterion
+
+      As
+      you wish.
+
+      --
+
+      icon=Devil1_Sao2_3
+
+      title=devil
+
+      Oh'
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

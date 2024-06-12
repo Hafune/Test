@@ -1,0 +1,23 @@
+.text-color-base {
+    color: rgb(224, 224, 224);
+}
+
+.text-color-base Label {
+    color: rgb(224, 224, 224);
+}
+
+.text-color-base Label:focus {
+    color: rgb(224, 224, 224);
+}
+
+.text-color-base:focus {
+    color: rgb(224, 224, 224);
+}
+
+.text-color-base:focus Label {
+    color: rgb(224, 224, 224);
+}
+
+.text-color-base:focus Label:focus {
+    color: rgb(224, 224, 224);
+}

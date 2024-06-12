@@ -1,0 +1,160 @@
+{
+    "layers": [
+        "Default",
+        "TransparentFX",
+        "Ignore Raycast",
+        "Minimap",
+        "Water",
+        "UI",
+        "",
+        "DefaultTarget",
+        "CameraBounds",
+        "Collectable",
+        "CollectableTarget",
+        "EnemyDamageArea",
+        "EnemyDamageAreaTarget",
+        "",
+        "Clickable",
+        "",
+        "",
+        "MapFog",
+        "PlayerDamageArea",
+        "PlayerDamageAreaTarget",
+        "Interference",
+        "InterferenceTarget",
+        "",
+        "ActivateArea",
+        "ActivateAreaTarget",
+        "",
+        "Platform",
+        "PlatformTarget",
+        "EnemyAgroArea",
+        "EnemyAgroAreaTarget",
+        "InvisibleWall",
+        "InvisibleWallTarget"
+    ],
+    "collisions3D": [
+        {
+            "layerA": "Default",
+            "layerB": "Default"
+        },
+        {
+            "layerA": "Default",
+            "layerB": "Minimap"
+        },
+        {
+            "layerA": "Default",
+            "layerB": "Collectable"
+        },
+        {
+            "layerA": "Default",
+            "layerB": "Clickable"
+        },
+        {
+            "layerA": "Minimap",
+            "layerB": ""
+        },
+        {
+            "layerA": "Collectable",
+            "layerB": "CollectableTarget"
+        },
+        {
+            "layerA": "EnemyDamageArea",
+            "layerB": "EnemyDamageAreaTarget"
+        },
+        {
+            "layerA": "EnemyDamageAreaTarget",
+            "layerB": "Clickable"
+        },
+        {
+            "layerA": "",
+            "layerB": "PlayerDamageArea"
+        },
+        {
+            "layerA": "",
+            "layerB": ""
+        },
+        {
+            "layerA": "",
+            "layerB": "InterferenceTarget"
+        }
+    ],
+    "collisions2D": [
+        {
+            "layerA": "Default",
+            "layerB": "Default"
+        },
+        {
+            "layerA": "Default",
+            "layerB": "Minimap"
+        },
+        {
+            "layerA": "Default",
+            "layerB": "DefaultTarget"
+        },
+        {
+            "layerA": "Default",
+            "layerB": ""
+        },
+        {
+            "layerA": "Default",
+            "layerB": "Clickable"
+        },
+        {
+            "layerA": "Minimap",
+            "layerB": "PlayerDamageAreaTarget"
+        },
+        {
+            "layerA": "Collectable",
+            "layerB": "CollectableTarget"
+        },
+        {
+            "layerA": "EnemyDamageArea",
+            "layerB": "EnemyDamageAreaTarget"
+        },
+        {
+            "layerA": "EnemyDamageAreaTarget",
+            "layerB": "Clickable"
+        },
+        {
+            "layerA": "Clickable",
+            "layerB": "Platform"
+        },
+        {
+            "layerA": "",
+            "layerB": ""
+        },
+        {
+            "layerA": "PlayerDamageArea",
+            "layerB": "PlayerDamageAreaTarget"
+        },
+        {
+            "layerA": "PlayerDamageAreaTarget",
+            "layerB": "Platform"
+        },
+        {
+            "layerA": "Interference",
+            "layerB": "InterferenceTarget"
+        },
+        {
+            "layerA": "",
+            "layerB": ""
+        },
+        {
+            "layerA": "ActivateArea",
+            "layerB": "ActivateAreaTarget"
+        },
+        {
+            "layerA": "Platform",
+            "layerB": "PlatformTarget"
+        },
+        {
+            "layerA": "EnemyAgroArea",
+            "layerB": "EnemyAgroAreaTarget"
+        },
+        {
+            "layerA": "InvisibleWall",
+            "layerB": "InvisibleWallTarget"
+        }
+    ]
+}

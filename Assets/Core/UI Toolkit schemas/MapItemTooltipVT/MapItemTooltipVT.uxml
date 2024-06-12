@@ -1,0 +1,14 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" gen-cs-file="702798dd777bc234d91e2e9ed1884bb1" editor-extension-mode="False">
+    <ui:Template name="SlotDescriptionVT" src="project://database/Assets/Core/UI%20Toolkit%20schemas/SlotDescriptionVT/SlotDescriptionVT.uxml?fileID=9197481963319205126&amp;guid=ef05b050d29c4d349abd51d0dcb62199&amp;type=3#SlotDescriptionVT" />
+    <Style src="project://database/Assets/Core/UI%20Toolkit%20schemas/MapItemTooltipVT/MapItemTooltipVT.uss?fileID=7433441132597879392&amp;guid=1909a5326c51d064ca4162e22a4be83e&amp;type=3#MapItemTooltipVT" />
+    <Style src="project://database/Assets/Core/UI%20Toolkit%20schemas/CommonStyles/TextColorBase.uss?fileID=7433441132597879392&amp;guid=f5a2fd541c0c679418222f1986708dd1&amp;type=3#TextColorBase" />
+    <Style src="project://database/Assets/Core/UI%20Toolkit%20schemas/CommonStyles/TextFontBase.uss?fileID=7433441132597879392&amp;guid=38a94273c510b1447bb6532a65e8d29a&amp;type=3#TextFontBase" />
+    <ui:VisualElement name="Tooltip" class="text-color-base text-font-base map-item-tooltip">
+        <ui:VisualElement class="map-item-tooltip__icon-title-container">
+            <ui:VisualElement name="Icon" class="map-item-tooltip__icon" />
+            <ui:Label text="Описание&#10;чего нибудь" display-tooltip-when-elided="true" name="Title" enable-rich-text="true" class="map-item-tooltip__title" />
+        </ui:VisualElement>
+        <ui:Label text="Описание&#10;чего нибудь" display-tooltip-when-elided="true" name="Description" enable-rich-text="true" class="map-item-tooltip__description" />
+        <ui:Instance template="SlotDescriptionVT" name="SlotDescriptionVT" class="map-item-tooltip__slot-container" />
+    </ui:VisualElement>
+</ui:UXML>

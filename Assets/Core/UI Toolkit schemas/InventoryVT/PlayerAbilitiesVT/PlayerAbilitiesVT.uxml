@@ -1,0 +1,35 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" gen-cs-file="f7b681f81c6d5a44e9d9a9ad7af82d33" editor-extension-mode="False">
+    <Style src="project://database/Assets/Core/UI%20Toolkit%20schemas/InventoryVT/PlayerAbilitiesVT/PlayerAbilitiesVT.uss?fileID=7433441132597879392&amp;guid=8b456f351841f1d4795c9374134a74eb&amp;type=3#PlayerAbilitiesVT" />
+    <Style src="project://database/Assets/Core/UI%20Toolkit%20schemas/CommonStyles/NavigationBar.uss?fileID=7433441132597879392&amp;guid=aef2a06e51c7977458c609b4e786304a&amp;type=3#NavigationBar" />
+    <Style src="project://database/Assets/Core/UI%20Toolkit%20schemas/CommonStyles/TextColorBase.uss?fileID=7433441132597879392&amp;guid=f5a2fd541c0c679418222f1986708dd1&amp;type=3#TextColorBase" />
+    <Style src="project://database/Assets/Core/UI%20Toolkit%20schemas/CommonStyles/TextFontBase.uss?fileID=7433441132597879392&amp;guid=38a94273c510b1447bb6532a65e8d29a&amp;type=3#TextFontBase" />
+    <Style src="project://database/Assets/Core/UI%20Toolkit%20schemas/CommonStyles/TitleBackground.uss?fileID=7433441132597879392&amp;guid=0f2432af235148243978f2cea839f490&amp;type=3#TitleBackground" />
+    <Core.FocusableNodeElement class="abilities-tab text-font-base text-color-base">
+        <ui:ScrollView horizontal-scroller-visibility="Hidden" name="Container" class="scroll-view" />
+        <ui:VisualElement class="abilities-tab__description-container" style="align-self: flex-start; padding-top: 20px; padding-right: 20px; padding-bottom: 20px; padding-left: 20px;">
+            <ui:VisualElement style="flex-direction: row; align-items: center;">
+                <ui:VisualElement name="Icon" style="width: 100px; height: 100px; -unity-background-scale-mode: scale-to-fit; margin-right: 5px;" />
+                <ui:VisualElement>
+                    <ui:VisualElement class="title-bg" style="width: 100%;" />
+                    <ui:Label text="Заголовок чего нибудь" display-tooltip-when-elided="true" name="Title" enable-rich-text="true" style="font-size: 40px; white-space: normal; -unity-font-style: bold;" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement style="overflow: hidden; align-self: flex-start;">
+                <ui:Label text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." display-tooltip-when-elided="true" name="Description" enable-rich-text="true" style="font-size: 30px; white-space: normal;" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement class="text-color-base text-font-base" style="flex-grow: 1; position: absolute; right: 0; top: 0; flex-direction: row; align-items: center;">
+            <ui:VisualElement style="flex-grow: 1; background-image: url(&quot;project://database/Assets/Additionals/Tower/Assets/Texture2D/SpriteAtlasTexture-Share%20(Group%201)-2048x512-fmt12.png?fileID=21300016&amp;guid=8d998c8656643084da4576c5d024f42c&amp;type=3#magic&quot;); width: 45px; height: 54px;" />
+            <ui:Label tabindex="-1" text="999" parse-escape-sequences="true" display-tooltip-when-elided="true" name="GemsCount" style="font-size: 40px; -unity-font-style: bold;" />
+        </ui:VisualElement>
+    </Core.FocusableNodeElement>
+    <ui:VisualElement class="navigation-bar text-color-base text-font-base">
+        <ui:VisualElement class="navigation-bar-background" />
+        <ui:VisualElement name="Navigation" class="navigation-bar-button-container">
+            <Core.InputSprites.SubmitInputSpriteElement class="navigation-bar-button-icon" />
+            <ui:Label tabindex="-1" text="#submit" parse-escape-sequences="true" display-tooltip-when-elided="true" />
+            <Core.InputSprites.CancelInputSpriteElement class="navigation-bar-button-icon" />
+            <ui:Label tabindex="-1" text="#cancel" parse-escape-sequences="true" display-tooltip-when-elided="true" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

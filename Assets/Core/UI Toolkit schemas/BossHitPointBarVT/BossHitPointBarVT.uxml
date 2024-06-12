@@ -1,0 +1,8 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/Core/UI%20Toolkit%20schemas/BossHitPointBarVT/BossHitPointBarVT.uss?fileID=7433441132597879392&amp;guid=d14ef702038b3444087a60facfa5bf25&amp;type=3#BossHitPointBarVT" />
+    <Style src="project://database/Assets/Core/UI%20Toolkit%20schemas/CommonStyles/TextFontBase.uss?fileID=7433441132597879392&amp;guid=38a94273c510b1447bb6532a65e8d29a&amp;type=3#TextFontBase" />
+    <Style src="project://database/Assets/Core/UI%20Toolkit%20schemas/CommonStyles/TextColorBase.uss?fileID=7433441132597879392&amp;guid=f5a2fd541c0c679418222f1986708dd1&amp;type=3#TextColorBase" />
+    <ui:VisualElement class="text-color-base text-font-base container">
+        <ui:ProgressBar value="0.5" high-value="1" name="Bar" class="bar" />
+    </ui:VisualElement>
+</ui:UXML>

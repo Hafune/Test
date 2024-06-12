@@ -1,0 +1,17 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False" gen-cs-file="0d6ba48715a6e3949ba93dc65b853c04">
+    <Style src="project://database/Assets/Core/UI%20Toolkit%20schemas/InventoryVT/WeaponsTabVT/WeaponsTabItemVT.uss?fileID=7433441132597879392&amp;guid=54a17c9b8da513643a59866b3f05d397&amp;type=3#WeaponsTabItemVT" />
+    <Style src="project://database/Assets/Core/UI%20Toolkit%20schemas/CommonStyles/FocusableLabel.uss?fileID=7433441132597879392&amp;guid=3a411ca424cbe6247bc9ea990ad76d1a&amp;type=3#FocusableLabel" />
+    <ui:VisualElement name="Item" class="weapons-tab__item-container focusable-label">
+        <ui:VisualElement name="UsedIcon" class="weapons-tab__item-used-icon" />
+        <ui:VisualElement name="Icon" class="weapons-tab__item-icon" />
+        <ui:VisualElement class="weapons-tab__item-info-container">
+            <ui:VisualElement style="align-self: center;">
+                <ui:Label text="Label" display-tooltip-when-elided="true" name="Title" class="weapons-tab__item-title" />
+            </ui:VisualElement>
+            <ui:VisualElement style="flex-direction: row; align-items: center; align-self: flex-start;">
+                <ui:Label text="999" display-tooltip-when-elided="true" name="Cost" class="weapons-tab__item-gem-count" />
+                <ui:VisualElement class="weapons-tab__item-gem-icon" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

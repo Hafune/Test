@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f948fed1690349d8aafa1b1d236fd3d9, type: 3}
+  m_Name: Scales_Normal_Hit_Point
+  m_EditorClassIdentifier: 
+  _rawData: '110
+
+    260
+
+    485
+
+    823
+
+    2000'
+  _scales:
+  - 110
+  - 260
+  - 500
+  - 1000
+  - 2000
+  _base: 1.2
+  _table: {fileID: 11400000, guid: 1b046bf709617ec4ba08e5aa663fea39, type: 2}
+  <valueEnum>k__BackingField: -259302127

@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1e3e22ff9634e441a479f01f905a2f7, type: 3}
+  m_Name: Global_Variables_Group
+  m_EditorClassIdentifier: 
+  m_Variables:
+  - name: btn_jump
+    variable:
+      rid: 693277326411300870
+  - name: btn_dash
+    variable:
+      rid: 693277326411300890
+  - name: btn_light_attack
+    variable:
+      rid: 693277337721241610
+  - name: btn_down
+    variable:
+      rid: 693277326411300889
+  - name: btn_left
+    variable:
+      rid: 693277337721241608
+  - name: btn_right
+    variable:
+      rid: 693277337721241609
+  references:
+    version: 2
+    RefIds:
+    - rid: 693277326411300870
+      type: {class: StringVariable, ns: UnityEngine.Localization.SmartFormat.PersistentVariables, asm: Unity.Localization}
+      data:
+        m_Value: <sprite name="jump">
+    - rid: 693277326411300889
+      type: {class: StringVariable, ns: UnityEngine.Localization.SmartFormat.PersistentVariables, asm: Unity.Localization}
+      data:
+        m_Value: <sprite name="down">
+    - rid: 693277326411300890
+      type: {class: StringVariable, ns: UnityEngine.Localization.SmartFormat.PersistentVariables, asm: Unity.Localization}
+      data:
+        m_Value: <sprite name="dash">
+    - rid: 693277337721241608
+      type: {class: StringVariable, ns: UnityEngine.Localization.SmartFormat.PersistentVariables, asm: Unity.Localization}
+      data:
+        m_Value: <sprite name="left">
+    - rid: 693277337721241609
+      type: {class: StringVariable, ns: UnityEngine.Localization.SmartFormat.PersistentVariables, asm: Unity.Localization}
+      data:
+        m_Value: <sprite name="right">
+    - rid: 693277337721241610
+      type: {class: StringVariable, ns: UnityEngine.Localization.SmartFormat.PersistentVariables, asm: Unity.Localization}
+      data:
+        m_Value: <sprite name="light_attack">

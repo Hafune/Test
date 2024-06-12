@@ -1,0 +1,20 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False" gen-cs-file="ae8bfe8489c116b4ba43d86b5ec9c35f">
+    <Style src="project://database/Assets/Core/UI%20Toolkit%20schemas/InventoryVT/ItemContextMenuVT.uss?fileID=7433441132597879392&amp;guid=aeb492215a280b942943148bc0fd011b&amp;type=3#ItemContextMenuVT" />
+    <ui:VisualElement name="ItemContextMenuWrapper" style="left: 0; top: 0; right: 0; bottom: 0; align-items: center; justify-content: center; position: absolute; background-color: rgba(0, 0, 0, 0.2);">
+        <ui:VisualElement name="ItemContextMenu" style="position: absolute; border-left-color: rgb(255, 255, 255); border-right-color: rgb(255, 255, 255); border-top-color: rgb(255, 255, 255); border-bottom-color: rgb(255, 255, 255); border-left-width: 2px; border-right-width: 2px; border-top-width: 2px; border-bottom-width: 2px; border-top-left-radius: 5px; border-bottom-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; background-color: rgb(103, 103, 103); padding-left: 30px; padding-right: 30px; padding-top: 10px; padding-bottom: 30px; align-items: center;">
+            <Core.FocusableNodeElement name="Container" />
+            <ui:VisualElement style="position: absolute; bottom: 15px; align-items: center;">
+                <ui:VisualElement style="flex-direction: row; justify-content: center; position: absolute;">
+                    <ui:VisualElement class="button" style="margin-right: 10px;">
+                        <Core.InputSprites.SubmitInputSpriteElement class="button-icon" style="background-image: url(&apos;project://database/Assets/Additionals/XBOX%20BUTTONS%20-%20Premium%20Assets/Digital%20Buttons/ABXY-standart/button_xbox_digital_a_5-standart.png?fileID=21300000&amp;guid=270599c8a124e3f42989fa2670098c43&amp;type=3#button_xbox_digital_a_5-standart&apos;);" />
+                        <ui:Label text="#submit" display-tooltip-when-elided="true" class="button-text" style="flex-shrink: 1;" />
+                    </ui:VisualElement>
+                    <ui:VisualElement class="button" style="margin-right: 10px;">
+                        <Core.InputSprites.CancelInputSpriteElement class="button-icon" style="background-image: url(&apos;project://database/Assets/Additionals/XBOX%20BUTTONS%20-%20Premium%20Assets/Digital%20Buttons/ABXY-standart/button_xbox_digital_b_5-standart.png?fileID=21300000&amp;guid=312431ce4152616418416c0e5bf6cc0a&amp;type=3#button_xbox_digital_b_5-standart&apos;);" />
+                        <ui:Label text="#cancel" display-tooltip-when-elided="true" class="buttonText button-text" style="flex-shrink: 1;" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

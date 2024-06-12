@@ -1,0 +1,21 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False" gen-cs-file="bd796ab9e4388db46b93422df1ac3cde">
+    <Style src="project://database/Assets/Core/UI%20Toolkit%20schemas/DialogVT/DialogVT.uss?fileID=7433441132597879392&amp;guid=34371b7d7dadcfa45a537a01af252425&amp;type=3#DialogVT" />
+    <Style src="project://database/Assets/Core/UI%20Toolkit%20schemas/CommonStyles/TextFontBase.uss?fileID=7433441132597879392&amp;guid=38a94273c510b1447bb6532a65e8d29a&amp;type=3#TextFontBase" />
+    <Style src="project://database/Assets/Core/UI%20Toolkit%20schemas/CommonStyles/TextColorBase.uss?fileID=7433441132597879392&amp;guid=f5a2fd541c0c679418222f1986708dd1&amp;type=3#TextColorBase" />
+    <ui:VisualElement style="flex-grow: 1; align-items: center; justify-content: flex-end;">
+        <ui:VisualElement class="text-color-base text-font-base window" style="flex-direction: row; margin-bottom: 10%;">
+            <ui:VisualElement class="text-container">
+                <ui:VisualElement style="align-items: flex-start; align-self: flex-start;">
+                    <ui:VisualElement class="title-underline" />
+                    <ui:Label tabindex="-1" text="Героиня" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Title" style="font-size: 30px;" />
+                </ui:VisualElement>
+                <ui:Label tabindex="-1" text="Тестовый текст для примерного понимания &#10;того сколько места для всего этого понадобится" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Message" style="font-size: 24px; white-space: normal;" />
+            </ui:VisualElement>
+            <ui:VisualElement name="Icon" class="icon" style="background-image: url(&quot;project://database/Assets/Additionals/Tower/Assets/Resources_not_load/charface/Erza_angry.png?fileID=21300000&amp;guid=ef0d1bdcc18335547a216c8bcbb06e16&amp;type=3#Erza_angry&quot;);" />
+            <ui:VisualElement style="position: absolute; bottom: 5px; right: 10px; flex-direction: row; align-items: center;">
+                <Core.InputSprites.SubmitInputSpriteElement style="width: 48px; height: 48px; position: relative;" />
+                <ui:Label tabindex="-1" text="#skip" parse-escape-sequences="true" display-tooltip-when-elided="true" style="font-size: 24px;" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

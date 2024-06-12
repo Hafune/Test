@@ -1,0 +1,72 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: SettingsVT Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: SettingsVT
+  m_TableCollectionNameGuidString: 1d6ed764cafebfd4a9e8c93d4f3571f1
+  m_Entries:
+  - m_Id: 9946221146112
+    m_Key: master_volume
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14951741288448
+    m_Key: language_value
+    m_Metadata:
+      m_Items: []
+  - m_Id: 30415527768064
+    m_Key: language_label
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13755838199656448
+    m_Key: shadows
+    m_Metadata:
+      m_Items: []
+  - m_Id: 40208228926779392
+    m_Key: up
+    m_Metadata:
+      m_Items: []
+  - m_Id: 40208297235214336
+    m_Key: down
+    m_Metadata:
+      m_Items: []
+  - m_Id: 40208342487560192
+    m_Key: change
+    m_Metadata:
+      m_Items: []
+  - m_Id: 40208429355790336
+    m_Key: close
+    m_Metadata:
+      m_Items: []
+  - m_Id: 40527165954617344
+    m_Key: background_volume
+    m_Metadata:
+      m_Items: []
+  - m_Id: 40527335593242624
+    m_Key: sfx_volume
+    m_Metadata:
+      m_Items: []
+  - m_Id: 54999192136478720
+    m_Key: drawing_distance
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 7680036174789345288
+  references:
+    version: 2
+    RefIds:
+    - rid: 7680036174789345288
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1699624146262

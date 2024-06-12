@@ -1,0 +1,20 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False" gen-cs-file="180109404538ce349acd915a2c92fda0">
+    <Style src="project://database/Assets/Core/UI%20Toolkit%20schemas/TitlesVT/TitlesVT.uss?fileID=7433441132597879392&amp;guid=a4a1d90dab4a0e045b8fa2b3d29d1e98&amp;type=3#TitlesVT" />
+    <Style src="project://database/Assets/Core/UI%20Toolkit%20schemas/CommonStyles/TextColorBase.uss?fileID=7433441132597879392&amp;guid=f5a2fd541c0c679418222f1986708dd1&amp;type=3#TextColorBase" />
+    <Style src="project://database/Assets/Core/UI%20Toolkit%20schemas/CommonStyles/TextFontBase.uss?fileID=7433441132597879392&amp;guid=38a94273c510b1447bb6532a65e8d29a&amp;type=3#TextFontBase" />
+    <Style src="project://database/Assets/Core/UI%20Toolkit%20schemas/CommonStyles/NavigationBar.uss?fileID=7433441132597879392&amp;guid=aef2a06e51c7977458c609b4e786304a&amp;type=3#NavigationBar" />
+    <ui:VisualElement name="Background" class="background text-font-base text-color-base">
+        <ui:VisualElement name="TextContianer" class="start_text_position" style="flex-grow: 1;">
+            <ui:Label tabindex="-1" text="#message" parse-escape-sequences="true" display-tooltip-when-elided="true" class="text_size text" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+    <ui:VisualElement name="NavigationContainer" class="text-font-base text-color-base navigation_hidden" style="position: absolute; bottom: 0; right: 0; left: 0; top: 0; justify-content: flex-end;">
+        <ui:VisualElement class="navigation-bar">
+            <ui:VisualElement class="navigation-bar-background" />
+            <ui:VisualElement class="navigation-bar-button-container" style="flex-grow: 1;">
+                <Core.InputSprites.SubmitInputSpriteElement class="navigation-bar-button-icon" />
+                <ui:Label tabindex="-1" text="#submit" parse-escape-sequences="true" display-tooltip-when-elided="true" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

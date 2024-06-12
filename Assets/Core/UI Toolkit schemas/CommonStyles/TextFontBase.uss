@@ -1,0 +1,4 @@
+.text-font-base {
+    -unity-font-definition: initial;
+    -unity-font: url('project://database/Assets/Additionals/Tower/Assets/Font/Cambria%20Math.ttf?fileID=12800000&guid=2deb3e250adbe3d4e9d0aa9f71187462&type=3#Cambria Math');
+}

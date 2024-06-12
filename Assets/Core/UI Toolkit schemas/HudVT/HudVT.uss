@@ -1,0 +1,125 @@
+.state_icon {
+    width: 26px;
+    height: 26px;
+    margin-right: 4px;
+}
+
+.state_value {
+    font-size: 20px;
+    -unity-font-style: bold;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+}
+
+.state_container {
+    flex-direction: row;
+    align-items: center;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 1px;
+}
+
+.item-progress-bar {
+    flex-grow: 1;
+    max-height: 47px;
+    max-width: 391px;
+    position: absolute;
+}
+
+.item-progress-bar .unity-progress-bar__container {
+    height: 100%;
+    max-height: 100%;
+    min-height: 100%;
+}
+
+.item-progress-bar .unity-progress-bar__progress {
+    background-image: url("project://database/Assets/Additionals/Tower/Assets/Texture2D/SpriteAtlasTexture-BattleHead%20(Group%201)-512x64-fmt10.png?fileID=21300000&guid=61d6e484d40a1414ea262f5ad5008075&type=3#bloodline");
+    -unity-background-scale-mode: scale-and-crop;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.item-progress-bar .unity-progress-bar__background {
+    border-left-color: rgb(255, 255, 255);
+    border-right-color: rgb(255, 255, 255);
+    border-top-color: rgb(255, 255, 255);
+    border-bottom-color: rgb(255, 255, 255);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    overflow: hidden;
+    flex-grow: 1;
+    background-color: rgb(48, 48, 48);
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;
+}
+
+.item-progress-bar .unity-label {
+    font-size: 20px;
+    -unity-font-style: bold;
+}
+
+.bloodsplit {
+    background-image: url("project://database/Assets/Additionals/Tower/Assets/Texture2D/SpriteAtlasTexture-BattleHead%20(Group%200)-1024x512-fmt12.png?fileID=21300040&guid=4ad0658a819913447988414d3b06bb34&type=3#bloodsplit");
+    width: 6px;
+    height: 33px;
+    position: absolute;
+}
+
+.mana-text {
+    font-size: 16px;
+    -unity-font-style: bold;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+}
+
+.input-icon {
+    width: 32px;
+    height: 32px;
+}
+
+.input-plus {
+    -unity-font-style: bold;
+    -unity-text-align: middle-left;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+}
+
+.input-container {
+    position: absolute;
+    flex-direction: row;
+    bottom: -9px;
+    left: -12px;
+}
+
+.magic-gem-container {
+    flex-direction: row;
+    position: absolute;
+    align-items: center;
+    left: 630px;
+}
+
+.magic-gem-icon {
+    width: 32px;
+    height: 32px;
+}

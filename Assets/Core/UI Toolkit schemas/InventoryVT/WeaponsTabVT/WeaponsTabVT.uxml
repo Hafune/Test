@@ -1,0 +1,63 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False" gen-cs-file="ef36a4721bddcfa4ca22284fe71d871b">
+    <ui:Template name="SlotDescriptionVT" src="project://database/Assets/Core/UI%20Toolkit%20schemas/SlotDescriptionVT/SlotDescriptionVT.uxml?fileID=9197481963319205126&amp;guid=ef05b050d29c4d349abd51d0dcb62199&amp;type=3#SlotDescriptionVT" />
+    <Style src="project://database/Assets/Core/UI%20Toolkit%20schemas/InventoryVT/WeaponsTabVT/WeaponsTabVT.uss?fileID=7433441132597879392&amp;guid=071b8aea53f9f8a4c9e168c5a72bd776&amp;type=3#WeaponsTabVT" />
+    <Style src="project://database/Assets/Core/UI%20Toolkit%20schemas/CommonStyles/FocusableLabel.uss?fileID=7433441132597879392&amp;guid=3a411ca424cbe6247bc9ea990ad76d1a&amp;type=3#FocusableLabel" />
+    <Style src="project://database/Assets/Core/UI%20Toolkit%20schemas/CommonStyles/NavigationBar.uss?fileID=7433441132597879392&amp;guid=aef2a06e51c7977458c609b4e786304a&amp;type=3#NavigationBar" />
+    <Style src="project://database/Assets/Core/UI%20Toolkit%20schemas/CommonStyles/TextColorBase.uss?fileID=7433441132597879392&amp;guid=f5a2fd541c0c679418222f1986708dd1&amp;type=3#TextColorBase" />
+    <Style src="project://database/Assets/Core/UI%20Toolkit%20schemas/CommonStyles/TextFontBase.uss?fileID=7433441132597879392&amp;guid=38a94273c510b1447bb6532a65e8d29a&amp;type=3#TextFontBase" />
+    <Style src="project://database/Assets/Core/UI%20Toolkit%20schemas/CommonStyles/TitleBackground.uss?fileID=7433441132597879392&amp;guid=0f2432af235148243978f2cea839f490&amp;type=3#TitleBackground" />
+    <Core.FocusableNodeElement class="text-color-base text-font-base" style="flex-direction: row; flex-grow: 1; margin-top: 90px; margin-right: 50px; margin-bottom: 50px; margin-left: 50px;">
+        <ui:VisualElement class="weapons-tab-section">
+            <ui:ScrollView name="Weapons" horizontal-scroller-visibility="Hidden" vertical-scroller-visibility="AlwaysVisible" mouse-wheel-scroll-size="60" class="my-scroll-view" style="margin-right: 10px; flex-grow: 1;" />
+        </ui:VisualElement>
+        <ui:VisualElement class="weapons-tab-section">
+            <ui:VisualElement name="CurrentWeaponDescriptionContainer">
+                <ui:Label tabindex="-1" text="#current_weapon" parse-escape-sequences="true" display-tooltip-when-elided="true" style="font-size: 40px; -unity-font-style: bold;" />
+                <ui:VisualElement class="weapons-tab__description-container" style="margin-bottom: 20px;">
+                    <ui:VisualElement style="flex-direction: row; align-items: center;">
+                        <ui:VisualElement name="CurrentWeaponIcon" style="width: 100px; height: 100px; -unity-background-scale-mode: scale-to-fit; margin-right: 5px;" />
+                        <ui:VisualElement>
+                            <ui:VisualElement class="title-bg" style="width: 100%;" />
+                            <ui:Label text="Заголовок чего нибудь" display-tooltip-when-elided="true" name="CurrentWeaponTitle" enable-rich-text="true" style="font-size: 40px; white-space: normal; -unity-font-style: bold;" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                    <ui:VisualElement style="overflow: hidden;">
+                        <ui:Label text="Lorem ipsum dolor sit amet" display-tooltip-when-elided="true" name="CurrentWeaponDescription" enable-rich-text="true" style="font-size: 30px; white-space: normal;" />
+                        <ui:Instance template="SlotDescriptionVT" name="CurrentWeaponSlotDescriptionVT" class="weapons-tab__slot-description__container" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="SelectedWeaponDescriptionContainer">
+                <ui:Label tabindex="-1" text="#selected_weapon" parse-escape-sequences="true" display-tooltip-when-elided="true" style="font-size: 40px; -unity-font-style: bold;" />
+                <ui:VisualElement class="weapons-tab__description-container">
+                    <ui:VisualElement style="flex-direction: row; align-items: center;">
+                        <ui:VisualElement name="Icon" style="width: 100px; height: 100px; -unity-background-scale-mode: scale-to-fit; margin-right: 5px;" />
+                        <ui:VisualElement>
+                            <ui:VisualElement class="title-bg" style="width: 100%;" />
+                            <ui:Label text="Заголовок чего нибудь" display-tooltip-when-elided="true" name="Title" enable-rich-text="true" style="font-size: 40px; white-space: normal; -unity-font-style: bold;" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                    <ui:VisualElement style="overflow: hidden;">
+                        <ui:Label text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." display-tooltip-when-elided="true" name="Description" enable-rich-text="true" style="font-size: 30px; white-space: normal;" />
+                        <ui:Instance template="SlotDescriptionVT" name="SlotDescriptionVT" class="weapons-tab__slot-description__container" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </Core.FocusableNodeElement>
+    <ui:VisualElement name="NavigationBar" class="text-color-base text-font-base navigation-bar">
+        <ui:VisualElement class="navigation-bar-background" />
+        <ui:VisualElement class="navigation-bar-button-container">
+            <Core.InputSprites.SubmitInputSpriteElement class="navigation-bar-button-icon" style="background-image: url(&quot;project://database/Assets/Additionals/XBOX%20BUTTONS%20-%20Premium%20Assets/Digital%20Buttons/ABXY-standart/button_xbox_digital_a_5-standart.png?fileID=21300000&amp;guid=270599c8a124e3f42989fa2670098c43&amp;type=3#button_xbox_digital_a_5-standart&quot;);" />
+            <ui:Label text="#use" display-tooltip-when-elided="true" name="ActionText" />
+        </ui:VisualElement>
+        <ui:VisualElement class="navigation-bar-button-container">
+            <Core.InputSprites.CancelInputSpriteElement class="navigation-bar-button-icon" style="background-image: url(&quot;project://database/Assets/Additionals/XBOX%20BUTTONS%20-%20Premium%20Assets/Digital%20Buttons/ABXY-standart/button_xbox_digital_b_5-standart.png?fileID=21300000&amp;guid=312431ce4152616418416c0e5bf6cc0a&amp;type=3#button_xbox_digital_b_5-standart&quot;);" />
+            <ui:Label text="#close_inventory" display-tooltip-when-elided="true" name="CancelText" />
+        </ui:VisualElement>
+        <ui:VisualElement name="ContextMenu" class="navigation-bar-button-container">
+            <Core.InputSprites.ContextMenuInputSpriteElement class="navigation-bar-button-icon" style="background-image: url(&quot;project://database/Assets/Additionals/XBOX%20BUTTONS%20-%20Premium%20Assets/Digital%20Buttons/ABXY-standart/button_xbox_digital_x_5-standart.png?fileID=21300000&amp;guid=1b26155bbe443124ba38d78beb433bf6&amp;type=3#button_xbox_digital_x_5-standart&quot;);" />
+            <ui:Label text="#destroy_to_gem" display-tooltip-when-elided="true" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

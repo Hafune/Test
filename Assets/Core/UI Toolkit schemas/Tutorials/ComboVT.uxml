@@ -1,0 +1,70 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False" gen-cs-file="550afea01a25fe546a976f3d3fd422a7">
+    <Style src="project://database/Assets/Core/UI%20Toolkit%20schemas/Tutorials/ComboVT.uss?fileID=7433441132597879392&amp;guid=ebb77c1ddd94e53479b21cacf2682907&amp;type=3#ComboVT" />
+    <Style src="project://database/Assets/Core/UI%20Toolkit%20schemas/CommonStyles/TextColorBase.uss?fileID=7433441132597879392&amp;guid=f5a2fd541c0c679418222f1986708dd1&amp;type=3#TextColorBase" />
+    <Style src="project://database/Assets/Core/UI%20Toolkit%20schemas/CommonStyles/TextFontBase.uss?fileID=7433441132597879392&amp;guid=38a94273c510b1447bb6532a65e8d29a&amp;type=3#TextFontBase" />
+    <ui:VisualElement class="my_text text-color-base text-font-base" style="flex-grow: 1; flex-direction: column;">
+        <ui:VisualElement style="flex-grow: 1;" />
+        <ui:VisualElement name="Combo" class="combo combo_visible" style="flex-direction: row; align-items: center;">
+            <ui:VisualElement style="flex-direction: row;">
+                <ui:Label tabindex="-1" text="#combo_1" parse-escape-sequences="true" display-tooltip-when-elided="true" />
+                <Core.InputSprites.LightAttackInputSpriteElement class="button" />
+                <Core.InputSprites.LightAttackInputSpriteElement class="button" />
+                <Core.InputSprites.LightAttackInputSpriteElement class="button" />
+            </ui:VisualElement>
+            <ui:VisualElement name="Success" class="un_success" style="flex-grow: 0; background-image: url(&quot;project://database/Assets/Additionals/Tower/Assets/Texture2D/true.png?fileID=21300000&amp;guid=e8dc692b8f9abf0489485cb5f5d50587&amp;type=3#true&quot;);" />
+        </ui:VisualElement>
+        <ui:VisualElement name="Combo" class="combo" style="flex-direction: row; align-items: center;">
+            <ui:VisualElement style="flex-direction: row;">
+                <ui:Label tabindex="-1" text="#combo_2" parse-escape-sequences="true" display-tooltip-when-elided="true" />
+                <Core.InputSprites.JumpInputSpriteElement class="button" />
+                <Core.InputSprites.StrongAttackInputSpriteElement class="button" />
+                <ui:Label tabindex="-1" parse-escape-sequences="true" display-tooltip-when-elided="true" text="(60 &lt;color=#00ffffff&gt;MP&lt;/color&gt;)" />
+            </ui:VisualElement>
+            <ui:VisualElement name="Success" class="un_success" style="flex-grow: 0; background-image: url(&quot;project://database/Assets/Additionals/Tower/Assets/Texture2D/true.png?fileID=21300000&amp;guid=e8dc692b8f9abf0489485cb5f5d50587&amp;type=3#true&quot;); transition-duration: 1s;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="Combo" class="combo" style="flex-direction: row; align-items: center;">
+            <ui:VisualElement style="flex-direction: row;">
+                <ui:Label tabindex="-1" text="#combo_3" parse-escape-sequences="true" display-tooltip-when-elided="true" />
+                <Core.InputSprites.StrongAttackInputSpriteElement class="button" />
+                <Core.InputSprites.StrongAttackInputSpriteElement class="button" />
+                <Core.InputSprites.StrongAttackInputSpriteElement class="button" />
+            </ui:VisualElement>
+            <ui:VisualElement name="Success" class="un_success" style="flex-grow: 0; background-image: url(&quot;project://database/Assets/Additionals/Tower/Assets/Texture2D/true.png?fileID=21300000&amp;guid=e8dc692b8f9abf0489485cb5f5d50587&amp;type=3#true&quot;); transition-duration: 1s;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="Combo" class="combo" style="flex-direction: row; align-items: center;">
+            <ui:VisualElement style="flex-direction: row;">
+                <ui:Label tabindex="-1" text="#combo_4" parse-escape-sequences="true" display-tooltip-when-elided="true" />
+                <Core.InputSprites.JumpInputSpriteElement class="button" />
+                <Core.InputSprites.DownInputSpriteElement class="button" />
+                <ui:Label tabindex="-1" text="+" parse-escape-sequences="true" display-tooltip-when-elided="true" />
+                <Core.InputSprites.StrongAttackInputSpriteElement class="button" />
+                <ui:Label tabindex="-1" parse-escape-sequences="true" display-tooltip-when-elided="true" text="(60 &lt;color=#00ffffff&gt;MP&lt;/color&gt;)" />
+            </ui:VisualElement>
+            <ui:VisualElement name="Success" class="un_success" style="flex-grow: 0; background-image: url(&quot;project://database/Assets/Additionals/Tower/Assets/Texture2D/true.png?fileID=21300000&amp;guid=e8dc692b8f9abf0489485cb5f5d50587&amp;type=3#true&quot;); transition-duration: 1s;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="Combo" class="combo" style="flex-direction: row; align-items: center;">
+            <ui:VisualElement style="flex-direction: row;">
+                <ui:Label tabindex="-1" text="#combo_5" parse-escape-sequences="true" display-tooltip-when-elided="true" />
+                <Core.InputSprites.LightAttackInputSpriteElement class="button" />
+                <Core.InputSprites.LightAttackInputSpriteElement class="button" />
+                <Core.InputSprites.StrongAttackInputSpriteElement class="button" />
+                <Core.InputSprites.StrongAttackInputSpriteElement class="button" />
+                <Core.InputSprites.StrongAttackInputSpriteElement class="button" />
+            </ui:VisualElement>
+            <ui:VisualElement name="Success" class="un_success" style="flex-grow: 0; background-image: url(&quot;project://database/Assets/Additionals/Tower/Assets/Texture2D/true.png?fileID=21300000&amp;guid=e8dc692b8f9abf0489485cb5f5d50587&amp;type=3#true&quot;); transition-duration: 1s;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="Combo" class="combo" style="flex-direction: row; align-items: center;">
+            <ui:VisualElement style="flex-direction: row;">
+                <ui:Label tabindex="-1" text="#combo_6" parse-escape-sequences="true" display-tooltip-when-elided="true" />
+                <Core.InputSprites.LightAttackInputSpriteElement class="button" />
+                <Core.InputSprites.LightAttackInputSpriteElement class="button" />
+                <Core.InputSprites.StrongAttackInputSpriteElement class="button" />
+                <Core.InputSprites.StrongAttackInputSpriteElement class="button" />
+                <Core.InputSprites.LightAttackInputSpriteElement class="button" />
+                <Core.InputSprites.StrongAttackInputSpriteElement class="button" />
+            </ui:VisualElement>
+            <ui:VisualElement name="Success" class="un_success" style="flex-grow: 0; background-image: url(&quot;project://database/Assets/Additionals/Tower/Assets/Texture2D/true.png?fileID=21300000&amp;guid=e8dc692b8f9abf0489485cb5f5d50587&amp;type=3#true&quot;); transition-duration: 1s;" />
+        </ui:VisualElement>
+        <ui:VisualElement style="height: 48px;" />
+    </ui:VisualElement>
+</ui:UXML>

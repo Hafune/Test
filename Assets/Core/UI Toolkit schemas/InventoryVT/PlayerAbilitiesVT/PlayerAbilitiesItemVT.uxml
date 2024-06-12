@@ -1,0 +1,22 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False" gen-cs-file="06756c3d3715ab740909df7b5099cfd7">
+    <Style src="project://database/Assets/Core/UI%20Toolkit%20schemas/InventoryVT/PlayerAbilitiesVT/PlayerAbilitiesItemVT.uss?fileID=7433441132597879392&amp;guid=d637ed2ac0a7236429f60e2b34d5ff3f&amp;type=3#PlayerAbilitiesItemVT" />
+    <Style src="project://database/Assets/Core/UI%20Toolkit%20schemas/CommonStyles/TextColorBase.uss?fileID=7433441132597879392&amp;guid=f5a2fd541c0c679418222f1986708dd1&amp;type=3#TextColorBase" />
+    <Style src="project://database/Assets/Core/UI%20Toolkit%20schemas/CommonStyles/TextFontBase.uss?fileID=7433441132597879392&amp;guid=38a94273c510b1447bb6532a65e8d29a&amp;type=3#TextFontBase" />
+    <Style src="project://database/Assets/Core/UI%20Toolkit%20schemas/CommonStyles/TitleBackground.uss?fileID=7433441132597879392&amp;guid=0f2432af235148243978f2cea839f490&amp;type=3#TitleBackground" />
+    <Core.FocusableVisualElement focusable="true" name="Item" class="item-container text-font-base text-color-base" style="overflow: hidden;">
+        <ui:VisualElement name="Icon" class="item-icon" />
+        <ui:VisualElement class="item-info-container" style="align-items: stretch;">
+            <ui:VisualElement style="align-self: flex-start;">
+                <ui:VisualElement class="title-bg" style="width: 100%;" />
+                <ui:Label text="Label" display-tooltip-when-elided="true" name="Title" class="item-title" />
+            </ui:VisualElement>
+            <ui:VisualElement class="item-progress-container" style="justify-content: space-between;">
+                <ui:Label text="Lvl 3" display-tooltip-when-elided="true" name="Level" class="item-level" style="-unity-font-style: bold;" />
+                <ui:VisualElement style="flex-direction: row; align-items: center;">
+                    <ui:Label text="999" display-tooltip-when-elided="true" name="Cost" class="item-level" style="-unity-font-style: bold;" />
+                    <ui:VisualElement style="flex-grow: 1; background-image: url(&quot;project://database/Assets/Additionals/Tower/Assets/Texture2D/SpriteAtlasTexture-Share%20(Group%201)-2048x512-fmt12.png?fileID=21300016&amp;guid=8d998c8656643084da4576c5d024f42c&amp;type=3#magic&quot;); width: 45px; height: 54px; -unity-background-scale-mode: scale-to-fit;" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </Core.FocusableVisualElement>
+</ui:UXML>

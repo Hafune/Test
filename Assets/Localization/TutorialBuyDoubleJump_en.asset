@@ -1,0 +1,54 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: TutorialBuyDoubleJump_en
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: 3cbd85b34366b4640958f9d07e9e1a04, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 58917023744
+    m_Localized: 'At the bottom are control hints
+
+
+      Continue <sprite name="submit">'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1465669808128
+    m_Localized: 'At the top are various tabs
+
+
+      Press <sprite name="right_trigger">
+      to select the next tab'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1738744164352
+    m_Localized: 'We will skip this section for now
+
+
+      Press <sprite name="right_trigger">
+      to select the next tab'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3696875958272
+    m_Localized: 'This tab contains character abilities
+
+
+      Press <sprite name="submit">
+      to continue'
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

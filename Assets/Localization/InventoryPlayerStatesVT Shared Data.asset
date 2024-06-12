@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: InventoryPlayerStatesVT Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: InventoryPlayerStatesVT
+  m_TableCollectionNameGuidString: 8afe17af82769af499d42941d5c3b6df
+  m_Entries:
+  - m_Id: 47386882048
+    m_Key: atk
+    m_Metadata:
+      m_Items: []
+  - m_Id: 184645480448
+    m_Key: def
+    m_Metadata:
+      m_Items: []
+  - m_Id: 233731420160
+    m_Key: crch
+    m_Metadata:
+      m_Items: []
+  - m_Id: 793759084544
+    m_Key: crd
+    m_Metadata:
+      m_Items: []
+  - m_Id: 37040346122317824
+    m_Key: energy_used
+    m_Metadata:
+      m_Items: []
+  - m_Id: 37694461894619136
+    m_Key: status
+    m_Metadata:
+      m_Items: []
+  - m_Id: 38038067964702720
+    m_Key: hp
+    m_Metadata:
+      m_Items: []
+  - m_Id: 38038147023138816
+    m_Key: mp
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 7680036044856885250
+  references:
+    version: 2
+    RefIds:
+    - rid: 7680036044856885250
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1699100838823

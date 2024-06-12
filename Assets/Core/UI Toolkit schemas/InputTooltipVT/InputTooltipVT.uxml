@@ -1,0 +1,9 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False" gen-cs-file="38900dd0d26b4c04992e6444f9c2a822">
+    <ui:VisualElement name="Tooltip" style="position: absolute; height: 350px; align-items: center;">
+        <ui:VisualElement style="flex-direction: row; align-items: center;">
+            <Core.InputSprites.UpInputSpriteElement style="-unity-background-scale-mode: scale-to-fit; width: 48px; height: 48px;" />
+            <ui:Label display-tooltip-when-elided="true" name="Description" text="Подобрать" style="color: rgb(210, 210, 210); font-size: 30px; -unity-font-style: normal;" />
+        </ui:VisualElement>
+        <ui:Label text="(Удержание) разбить на кристаллы" display-tooltip-when-elided="true" name="SubDescription" style="font-size: 30px; color: rgb(210, 210, 210); display: none;" />
+    </ui:VisualElement>
+</ui:UXML>

@@ -1,0 +1,98 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" gen-cs-file="1017782f73c21d848aec2d5c582f22ba" editor-extension-mode="False">
+    <ui:Template name="ActionSlotVT" src="project://database/Assets/Core/UI%20Toolkit%20schemas/HudVT/ActionSlotVT.uxml?fileID=9197481963319205126&amp;guid=ae155ab10e52dbf479c5a3dc4c115b8e&amp;type=3#ActionSlotVT" />
+    <Style src="project://database/Assets/Core/UI%20Toolkit%20schemas/HudVT/HudVT.uss?fileID=7433441132597879392&amp;guid=ddf67ae1052d40c5b7ed54a2ecf8dce5&amp;type=3#HudVT" />
+    <Style src="project://database/Assets/Core/UI%20Toolkit%20schemas/CommonStyles/TextColorBase.uss?fileID=7433441132597879392&amp;guid=f5a2fd541c0c679418222f1986708dd1&amp;type=3#TextColorBase" />
+    <Style src="project://database/Assets/Core/UI%20Toolkit%20schemas/CommonStyles/TextFontBase.uss?fileID=7433441132597879392&amp;guid=38a94273c510b1447bb6532a65e8d29a&amp;type=3#TextFontBase" />
+    <ui:VisualElement class="text-color-base text-font-base" style="flex-grow: 1;">
+        <ui:VisualElement style="background-image: url(&quot;project://database/Assets/Additionals/Tower/Assets/Texture2D/SpriteAtlasTexture-BattleHead%20(Group%200)-1024x512-fmt12.png?fileID=21300028&amp;guid=4ad0658a819913447988414d3b06bb34&amp;type=3#bg&quot;); width: 673px; height: 173px; margin-top: 20px; margin-left: 30px;">
+            <ui:VisualElement style="background-image: url(&quot;project://database/Assets/Additionals/Tower/Assets/Texture2D/SpriteAtlasTexture-BattleHead%20(Group%200)-1024x512-fmt12.png?fileID=21300008&amp;guid=4ad0658a819913447988414d3b06bb34&amp;type=3#face&quot;); position: absolute; width: 102px; height: 110px; top: 24px; left: 30px;" />
+            <ui:VisualElement style="flex-grow: 1; position: absolute; top: 4px; left: 4px; width: 73px; height: 151px; overflow: hidden;">
+                <ui:VisualElement name="ManaBarWheel" usage-hints="DynamicTransform" style="position: relative; width: 151px; height: 151px; background-image: url(&quot;project://database/Assets/Additionals/Tower/Assets/Texture2D/SpriteAtlasTexture-BattleHead%20(Group%200)-1024x512-fmt12.png?fileID=21300036&amp;guid=4ad0658a819913447988414d3b06bb34&amp;type=3#powerline&quot;);" />
+            </ui:VisualElement>
+            <ui:VisualElement name="ManaSeparator" style="position: absolute; left: 4px; top: 4px; background-image: url(&quot;project://database/Assets/Core/UI%20Toolkit%20schemas/HudVT/Mana.png?fileID=434478479&amp;guid=9185a177ec6294541a0edee8a4272bc3&amp;type=3#Mana_0&quot;); height: 152px; width: 60px; -unity-background-scale-mode: scale-to-fit;" />
+            <ui:ProgressBar value="1" title="2000/2000" high-value="1" name="HitPointBar" class="item-progress-bar" style="top: 30px; left: 139px; width: 364px; height: 31px;">
+                <ui:VisualElement class="bloodsplit" style="left: 33%;" />
+                <ui:VisualElement class="bloodsplit" style="left: 66%;" />
+            </ui:ProgressBar>
+            <ui:VisualElement style="position: absolute; flex-direction: row; top: 33px; left: 520px;">
+                <ui:VisualElement style="flex-direction: row;">
+                    <ui:VisualElement>
+                        <ui:VisualElement class="state_container">
+                            <ui:VisualElement class="state_icon" style="background-image: url(&quot;project://database/Assets/Additionals/Tower/Assets/Texture2D/SpriteAtlasTexture-PlayerInfo%20(Group%200)-2048x1024-fmt12.png?fileID=21300022&amp;guid=6639c7b3751ef8846b03af67b6422935&amp;type=3#ATK&quot;);" />
+                            <ui:Label text="123" display-tooltip-when-elided="true" name="Damage" class="state_value" />
+                        </ui:VisualElement>
+                        <ui:VisualElement class="state_container">
+                            <ui:VisualElement class="state_icon" style="background-image: url(&quot;project://database/Assets/Additionals/Tower/Assets/Texture2D/SpriteAtlasTexture-PlayerInfo%20(Group%200)-2048x1024-fmt12.png?fileID=21300008&amp;guid=6639c7b3751ef8846b03af67b6422935&amp;type=3#def&quot;);" />
+                            <ui:Label text="321" display-tooltip-when-elided="true" name="Defence" class="state_value" />
+                        </ui:VisualElement>
+                        <ui:VisualElement class="state_container">
+                            <ui:VisualElement class="state_icon" style="background-image: url(&quot;project://database/Assets/Additionals/Tower/Assets/Texture2D/SpriteAtlasTexture-PlayerInfo%20(Group%200)-2048x1024-fmt12.png?fileID=21300046&amp;guid=6639c7b3751ef8846b03af67b6422935&amp;type=3#POW&quot;);" />
+                            <ui:Label text="123%" display-tooltip-when-elided="true" name="CriticalChanse" class="state_value" />
+                        </ui:VisualElement>
+                        <ui:VisualElement class="state_container">
+                            <ui:VisualElement class="state_icon" style="background-image: url(&quot;project://database/Assets/Additionals/Tower/Assets/Texture2D/SpriteAtlasTexture-PlayerInfo%20(Group%200)-2048x1024-fmt12.png?fileID=21300036&amp;guid=6639c7b3751ef8846b03af67b6422935&amp;type=3#Crit&quot;);" />
+                            <ui:Label text="999%" display-tooltip-when-elided="true" name="CriticalDamage" class="state_value" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement style="left: 82px; top: 6px; flex-direction: row;">
+                <ui:Label text="MP: " display-tooltip-when-elided="true" class="mana-text" />
+                <ui:Label text="123" display-tooltip-when-elided="true" name="ManaValue" class="mana-text" style="font-size: 16px;" />
+                <ui:Label text="/" display-tooltip-when-elided="true" class="mana-text" style="font-size: 16px; top: -2px;" />
+                <ui:Label text="321" display-tooltip-when-elided="true" name="ManaMaxValue" class="mana-text" style="font-size: 16px;" />
+            </ui:VisualElement>
+            <ui:VisualElement style="top: 72px; left: 142px; flex-direction: row; justify-content: space-between; position: absolute; right: 165px; padding-right: 30px; padding-left: 30px;">
+                <ui:Instance template="ActionSlotVT" name="WeaponSlot">
+                    <ui:VisualElement class="input-container">
+                        <Core.InputSprites.LightAttackInputSpriteElement class="input-icon" />
+                    </ui:VisualElement>
+                </ui:Instance>
+                <ui:Instance template="ActionSlotVT" name="SpecialSlot">
+                    <ui:VisualElement class="input-container">
+                        <Core.InputSprites.RightInputSpriteElement class="input-icon" />
+                        <ui:Label tabindex="-1" text="+" parse-escape-sequences="true" display-tooltip-when-elided="true" class="input-plus" />
+                        <Core.InputSprites.StrongAttackInputSpriteElement class="input-icon" />
+                    </ui:VisualElement>
+                </ui:Instance>
+                <ui:Instance template="ActionSlotVT" name="DashSlot">
+                    <ui:VisualElement class="input-container">
+                        <Core.InputSprites.DashInputSpriteElement class="input-icon" />
+                    </ui:VisualElement>
+                </ui:Instance>
+                <ui:Instance template="ActionSlotVT" name="HealingPotionSlot">
+                    <ui:VisualElement class="input-container">
+                        <Core.InputSprites.RightTriggerInputSpriteElement class="input-icon" />
+                    </ui:VisualElement>
+                    <ui:Label tabindex="-1" text="0" parse-escape-sequences="true" display-tooltip-when-elided="true" name="HealingPotionCount" style="position: absolute; font-size: 20px; -unity-font-style: bold; top: -5px; left: 59px; -unity-text-align: middle-center;" />
+                </ui:Instance>
+            </ui:VisualElement>
+            <ui:VisualElement name="AttackGemContainer" class="magic-gem-container" style="top: 35px;">
+                <ui:VisualElement class="magic-gem-icon" style="background-image: url(&quot;project://database/Assets/Additionals/Tower/Assets/Resources_not_load/propsicon/RedMagicCore.png?fileID=2800000&amp;guid=4517c869bce473446ad7c10e85c4e062&amp;type=3#RedMagicCore&quot;);" />
+                <ui:Label tabindex="-1" text="123" parse-escape-sequences="true" display-tooltip-when-elided="true" name="AttackGemText" class="state_value" />
+            </ui:VisualElement>
+            <ui:VisualElement name="DefenceGemContainer" class="magic-gem-container" style="top: 70px;">
+                <ui:VisualElement class="magic-gem-icon" style="background-image: url(&quot;project://database/Assets/Additionals/Tower/Assets/Resources_not_load/propsicon/PurpleMagicCore.png?fileID=2800000&amp;guid=5c33a6851bfced74ea4ba22f8cc60e43&amp;type=3#PurpleMagicCore&quot;);" />
+                <ui:Label tabindex="-1" text="123" parse-escape-sequences="true" display-tooltip-when-elided="true" name="DefenceGemText" class="state_value" />
+            </ui:VisualElement>
+            <ui:VisualElement name="HitpointGemContainer" class="magic-gem-container" style="top: 105px;">
+                <ui:VisualElement class="magic-gem-icon" style="background-image: url(&quot;project://database/Assets/Additionals/Tower/Assets/Resources_not_load/propsicon/GreenMagicCore.png?fileID=2800000&amp;guid=623c5b9742d6363429697bbecc96c9a8&amp;type=3#GreenMagicCore&quot;);" />
+                <ui:Label tabindex="-1" text="123" parse-escape-sequences="true" display-tooltip-when-elided="true" name="HitpointGemText" class="state_value" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement style="position: absolute; justify-content: flex-start; flex-grow: 1; left: 0; bottom: 0; flex-direction: column; align-items: center;">
+            <ui:VisualElement style="flex-direction: row;">
+                <ui:VisualElement style="background-image: url(&quot;project://database/Assets/Additionals/Tower/Assets/Resources_not_load/propsicon/goldKey.png?fileID=21300000&amp;guid=ea6dc2262029e5d4ba7b03db78fca81c&amp;type=3#goldKey&quot;); width: 40.92193px; height: 35.92388px; flex-direction: row; margin-right: 10px;" />
+                <ui:Label text="123" display-tooltip-when-elided="true" name="GoldKeyCount" enable-rich-text="false" style="font-size: 24px; -unity-font-style: bold;" />
+            </ui:VisualElement>
+            <ui:VisualElement style="flex-direction: row;">
+                <ui:VisualElement style="background-image: url(&quot;project://database/Assets/Additionals/Tower/Assets/Resources_not_load/propsicon/sliverKey.png?fileID=21300000&amp;guid=d6fac6147bf9d6c43b8baa84670317ff&amp;type=3#sliverKey&quot;); width: 40.92193px; height: 35.92388px; flex-direction: row; margin-right: 10px;" />
+                <ui:Label text="123" display-tooltip-when-elided="true" name="SilverKeyCount" enable-rich-text="false" style="font-size: 24px; -unity-font-style: bold;" />
+            </ui:VisualElement>
+            <ui:VisualElement style="flex-direction: row;">
+                <ui:VisualElement style="background-image: url(&quot;project://database/Assets/Additionals/Tower/Assets/Resources_not_load/propsicon/Crystal1.png?fileID=21300000&amp;guid=dbff8868b8c323d4c9d6285c786bb443&amp;type=3#Crystal1&quot;); width: 40.92193px; height: 35.92388px; flex-direction: row; margin-right: 10px;" />
+                <ui:Label text="123" display-tooltip-when-elided="true" name="GemCount" enable-rich-text="false" style="font-size: 24px; -unity-font-style: bold;" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

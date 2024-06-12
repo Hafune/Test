@@ -1,0 +1,8 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False" gen-cs-file="fb226216ab0182240b50ee5b0e89b631">
+    <Style src="project://database/Assets/Core/UI%20Toolkit%20schemas/BedMenuVT/BedMenu.uss?fileID=7433441132597879392&amp;guid=0419621ce0e81fc42be61a38567b00b7&amp;type=3#BedMenu" />
+    <ui:VisualElement style="flex-grow: 1; align-items: center; justify-content: center;">
+        <Core.FocusableNodeElement class="window" style="width: 300px; height: 200px;">
+            <Core.FocusableLabel tabindex="-1" text="#teleport_to_hub" name="TeleportToHub" class="option" />
+        </Core.FocusableNodeElement>
+    </ui:VisualElement>
+</ui:UXML>

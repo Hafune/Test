@@ -1,0 +1,47 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False" gen-cs-file="593653d8807cc4147a30314e2b334ffb">
+    <Style src="project://database/Assets/Core/UI%20Toolkit%20schemas/InventoryVT/SettingsVT.uss?fileID=7433441132597879392&amp;guid=2bd0326aba8298c4295ed6696772600d&amp;type=3#SettingsVT" />
+    <Style src="project://database/Assets/Core/UI%20Toolkit%20schemas/CommonStyles/TextColorBase.uss?fileID=7433441132597879392&amp;guid=f5a2fd541c0c679418222f1986708dd1&amp;type=3#TextColorBase" />
+    <Style src="project://database/Assets/Core/UI%20Toolkit%20schemas/CommonStyles/FocusableLabel.uss?fileID=7433441132597879392&amp;guid=3a411ca424cbe6247bc9ea990ad76d1a&amp;type=3#FocusableLabel" />
+    <Style src="project://database/Assets/Core/UI%20Toolkit%20schemas/CommonStyles/TextFontBase.uss?fileID=7433441132597879392&amp;guid=38a94273c510b1447bb6532a65e8d29a&amp;type=3#TextFontBase" />
+    <Style src="project://database/Assets/Core/UI%20Toolkit%20schemas/CommonStyles/NavigationBar.uss?fileID=7433441132597879392&amp;guid=aef2a06e51c7977458c609b4e786304a&amp;type=3#NavigationBar" />
+    <Core.FocusableNodeElement class="text-color-base text-font-base font-size settings-container">
+        <ui:VisualElement>
+            <Core.FocusableSlider label="#master_volume" value="0.5" high-value="1" name="MasterVolume" class="slider focusable-label" />
+            <Core.FocusableSlider label="#background_volume" value="0.5" high-value="1" name="BackgroundVolume" class="slider focusable-label" />
+            <Core.FocusableSlider label="#sfx_volume" value="0.5" high-value="1" name="SfxVolume" class="focusable-label slider" />
+            <Core.FocusableVisualElement name="Language" class="focusable-label" style="flex-direction: row; justify-content: space-between;">
+                <ui:Label text="#language_label" display-tooltip-when-elided="true" focusable="false" tabindex="-1" style="flex-direction: row; justify-content: flex-end; align-items: center;" />
+                <ui:VisualElement style="flex-direction: row; align-items: center;">
+                    <ui:VisualElement name="LanguageLeftArrow" tabindex="-1" style="background-image: url(&quot;project://database/Assets/UI%20Toolkit/UnityThemes/UnityDefaultRuntimeTheme.tss?fileID=-2236324273849735119&amp;guid=fd2091b70e3c2ee48849f4af8cd19a33&amp;type=3#arrow-left@2x&quot;); width: 32px; height: 32px;" />
+                    <ui:Label text="#language_value" display-tooltip-when-elided="true" />
+                    <ui:VisualElement name="LanguageRightArrow" tabindex="-1" style="background-image: url(&quot;project://database/Assets/UnityDefaultRuntimeTheme%201.tss?fileID=-1087164816274819069&amp;guid=a8501a656854b1b459838d1af0470fcf&amp;type=3#arrow-right@2x&quot;); width: 32px; height: 32px;" />
+                </ui:VisualElement>
+            </Core.FocusableVisualElement>
+            <Core.FocusableToggle label="SSAO" name="SSAO" class="focusable-label" style="margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0;" />
+            <Core.FocusableToggle label="#shadows" name="Shadows" class="focusable-label" style="margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0;" />
+            <Core.FocusableSlider label="#drawing_distance" value="0.5" high-value="1" name="DrawingDistance" class="focusable-label slider" />
+        </ui:VisualElement>
+    </Core.FocusableNodeElement>
+    <ui:VisualElement class="text-color-base text-font-base navigation-bar">
+        <ui:VisualElement class="navigation-bar-background" />
+        <ui:VisualElement class="navigation-bar-button-container">
+            <Core.InputSprites.UpInputSpriteElement class="navigation-bar-button-icon" />
+            <ui:Label text="#up" display-tooltip-when-elided="true" />
+        </ui:VisualElement>
+        <ui:VisualElement class="navigation-bar-button-container">
+            <Core.InputSprites.DownInputSpriteElement class="navigation-bar-button-icon" />
+            <ui:Label text="#down" display-tooltip-when-elided="true" />
+        </ui:VisualElement>
+        <ui:VisualElement class="navigation-bar-button-container">
+            <Core.InputSprites.LeftInputSpriteElement class="navigation-bar-button-icon" />
+        </ui:VisualElement>
+        <ui:VisualElement class="navigation-bar-button-container">
+            <Core.InputSprites.RightInputSpriteElement class="navigation-bar-button-icon" />
+            <ui:Label text="#change" display-tooltip-when-elided="true" />
+        </ui:VisualElement>
+        <ui:VisualElement class="navigation-bar-button-container">
+            <Core.InputSprites.CancelInputSpriteElement class="navigation-bar-button-icon" />
+            <ui:Label text="#close" display-tooltip-when-elided="true" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

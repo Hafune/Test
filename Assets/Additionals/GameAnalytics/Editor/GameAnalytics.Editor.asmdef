@@ -1,0 +1,18 @@
+{
+    "name": "GameAnalytics.Editor",
+    "rootNamespace": "",
+    "references": [
+        "GUID:886ffe6bf30dba5418e3528b3637ea65"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

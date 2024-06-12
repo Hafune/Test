@@ -1,0 +1,43 @@
+.bar .unity-progress-bar__progress {
+    margin-top: 1px;
+    margin-right: 1px;
+    margin-bottom: 1px;
+    margin-left: 1px;
+    background-image: url("project://database/Assets/Additionals/Tower/Assets/Texture2D/Bars.png?fileID=625733276&guid=68b8f11786234354bbb915f6a3f27c6d&type=3#bossHPVal");
+}
+
+.bar .unity-progress-bar__background {
+    overflow: hidden;
+    background-color: rgb(34, 34, 34);
+}
+
+.bar .unity-label {
+    font-size: 24px;
+    -unity-font-style: bold;
+    color: rgb(210, 210, 210);
+    display: none;
+}
+
+.bar .unity-progress-bar__container {
+    max-height: 100%;
+    min-height: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    overflow: hidden;
+}
+
+.bar {
+    height: 40px;
+}
+
+.container {
+    flex-grow: 1;
+    justify-content: flex-end;
+    align-items: stretch;
+    padding-top: 25px;
+    padding-right: 15%;
+    padding-bottom: 30px;
+    padding-left: 15%;
+}

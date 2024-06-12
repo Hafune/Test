@@ -1,0 +1,44 @@
+.slot-description__container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.slot-description__row {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 50%;
+    min-width: 50%;
+}
+
+.slot-description__icon-name-container {
+    flex-direction: row;
+    align-items: center;
+}
+
+.slot-description__value-icon {
+    -unity-background-scale-mode: scale-to-fit;
+    background-image: url("project://database/Assets/Additionals/Tower/Assets/Texture2D/SpriteAtlasTexture-PlayerInfo%20(Group%200)-2048x1024-fmt12.png?fileID=21300022&guid=6639c7b3751ef8846b03af67b6422935&type=3#ATK");
+    margin-bottom: 1px;
+    max-width: 28px;
+    min-width: 28px;
+    min-height: 28px;
+    max-height: 28px;
+}
+
+.slot-description__value-name {
+    font-size: 24px;
+    -unity-font-style: bold;
+}
+
+.slot-description__value {
+    font-size: 24px;
+    -unity-font-style: bold;
+    margin-right: 10px;
+}
+
+.slot-description__tag-descroption {
+    font-size: 26px;
+    white-space: normal;
+}

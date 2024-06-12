@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: FinalTitles_en
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: 5410f2af3f3a6f242a8787ac25fd28ea, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 33184968704
+    m_Localized: 'Congratulations!
+
+      
+
+      You have overcome all the challenges
+      and reached the end of the game Tower Of Nightmare. Your strength, perseverance,
+      and skills have helped you overcome all the trials (that are available at the
+      moment :)
+
+      
+
+      Thank you for playing and I wish you all the best.
+
+      
+
+      P.S.
+      The game will be improved over time, with the story and various details being
+      refined.
+
+      And if the game becomes popular, there will be new content
+      as well.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 43081881251840
+    m_Localized: Exit to main menu
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

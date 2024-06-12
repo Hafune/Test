@@ -1,0 +1,46 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False" gen-cs-file="2598963f4c188e54d839fa7e41c8ea4c">
+    <Style src="project://database/Assets/Core/UI%20Toolkit%20schemas/MagicGemMenuVT/MagicGemMenuVT.uss?fileID=7433441132597879392&amp;guid=009b16dd339ff6a408ae2085eff94c4e&amp;type=3#MagicGemMenuVT" />
+    <Style src="project://database/Assets/Core/UI%20Toolkit%20schemas/CommonStyles/NavigationBar.uss?fileID=7433441132597879392&amp;guid=aef2a06e51c7977458c609b4e786304a&amp;type=3#NavigationBar" />
+    <Style src="project://database/Assets/Core/UI%20Toolkit%20schemas/CommonStyles/TextColorBase.uss?fileID=7433441132597879392&amp;guid=f5a2fd541c0c679418222f1986708dd1&amp;type=3#TextColorBase" />
+    <Style src="project://database/Assets/Core/UI%20Toolkit%20schemas/CommonStyles/TextFontBase.uss?fileID=7433441132597879392&amp;guid=38a94273c510b1447bb6532a65e8d29a&amp;type=3#TextFontBase" />
+    <Style src="project://database/Assets/Core/UI%20Toolkit%20schemas/CommonStyles/TitleBackground.uss?fileID=7433441132597879392&amp;guid=0f2432af235148243978f2cea839f490&amp;type=3#TitleBackground" />
+    <Core.FocusableNodeElement class="text-color-base text-font-base" style="flex-direction: row; align-items: center; justify-content: space-around; flex-grow: 1;">
+        <Core.FocusableVisualElement name="attack_gem" class="frame">
+            <ui:VisualElement class="background">
+                <ui:VisualElement class="icon" />
+                <ui:VisualElement style="align-items: center; align-self: center;">
+                    <ui:VisualElement class="title-bg" style="width: 100%;" />
+                    <ui:Label tabindex="-1" text="#attack_gem_title" parse-escape-sequences="true" display-tooltip-when-elided="true" class="title-text" />
+                </ui:VisualElement>
+                <ui:Label tabindex="-1" text="#attack_gem_description" parse-escape-sequences="true" display-tooltip-when-elided="true" class="description" />
+            </ui:VisualElement>
+        </Core.FocusableVisualElement>
+        <Core.FocusableVisualElement name="defence_gem" class="frame">
+            <ui:VisualElement class="background">
+                <ui:VisualElement class="icon" style="background-image: url(&quot;project://database/Assets/Additionals/Tower/Assets/Resources_not_load/propsicon/PurpleMagicCore.png?fileID=21300000&amp;guid=5c33a6851bfced74ea4ba22f8cc60e43&amp;type=3#PurpleMagicCore&quot;);" />
+                <ui:VisualElement style="align-items: center; align-self: center;">
+                    <ui:VisualElement class="title-bg" style="width: 100%;" />
+                    <ui:Label tabindex="-1" text="#defence_gem_title" parse-escape-sequences="true" display-tooltip-when-elided="true" class="title-text" />
+                </ui:VisualElement>
+                <ui:Label tabindex="-1" text="#defence_gem_description" parse-escape-sequences="true" display-tooltip-when-elided="true" class="description" />
+            </ui:VisualElement>
+        </Core.FocusableVisualElement>
+        <Core.FocusableVisualElement name="hitpoint_gem" class="frame">
+            <ui:VisualElement class="background">
+                <ui:VisualElement class="icon" style="background-image: url(&quot;project://database/Assets/Additionals/Tower/Assets/Resources_not_load/propsicon/GreenMagicCore.png?fileID=21300000&amp;guid=623c5b9742d6363429697bbecc96c9a8&amp;type=3#GreenMagicCore&quot;);" />
+                <ui:VisualElement style="align-items: center; align-self: center;">
+                    <ui:VisualElement class="title-bg" style="width: 100%;" />
+                    <ui:Label tabindex="-1" text="#hitpoint_gem_title" parse-escape-sequences="true" display-tooltip-when-elided="true" class="title-text" />
+                </ui:VisualElement>
+                <ui:Label tabindex="-1" text="#hitpoint_gem_description" parse-escape-sequences="true" display-tooltip-when-elided="true" class="description" />
+            </ui:VisualElement>
+        </Core.FocusableVisualElement>
+    </Core.FocusableNodeElement>
+    <ui:VisualElement class="navigation-bar text-color-base text-font-base">
+        <ui:VisualElement class="navigation-bar-background" />
+        <ui:VisualElement class="navigation-bar-button-container">
+            <Core.InputSprites.SubmitInputSpriteElement class="navigation-bar-button-icon" />
+            <ui:Label tabindex="-1" text="#submit" parse-escape-sequences="true" display-tooltip-when-elided="true" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

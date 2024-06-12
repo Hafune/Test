@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2bafa8510f4244b6908491dbb20cdf7f, type: 3}
+  m_Name: Ui_Sfx_Template_Default
+  m_EditorClassIdentifier: 
+  <SelectSourceContainer>k__BackingField: {fileID: 2950115841024566738, guid: 1f0eb3a595949d243bb6a7583d10fb14, type: 3}
+  <SubmitSourceContainer>k__BackingField: {fileID: 2950115841024566738, guid: 7e5056164389b2f4d9e0d03910cc7742, type: 3}
+  <CancelSourceContainer>k__BackingField: {fileID: 2950115841024566738, guid: 2d56e79beb0ea134d9c00d5104db5767, type: 3}
+  <TriggerSourceContainer>k__BackingField: {fileID: 2950115841024566738, guid: 35ebc683abc3d2147984f5f1202af9d5, type: 3}

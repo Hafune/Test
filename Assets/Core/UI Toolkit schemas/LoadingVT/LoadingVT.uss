@@ -1,0 +1,90 @@
+.item-progress-bar {
+    width: 100%;
+    height: 50px;
+}
+
+.item-progress-bar .unity-progress-bar__container {
+    height: 100%;
+    max-height: 100%;
+    min-height: 100%;
+}
+
+.item-progress-bar .unity-progress-bar__progress {
+    -unity-background-scale-mode: scale-and-crop;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    background-image: url("project://database/Assets/Core/UI%20Toolkit%20schemas/InventoryVT/Sprites/TitleBg.png?fileID=21300000&guid=2c5d96486b6ed7947b28b91f532f3a60&type=3#TitleBg");
+}
+
+.item-progress-bar .unity-progress-bar__background {
+    border-left-color: rgb(255, 255, 255);
+    border-right-color: rgb(255, 255, 255);
+    border-top-color: rgb(255, 255, 255);
+    border-bottom-color: rgb(255, 255, 255);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    overflow: hidden;
+    flex-grow: 1;
+    background-color: rgb(48, 48, 48);
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;
+}
+
+.item-progress-bar .unity-label {
+    font-size: 20px;
+    -unity-font-style: bold;
+}
+
+.container {
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    left: 0;
+}
+
+.loading-container {
+    width: 50%;
+    align-items: center;
+}
+
+.loading-label {
+    -unity-font-style: bold;
+    font-size: 40px;
+}
+
+.spinner {
+    position: absolute;
+    bottom: 29px;
+    background-image: url("project://database/Assets/Additionals/Tower/Assets/Texture2D/SpriteAtlasTexture-Share%20(Group%201)-2048x512-fmt12.png?fileID=21300008&guid=8d998c8656643084da4576c5d024f42c&type=3#spinner_48_outer_holo");
+    transform-origin: center;
+    max-width: 79px;
+    min-width: 79px;
+    max-height: 79px;
+    min-height: 79px;
+    right: 69px;
+}
+
+.saved {
+    position: absolute;
+    top: 200px;
+    -unity-font-style: bold;
+    font-size: 40px;
+    -unity-text-align: middle-center;
+    flex-grow: 1;
+    align-self: center;
+}
+
+.saved-hide {
+    transition-duration: 0.5s;
+    opacity: 0;
+    translate: 0 -50px;
+}

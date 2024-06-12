@@ -1,0 +1,27 @@
+.window {
+    width: 800px;
+    height: 200px;
+    background-image: url("project://database/Assets/Core/UI%20Toolkit%20schemas/DialogVT/Dialog.png?fileID=21300000&guid=efa218653d0fb6248aa3a3f904d469ac&type=3#Dialog");
+}
+
+.icon {
+    width: 224px;
+    height: 224px;
+    -unity-background-scale-mode: scale-to-fit;
+    position: absolute;
+    bottom: 4px;
+}
+
+.text-container {
+    flex-grow: 1;
+    margin-left: 192px;
+}
+
+.title-underline {
+    position: absolute;
+    background-color: rgb(50, 120, 189);
+    bottom: 6px;
+    top: 9px;
+    left: -50px;
+    right: -20px;
+}

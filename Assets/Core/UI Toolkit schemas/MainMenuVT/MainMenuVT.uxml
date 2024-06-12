@@ -1,0 +1,44 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False" gen-cs-file="851ea06fe85891c49804c3b25888f107">
+    <ui:Template name="SettingsVT" src="project://database/Assets/Core/UI%20Toolkit%20schemas/InventoryVT/SettingsVT.uxml?fileID=9197481963319205126&amp;guid=6f2ab87057af97741b9d407812169ecf&amp;type=3#SettingsVT" />
+    <ui:Template name="PopConfirmVT" src="project://database/Assets/Core/UI%20Toolkit%20schemas/PopConfirmVT/PopConfirmVT.uxml?fileID=9197481963319205126&amp;guid=d3cbd3d7d1c7ea447912d2eec10dec4c&amp;type=3#PopConfirmVT" />
+    <Style src="project://database/Assets/Core/UI%20Toolkit%20schemas/MainMenuVT/MainMenuVT.uss?fileID=7433441132597879392&amp;guid=dc72753f412557a4db0c5bf259c8ea62&amp;type=3#MainMenuVT" />
+    <Style src="project://database/Assets/Core/UI%20Toolkit%20schemas/CommonStyles/TextColorBase.uss?fileID=7433441132597879392&amp;guid=f5a2fd541c0c679418222f1986708dd1&amp;type=3#TextColorBase" />
+    <Style src="project://database/Assets/Core/UI%20Toolkit%20schemas/CommonStyles/FocusableLabel.uss?fileID=7433441132597879392&amp;guid=3a411ca424cbe6247bc9ea990ad76d1a&amp;type=3#FocusableLabel" />
+    <Style src="project://database/Assets/Core/UI%20Toolkit%20schemas/CommonStyles/TextFontBase.uss?fileID=7433441132597879392&amp;guid=38a94273c510b1447bb6532a65e8d29a&amp;type=3#TextFontBase" />
+    <Style src="project://database/Assets/Core/UI%20Toolkit%20schemas/CommonStyles/NavigationBar.uss?fileID=7433441132597879392&amp;guid=aef2a06e51c7977458c609b4e786304a&amp;type=3#NavigationBar" />
+    <ui:VisualElement style="flex-grow: 1; justify-content: center; align-items: center; background-image: url(&quot;project://database/Assets/Core/UI%20Toolkit%20schemas/MainMenuVT/Sprites/MainMenuBg.png?fileID=2800000&amp;guid=a748369127cf7d348bd8f809226791bd&amp;type=3#MainMenuBg&quot;);">
+        <ui:VisualElement name="Penta" usage-hints="DynamicTransform" style="flex-grow: 1; position: absolute; left: -604px; top: -601px; right: 106px; bottom: -628px; background-image: url(&quot;project://database/Assets/Additionals/Tower/Assets/Texture2D/MagicCircle.png?fileID=2800000&amp;guid=c9e8269d5e723a94191f1305000bd023&amp;type=3#MagicCircle&quot;); -unity-background-scale-mode: scale-to-fit; -unity-background-image-tint-color: rgba(255, 255, 255, 0.1);" />
+        <ui:Label tabindex="-1" text="tower of nightmares" parse-escape-sequences="true" display-tooltip-when-elided="true" class="text-color-base" style="-unity-font-definition: initial; -unity-font: url(&quot;project://database/Assets/Additionals/Tower/Assets/Font/NORTHWEST-B.otf?fileID=12800000&amp;guid=c8d41b8167ef9d9428a942f3d4ce91f3&amp;type=3#NORTHWEST-B&quot;); font-size: 100px; margin-top: 0; margin-right: 0; margin-bottom: 100px; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;" />
+        <Core.FocusableNodeElement name="MainMenuContainer" class="container text-font-base text-color-base">
+            <Core.FocusableLabel tabindex="0" text="#continue_game" name="ContinueGame" focusable="true" enable-rich-text="false" class="focusable-label main-menu-item text-color-base" />
+            <Core.FocusableLabel tabindex="0" text="#new_game" name="NewGame" focusable="true" enable-rich-text="false" class="focusable-label main-menu-item text-color-base" />
+            <Core.FocusableLabel tabindex="0" text="#settings" name="Settings" focusable="true" enable-rich-text="false" class="focusable-label main-menu-item text-color-base" />
+        </Core.FocusableNodeElement>
+        <ui:VisualElement name="LanguageIcons" class="icon-container">
+            <ui:VisualElement tabindex="-1" focusable="true" name="LangRu" class="language-icon" />
+            <ui:VisualElement name="LangEn" focusable="true" tabindex="-1" class="language-icon" style="background-image: url(&quot;project://database/Assets/Core/UI%20Toolkit%20schemas/MainMenuVT/Sprites/language_small_eng.png?fileID=2800000&amp;guid=650e166310ebec5458927e7a47d64673&amp;type=3#language_small_eng&quot;);" />
+        </ui:VisualElement>
+        <ui:VisualElement name="NavigationBar" class="text-color-base text-font-base navigation-bar" style="position: absolute; bottom: 0; right: 0; left: 0;">
+            <ui:VisualElement class="navigation-bar-background" />
+            <ui:VisualElement class="navigation-bar-button-container">
+                <Core.InputSprites.UpInputSpriteElement class="navigation-bar-button-icon" />
+                <ui:Label text="#up" display-tooltip-when-elided="true" />
+            </ui:VisualElement>
+            <ui:VisualElement class="navigation-bar-button-container">
+                <Core.InputSprites.DownInputSpriteElement class="navigation-bar-button-icon" />
+                <ui:Label text="#down" display-tooltip-when-elided="true" />
+            </ui:VisualElement>
+            <ui:VisualElement class="navigation-bar-button-container">
+                <Core.InputSprites.SubmitInputSpriteElement class="navigation-bar-button-icon" />
+                <ui:Label text="#submit" display-tooltip-when-elided="true" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="SettingsContainer" class="main-menu-settings-container" style="flex-grow: 1;">
+            <ui:VisualElement style="flex-grow: 1; position: absolute; left: 223px; top: -127px; right: -593px; bottom: -628px; background-image: url(&quot;project://database/Assets/Additionals/Tower/Assets/Texture2D/MagicCircle.png?fileID=2800000&amp;guid=c9e8269d5e723a94191f1305000bd023&amp;type=3#MagicCircle&quot;); -unity-background-image-tint-color: rgba(255, 255, 255, 0.1); -unity-background-scale-mode: scale-to-fit;" />
+            <ui:VisualElement style="flex-grow: 1; position: absolute; left: -833px; top: -1280px; right: 464px; bottom: 526px; background-image: url(&quot;project://database/Assets/Additionals/Tower/Assets/Texture2D/MagicCircle.png?fileID=2800000&amp;guid=c9e8269d5e723a94191f1305000bd023&amp;type=3#MagicCircle&quot;); -unity-background-image-tint-color: rgba(255, 255, 255, 0.1); -unity-background-scale-mode: scale-to-fit;" />
+            <ui:Instance template="SettingsVT" name="SettingsVT" style="display: flex; position: absolute; left: 0; top: 0; right: 0; bottom: 0;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+    <ui:VisualElement name="RemoveButton" focusable="true" tabindex="-1" style="position: absolute; right: 10px; bottom: 90px; background-image: url(&quot;project://database/Assets/Sprites/btn_icon_small_delete.png?fileID=21300000&amp;guid=a5380df1330a796418d8d45771ff8a42&amp;type=3#btn_icon_small_delete&quot;); width: 48px; height: 56px; scale: 0.75 0.75; opacity: 0.7;" />
+    <ui:Instance template="PopConfirmVT" name="PopConfirmVT" style="display: none; position: absolute; left: 0; top: 0; right: 0; bottom: 0;" />
+</ui:UXML>

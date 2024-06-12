@@ -1,0 +1,17 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False" gen-cs-file="dcff23e7ba773ac4ca3656b207df0606">
+    <Style src="project://database/Assets/Core/UI%20Toolkit%20schemas/Tutorials/TutorialFocusVT/TutorialFocusVT.uss?fileID=7433441132597879392&amp;guid=1bf955a7194b31641ae0d402a620e72f&amp;type=3#TutorialFocusVT" />
+    <Style src="project://database/Assets/Core/UI%20Toolkit%20schemas/CommonStyles/TextColorBase.uss?fileID=7433441132597879392&amp;guid=f5a2fd541c0c679418222f1986708dd1&amp;type=3#TextColorBase" />
+    <Style src="project://database/Assets/Core/UI%20Toolkit%20schemas/CommonStyles/TextFontBase.uss?fileID=7433441132597879392&amp;guid=38a94273c510b1447bb6532a65e8d29a&amp;type=3#TextFontBase" />
+    <ui:VisualElement style="flex-grow: 1;">
+        <ui:VisualElement name="Top" class="fade tint transition" style="height: 32%;" />
+        <ui:VisualElement style="flex-direction: row; flex-grow: 1;">
+            <ui:VisualElement name="Left" class="fade tint transition" style="width: 50%;" />
+            <ui:VisualElement name="Center" class="tint transition" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/Core/UI%20Toolkit%20schemas/Tutorials/TutorialFocusVT/TutorialFocus.png?fileID=21300000&amp;guid=f86c97fc75f802d43ae414833922c33a&amp;type=3#TutorialFocus&quot;); -unity-slice-scale: 1px;" />
+            <ui:VisualElement name="Right" class="fade tint transition" style="width: 50%;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="Bottom" class="fade tint transition" style="height: 36%;" />
+    </ui:VisualElement>
+    <ui:VisualElement name="Container" class="text-font-base text-color-base text-size" style="flex-grow: 1; align-items: center; justify-content: center; position: absolute; left: 0; top: 0; right: 0; bottom: 0; padding-top: 50px; padding-right: 50px; padding-bottom: 50px; padding-left: 50px;">
+        <ui:Label text="Label&lt;sprite name=&quot;submit&quot;&gt; Label&lt;sprite name=&quot;cancel&quot;&gt;" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Label" style="white-space: normal; padding-top: 10px; padding-right: 10px; padding-bottom: 10px; padding-left: 10px; border-top-left-radius: 20px; border-top-right-radius: 20px; border-bottom-right-radius: 20px; border-bottom-left-radius: 20px; background-color: rgba(0, 0, 0, 0.65);" />
+    </ui:VisualElement>
+</ui:UXML>

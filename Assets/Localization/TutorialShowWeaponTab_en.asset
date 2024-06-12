@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: TutorialShowWeaponTab_en
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: 7b7a8c0b881612b48b8317821008524a, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 3845102661632
+    m_Localized: 'Training:
+
+
+      Open the inventory by button <sprite name="start">'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 420134678528
+    m_Localized: 'There are control tips at the bottom
+
+
+      Continue <sprite name="submit">'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 409472757760
+    m_Localized: 'On top there are tabs
+
+      for powerups, weapons, abilities and
+      settings
+
+
+      Press <sprite name="right_trigger"> to select the weapons
+      tab'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 435607465984
+    m_Localized: 'Here you can change weapons or spray those that are no longer needed.
+
+
+      Press
+      <sprite name="cancel"> to close the menu'
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

@@ -1,0 +1,18 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False" gen-cs-file="f5903fce076a62646ad3963f45a092a7">
+    <Style src="project://database/Assets/Core/UI%20Toolkit%20schemas/PopConfirmVT/PopConfirmVT.uss?fileID=7433441132597879392&amp;guid=1b5833bc279690d49b71e510b3d25e37&amp;type=3#PopConfirmVT" />
+    <Core.FocusableNodeElement style="position: absolute; left: 0; top: 0; right: 0; bottom: 0; justify-content: center; align-items: center;">
+        <ui:VisualElement name="PopConfirmWrapper" focusable="true" style="position: absolute; padding-left: 30px; padding-right: 30px; padding-top: 10px; padding-bottom: 60px; align-items: center; background-image: url(&quot;project://database/Assets/Additionals/Tower/Assets/Texture2D/SpriteAtlasTexture-Share%20(Group%201)-2048x512-fmt12.png?fileID=21300018&amp;guid=8d998c8656643084da4576c5d024f42c&amp;type=3#box_a1&quot;); min-width: 30%;">
+            <ui:Label tabindex="-1" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. &#10;Curabitur iaculis eros at lectus lacinia, at varius risus congue. &#10;Fusce laoreet mauris nec elementum aliquet." parse-escape-sequences="true" display-tooltip-when-elided="true" name="Message" style="font-size: 24px; -unity-font: url(&quot;project://database/Assets/Additionals/Tower/Assets/Font/Cambria%20Math.ttf?fileID=12800000&amp;guid=2deb3e250adbe3d4e9d0aa9f71187462&amp;type=3#Cambria Math&quot;); -unity-font-definition: initial; -unity-font-style: bold; color: rgb(225, 225, 225); min-height: 90px; -unity-text-align: middle-left;" />
+            <ui:VisualElement style="flex-direction: row; justify-content: center; position: absolute; bottom: 0;">
+                <ui:VisualElement name="SubmitButton" class="button" style="margin-right: 10px;">
+                    <Core.InputSprites.SubmitInputSpriteElement class="button-icon" style="background-image: url(&quot;project://database/Assets/Additionals/XBOX%20BUTTONS%20-%20Premium%20Assets/Digital%20Buttons/ABXY-standart/button_xbox_digital_a_5-standart.png?fileID=21300000&amp;guid=270599c8a124e3f42989fa2670098c43&amp;type=3#button_xbox_digital_a_5-standart&quot;);" />
+                    <ui:Label text="#submit" display-tooltip-when-elided="true" class="button-text" style="flex-shrink: 1;" />
+                </ui:VisualElement>
+                <ui:VisualElement name="CancelButton" class="button">
+                    <Core.InputSprites.CancelInputSpriteElement class="button-icon" style="background-image: url(&quot;project://database/Assets/Additionals/XBOX%20BUTTONS%20-%20Premium%20Assets/Digital%20Buttons/ABXY-standart/button_xbox_digital_b_5-standart.png?fileID=21300000&amp;guid=312431ce4152616418416c0e5bf6cc0a&amp;type=3#button_xbox_digital_b_5-standart&quot;);" />
+                    <ui:Label text="#cancel" display-tooltip-when-elided="true" class="buttonText button-text" style="flex-shrink: 1;" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </Core.FocusableNodeElement>
+</ui:UXML>

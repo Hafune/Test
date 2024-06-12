@@ -1,0 +1,9 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False" gen-cs-file="3895ba3e7a51d3346bcd45a5449eb166">
+    <Style src="project://database/Assets/Core/UI%20Toolkit%20schemas/WardrobeVT/WardrobeVT.uss?fileID=7433441132597879392&amp;guid=abb18263018567e448ca8c40168fa093&amp;type=3#WardrobeVT" />
+    <Core.FocusableNodeElement class="container">
+        <ui:VisualElement style="position: absolute; background-image: url(&apos;project://database/Assets/Additionals/Tower/Assets/Texture2D/SpriteAtlasTexture-BattleHead%20(Group%200)-1024x512-fmt12.png?fileID=21300034&amp;guid=4ad0658a819913447988414d3b06bb34&amp;type=3#bufferbg&apos;); -unity-slice-left: 0; -unity-slice-top: 0; -unity-slice-right: 0; -unity-slice-bottom: 0; padding-left: 25px; padding-right: 25px; padding-top: 25px; padding-bottom: 25px; right: 5%;">
+            <ui:VisualElement name="HairContainer" class="item_container" style="margin-bottom: 20px;" />
+            <ui:VisualElement name="FashionContainer" class="item_container" />
+        </ui:VisualElement>
+    </Core.FocusableNodeElement>
+</ui:UXML>

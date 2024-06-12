@@ -1,0 +1,18 @@
+{
+    "name": "MeshCombinerEditor",
+    "rootNamespace": "",
+    "references": [
+        "GUID:95bec04240244574ea7365d78871b8ab"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

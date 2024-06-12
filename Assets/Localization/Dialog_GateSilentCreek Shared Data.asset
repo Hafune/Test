@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: Dialog_GateSilentCreek Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: Dialog_GateSilentCreek
+  m_TableCollectionNameGuidString: ecf5afcb01a38a44bad0ea4d2995c2a6
+  m_Entries:
+  - m_Id: 21740589200076800
+    m_Key: start_message
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21746756999606272
+    m_Key: near_scarecrow
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21747300573016064
+    m_Key: near_scarecrow_end
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21747975600107520
+    m_Key: location_end
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25125881634254848
+    m_Key: New Entry
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 5261554908354052099
+  references:
+    version: 2
+    RefIds:
+    - rid: 5261554908354052099
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1710492278741

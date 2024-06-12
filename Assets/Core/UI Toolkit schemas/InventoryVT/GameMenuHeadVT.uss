@@ -1,0 +1,59 @@
+.icon {
+    flex-grow: 1;
+    -unity-background-scale-mode: scale-to-fit;
+}
+
+.chips {
+    background-image: url("project://database/Assets/Additionals/Tower/Assets/Texture2D/SpriteAtlasTexture-PlayerInfo%20(Group%200)-2048x1024-fmt12.png?fileID=21300042&guid=6639c7b3751ef8846b03af67b6422935&type=3#chip");
+}
+
+.chips-selected {
+    background-image: url("project://database/Assets/Additionals/Tower/Assets/Texture2D/SpriteAtlasTexture-PlayerInfo%20(Group%200)-2048x1024-fmt12.png?fileID=21300052&guid=6639c7b3751ef8846b03af67b6422935&type=3#chipselected");
+}
+
+.skills {
+    background-image: url("project://database/Assets/Additionals/Tower/Assets/Texture2D/SpriteAtlasTexture-PlayerInfo%20(Group%200)-2048x1024-fmt12.png?fileID=21300026&guid=6639c7b3751ef8846b03af67b6422935&type=3#skill");
+}
+
+.skills-selected {
+    background-image: url("project://database/Assets/Additionals/Tower/Assets/Texture2D/SpriteAtlasTexture-PlayerInfo%20(Group%200)-2048x1024-fmt12.png?fileID=21300032&guid=6639c7b3751ef8846b03af67b6422935&type=3#skillselected");
+}
+
+.equipment {
+    background-image: url("project://database/Assets/Additionals/Tower/Assets/Texture2D/SpriteAtlasTexture-PlayerInfo%20(Group%200)-2048x1024-fmt12.png?fileID=21300048&guid=6639c7b3751ef8846b03af67b6422935&type=3#zb");
+}
+
+.equipment-selected {
+    background-image: url("project://database/Assets/Additionals/Tower/Assets/Texture2D/SpriteAtlasTexture-PlayerInfo%20(Group%200)-2048x1024-fmt12.png?fileID=21300030&guid=6639c7b3751ef8846b03af67b6422935&type=3#zeselected");
+}
+
+.settings {
+    background-image: url("project://database/Assets/Additionals/Tower/Assets/Texture2D/SpriteAtlasTexture-PlayerInfo%20(Group%200)-2048x1024-fmt12.png?fileID=21300010&guid=6639c7b3751ef8846b03af67b6422935&type=3#set");
+}
+
+.settings-selected {
+    background-image: url("project://database/Assets/Additionals/Tower/Assets/Texture2D/SpriteAtlasTexture-PlayerInfo%20(Group%200)-2048x1024-fmt12.png?fileID=21300034&guid=6639c7b3751ef8846b03af67b6422935&type=3#setselected");
+}
+
+.background-image {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("project://database/Assets/Additionals/Tower/Assets/Texture2D/mofa_3.png?fileID=2800000&guid=d9d4c9a1326715f40aae68d42c2ea57e&type=3#mofa_3");
+    -unity-background-image-tint-color: rgba(255, 255, 255, 0.05);
+    -unity-background-scale-mode: scale-and-crop;
+}
+
+.input-icon {
+    -unity-background-scale-mode: scale-to-fit;
+    margin-left: 50px;
+    margin-right: 50px;
+    width: 64px;
+    max-width: 64px;
+    max-height: 64px;
+    flex-grow: 1;
+    min-width: 64px;
+    min-height: 64px;
+}

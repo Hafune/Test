@@ -1,0 +1,13 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False" gen-cs-file="1184a02e4c968444bb58d1ca9b737678">
+    <Style src="project://database/Assets/Core/UI%20Toolkit%20schemas/LoadingVT/LoadingVT.uss?fileID=7433441132597879392&amp;guid=78945ffe816eee24696d535a1e6d024f&amp;type=3#LoadingVT" />
+    <Style src="project://database/Assets/Core/UI%20Toolkit%20schemas/CommonStyles/TextColorBase.uss?fileID=7433441132597879392&amp;guid=f5a2fd541c0c679418222f1986708dd1&amp;type=3#TextColorBase" />
+    <Style src="project://database/Assets/Core/UI%20Toolkit%20schemas/CommonStyles/TextFontBase.uss?fileID=7433441132597879392&amp;guid=38a94273c510b1447bb6532a65e8d29a&amp;type=3#TextFontBase" />
+    <ui:VisualElement name="LoadingContainer" class="text-font-base text-color-base container">
+        <ui:VisualElement class="loading-container">
+            <ui:Label tabindex="-1" text="#loading" parse-escape-sequences="true" display-tooltip-when-elided="true" class="loading-label" />
+            <ui:ProgressBar title="12/56 MB" value="0.5" high-value="1" name="LoadingBar" class="item-progress-bar" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+    <ui:VisualElement name="Spinner" class="spinner" />
+    <ui:Label tabindex="-1" text="#saved" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Save" class="text-font-base text-color-base saved" />
+</ui:UXML>

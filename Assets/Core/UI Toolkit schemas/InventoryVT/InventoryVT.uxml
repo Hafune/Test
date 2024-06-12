@@ -1,0 +1,50 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False" gen-cs-file="e2efc158da4549548bb306bb1658f9ce">
+    <ui:Template name="InventoryPlayerStates" src="project://database/Assets/Core/UI%20Toolkit%20schemas/InventoryVT/InventoryPlayerStatesVT.uxml?fileID=9197481963319205126&amp;guid=f6d9a45b336ff644c9033b5d9ba3e04c&amp;type=3#InventoryPlayerStatesVT" />
+    <Style src="project://database/Assets/Core/UI%20Toolkit%20schemas/InventoryVT/InventoryVT.uss?fileID=7433441132597879392&amp;guid=1e8fc04df7d65c24d97a32c77fc9ba52&amp;type=3#InventoryVT" />
+    <Style src="project://database/Assets/Core/UI%20Toolkit%20schemas/CommonStyles/TextColorBase.uss?fileID=7433441132597879392&amp;guid=f5a2fd541c0c679418222f1986708dd1&amp;type=3#TextColorBase" />
+    <Style src="project://database/Assets/Core/UI%20Toolkit%20schemas/CommonStyles/TextFontBase.uss?fileID=7433441132597879392&amp;guid=38a94273c510b1447bb6532a65e8d29a&amp;type=3#TextFontBase" />
+    <Style src="project://database/Assets/Core/UI%20Toolkit%20schemas/CommonStyles/NavigationBar.uss?fileID=7433441132597879392&amp;guid=aef2a06e51c7977458c609b4e786304a&amp;type=3#NavigationBar" />
+    <Style src="project://database/Assets/Core/UI%20Toolkit%20schemas/CommonStyles/FocusableLabel.uss?fileID=7433441132597879392&amp;guid=3a411ca424cbe6247bc9ea990ad76d1a&amp;type=3#FocusableLabel" />
+    <Core.FocusableNodeElement class="text-color-base text-font-base" style="flex-direction: row; padding-bottom: 50px; flex-grow: 1; padding-top: 90px; justify-content: space-between;">
+        <ui:VisualElement class="column-section">
+            <ui:ScrollView name="InventoryItems" horizontal-scroller-visibility="Hidden" vertical-scroller-visibility="AlwaysVisible" mouse-wheel-scroll-size="60" class="my-scroll-view" style="margin-right: 10px; flex-grow: 1;" />
+        </ui:VisualElement>
+        <ui:VisualElement style="align-items: center;">
+            <ui:VisualElement name="InsertedEnhancements" style="flex-grow: 1; align-items: center; width: 300px; max-width: 100%; background-color: rgba(0, 0, 0, 0.4);" />
+            <ui:VisualElement name="EnergyLockedSpace1" class="enegy-locked-space">
+                <ui:VisualElement class="energy-locked-icon" />
+            </ui:VisualElement>
+            <ui:VisualElement name="EnergyLockedSpace2" class="enegy-locked-space">
+                <ui:VisualElement class="energy-locked-icon" />
+            </ui:VisualElement>
+            <ui:VisualElement name="EnergyLockedSpace3" class="enegy-locked-space">
+                <ui:VisualElement class="energy-locked-icon" />
+            </ui:VisualElement>
+            <ui:VisualElement name="EnergyLockedSpace4" class="enegy-locked-space">
+                <ui:VisualElement class="energy-locked-icon" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement class="column-section" style="flex-direction: row-reverse;">
+            <ui:Instance template="InventoryPlayerStates" name="InventoryPlayerStatesVT" style="flex-grow: 1;" />
+        </ui:VisualElement>
+    </Core.FocusableNodeElement>
+    <ui:VisualElement class="text-color-base text-font-base" style="border-left-color: rgb(255, 255, 255); border-right-color: rgb(255, 255, 255); border-top-color: rgb(255, 255, 255); border-bottom-color: rgb(255, 255, 255); border-left-width: 0; border-right-width: 0; border-top-width: 2px; border-bottom-width: 0; border-top-left-radius: 0; border-bottom-left-radius: 0; border-top-right-radius: 0; border-bottom-right-radius: 0; padding-left: 50px; padding-right: 10px; padding-top: 10px; padding-bottom: 10px; flex-direction: row; margin-bottom: 10px; min-height: 85px; max-height: 85px; align-items: stretch;">
+        <ui:VisualElement name="Icon" style="width: 64px; height: 64px; -unity-background-scale-mode: scale-to-fit; margin-right: 5px;" />
+        <ui:Label text="Заголовок чего нибудь" display-tooltip-when-elided="true" name="Description" enable-rich-text="true" style="font-size: 32px; white-space: normal; -unity-font-style: bold;" />
+    </ui:VisualElement>
+    <ui:VisualElement name="NavigationBar" class="text-color-base text-font-base navigation-bar">
+        <ui:VisualElement class="navigation-bar-background" />
+        <ui:VisualElement class="navigation-bar-button-container">
+            <Core.InputSprites.SubmitInputSpriteElement class="navigation-bar-button-icon" style="background-image: url(&quot;project://database/Assets/Additionals/XBOX%20BUTTONS%20-%20Premium%20Assets/Digital%20Buttons/ABXY-standart/button_xbox_digital_a_5-standart.png?fileID=21300000&amp;guid=270599c8a124e3f42989fa2670098c43&amp;type=3#button_xbox_digital_a_5-standart&quot;);" />
+            <ui:Label text="ActionText" display-tooltip-when-elided="true" name="ActionText" />
+        </ui:VisualElement>
+        <ui:VisualElement class="navigation-bar-button-container">
+            <Core.InputSprites.CancelInputSpriteElement class="navigation-bar-button-icon" style="background-image: url(&quot;project://database/Assets/Additionals/XBOX%20BUTTONS%20-%20Premium%20Assets/Digital%20Buttons/ABXY-standart/button_xbox_digital_b_5-standart.png?fileID=21300000&amp;guid=312431ce4152616418416c0e5bf6cc0a&amp;type=3#button_xbox_digital_b_5-standart&quot;);" />
+            <ui:Label text="#close_inventory" display-tooltip-when-elided="true" name="CancelText" />
+        </ui:VisualElement>
+        <ui:VisualElement name="ContextMenu" class="navigation-bar-button-container">
+            <Core.InputSprites.ContextMenuInputSpriteElement class="navigation-bar-button-icon" style="background-image: url(&quot;project://database/Assets/Additionals/XBOX%20BUTTONS%20-%20Premium%20Assets/Digital%20Buttons/ABXY-standart/button_xbox_digital_x_5-standart.png?fileID=21300000&amp;guid=1b26155bbe443124ba38d78beb433bf6&amp;type=3#button_xbox_digital_x_5-standart&quot;);" />
+            <ui:Label text="#destroy_to_gem" display-tooltip-when-elided="true" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

@@ -1,0 +1,38 @@
+.map-item-tooltip {
+    align-items: stretch;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    background-image: url("project://database/Assets/Additionals/Tower/Assets/Texture2D/SpriteAtlasTexture-Share%20(Group%201)-2048x512-fmt12.png?fileID=21300000&guid=8d998c8656643084da4576c5d024f42c&type=3#box");
+    max-width: 33%;
+    min-width: 550px;
+}
+
+.map-item-tooltip__icon-title-container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.map-item-tooltip__icon {
+    background-image: none;
+    width: 64px;
+    height: 64px;
+    -unity-background-scale-mode: scale-to-fit;
+    margin-right: 10px;
+}
+
+.map-item-tooltip__title {
+    font-size: 34px;
+    white-space: normal;
+    -unity-font-style: bold;
+}
+
+.map-item-tooltip__description {
+    font-size: 30px;
+    white-space: normal;
+}
+
+.map-item-tooltip__slot-container {
+}

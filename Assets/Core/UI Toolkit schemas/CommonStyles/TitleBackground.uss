@@ -1,0 +1,6 @@
+.title-bg {
+    background-image: url("project://database/Assets/Core/UI%20Toolkit%20schemas/InventoryVT/Sprites/TitleBg.png?fileID=2800000&guid=2c5d96486b6ed7947b28b91f532f3a60&type=3#TitleBg");
+    position: absolute;
+    bottom: 6px;
+    height: 16px;
+}

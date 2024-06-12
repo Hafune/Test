@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: InputTooltip Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: InputTooltip
+  m_TableCollectionNameGuidString: 80d3d3efaf101bc4aa48a78ca93807ea
+  m_Entries:
+  - m_Id: 8573251584
+    m_Key: pick
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1932697628672
+    m_Key: hold_to_break_crystals
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2026163499008
+    m_Key: wardrobe
+    m_Metadata:
+      m_Items: []
+  - m_Id: 28275388450500608
+    m_Key: teleport
+    m_Metadata:
+      m_Items: []
+  - m_Id: 28291878889353216
+    m_Key: chest
+    m_Metadata:
+      m_Items: []
+  - m_Id: 28292077116354560
+    m_Key: bed
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 3280217724688531458
+  references:
+    version: 2
+    RefIds:
+    - rid: 3280217724688531458
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1698735608988

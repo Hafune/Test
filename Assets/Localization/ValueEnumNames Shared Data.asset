@@ -1,0 +1,68 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: ValueEnumNames Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: ValueEnumNames
+  m_TableCollectionNameGuidString: 1a7f1d99ae6cdb04388de2c3ef02b7f2
+  m_Entries:
+  - m_Id: 101581484032
+    m_Key: CriticalChanceValue
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1124278628352
+    m_Key: CriticalDamageValue
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1550466052096
+    m_Key: DamageValue
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1614626320384
+    m_Key: DamagePercentValue
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1758054739968
+    m_Key: DefenceValue
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1792510947328
+    m_Key: HitPointValue
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9173633049718784
+    m_Key: HitPointMaxValue
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2012917428224
+    m_Key: ManaPointValue
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9173766948679680
+    m_Key: ManaPointMaxValue
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2124737572864
+    m_Key: RecoverySpeedManaPointValue
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 5261555113500868610
+  references:
+    version: 2
+    RefIds:
+    - rid: 5261555113500868610
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1711259070030

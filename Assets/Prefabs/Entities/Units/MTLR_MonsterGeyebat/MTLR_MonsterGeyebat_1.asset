@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b23f08d2ae4cba14087c1ed36193d82b, type: 3}
+  m_Name: MTLR_MonsterGeyebat_1
+  m_EditorClassIdentifier: 
+  mBehaviorSource:
+    behaviorName: Behavior
+    behaviorDescription: 
+    mTaskData:
+      types: []
+      parentIndex: 
+      startIndex: 
+      variableStartIndex: 
+      JSONSerialization: '{"EntryTask":{"Type":"BehaviorDesigner.Runtime.Tasks.EntryTask","NodeData":{"Offset":"(452.851685,-735.019531)"},"ID":0,"Name":"Entry","Instant":true},"RootTask":{"Type":"BehaviorDesigner.Runtime.Tasks.Repeater","NodeData":{"Offset":"(2.85166454,104.980476)"},"ID":1,"Name":"Repeater","Instant":true,"SharedIntcount":{"Type":"BehaviorDesigner.Runtime.SharedInt","Name":null,"Int32mValue":0},"SharedBoolrepeatForever":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":true},"SharedBoolendOnFailure":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":false},"Children":[{"Type":"BehaviorDesigner.Runtime.Tasks.Sequence","NodeData":{"Offset":"(4.99997139,100)"},"ID":2,"Name":"Sequence","Instant":true,"AbortTypeabortType":"None","Children":[{"Type":"Core.BehaviorTree.TargetInAgroRange","NodeData":{"Offset":"(2.55319214,100)"},"ID":3,"Name":"Target
+        In Agro Range","Instant":true},{"Type":"BehaviorDesigner.Runtime.Tasks.Selector","NodeData":{"Offset":"(20,190)"},"ID":4,"Name":"Selector","Instant":true,"AbortTypeabortType":"None","Children":[{"Type":"Core.BehaviorTree.StartNpcAction","NodeData":{"Offset":"(-170,110)"},"ID":5,"Name":"Start
+        Npc Action 1","Instant":true,"SharedBTreeNpcActionAction":{"Type":"Core.BehaviorTree.Shared.SharedBTreeNpcAction","Name":"NpcAction1","IsShared":true}},{"Type":"BehaviorDesigner.Runtime.Tasks.Sequence","NodeData":{"Offset":"(60,110)"},"ID":6,"Name":"Sequence","Instant":false,"AbortTypeabortType":"None","Children":[{"Type":"Core.BehaviorTree.RotateToTarget","NodeData":{"Offset":"(2.85168457,96.98047)"},"ID":7,"Name":"Rotate
+        To Target","Instant":false},{"Type":"Core.BehaviorTree.StartActionFly","NodeData":{"Offset":"(130,100)"},"ID":8,"Name":"Start
+        Action Fly","Instant":true}]}]}]}]},"Variables":[{"Type":"Core.BehaviorTree.Shared.SharedBTreeNpcAction","Name":"NpcAction1","IsShared":true},{"Type":"Core.BehaviorTree.Shared.SharedBTreeNpcAction","Name":"NpcAction2","IsShared":true},{"Type":"Core.BehaviorTree.Shared.SharedBTreeNpcAction","Name":"NpcAction3","IsShared":true},{"Type":"Core.BehaviorTree.Shared.SharedBTreeNpcAction","Name":"NpcAction4","IsShared":true}]}'
+      fieldSerializationData:
+        typeName: []
+        fieldNameHash: 
+        startIndex: 
+        dataPosition: 
+        unityObjects: []
+        byteData: 
+        byteDataArray: 
+      Version: 1.7.2
