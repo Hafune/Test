@@ -104,10 +104,12 @@ namespace Core
                 .Add(new AreaResetReceiversSystem())
 
                 //Обработка коллектебелс
-                .Add(new PickCollectableSystem(_context))
+                .Add(new PickCollectableSystem())
+                .Add(new ReceiverSystem())
 
                 //Притягивание колектаблов
-                .Add(new MagnetSystem())
+                .Add(new MagnetSystem<MagnetAreaComponent>())
+                .Add(new MagnetSystem<ReceiverMagnetAreaComponent>())
 
                 // .Add(new ScanHierarchyForNestedEntitiesSystem(_context))
                 //Вызов верхнеуровнего поведения
@@ -136,7 +138,7 @@ namespace Core
                 .Add(new DropOnDeathSystem(_context))
 
                 //Поворот модели сущности (Top Down)
-                // .Add(new RotationTransform2DSystem())
+                .Add(new RotationTransformSystem())
                 //
                 .Add(new SetupForwardVelocitySystem())
                 //

@@ -52,6 +52,7 @@ MonoBehaviour:
     - EasyPerformantOutline.Editor
     - DOTween.Modules
     - MeshCombinerEditor
+    - Assembly-CSharp
     - VHierarchy
     - VInspector
     - Leopotam.EcsLite

@@ -39,8 +39,8 @@ namespace Core
         public void InitializeService(Context context)
         {
             _context = context;
-            _playerDataService = _context.Resolve<PlayerDataService>();
-            _playerDataService.RegisterService(this, true);
+            // _playerDataService = _context.Resolve<PlayerDataService>();
+            // _playerDataService.RegisterService(this, true);
 
             _urpAsset = (UniversalRenderPipelineAsset)GraphicsSettings.currentRenderPipeline;
             _defaultShadowsDistance = _urpAsset.shadowDistance;
@@ -50,12 +50,12 @@ namespace Core
             _baseDistance = _virtualCamera.m_Lens.FarClipPlane;
             _sdkService = _context.Resolve<SdkService>();
 
-            context.Resolve<AddressableService>().OnSceneLoaded += () =>
-            {
-                _baseFogStartDistance = RenderSettings.fogStartDistance;
-                _baseFogEndDistance = RenderSettings.fogEndDistance;
-                ChangeDrawingDistance(_serviceData.drawingDistance, false);
-            };
+            // context.Resolve<AddressableService>().OnSceneLoaded += () =>
+            // {
+            //     _baseFogStartDistance = RenderSettings.fogStartDistance;
+            //     _baseFogEndDistance = RenderSettings.fogEndDistance;
+            //     ChangeDrawingDistance(_serviceData.drawingDistance, false);
+            // };
         }
 
         public void SaveData() => _playerDataService.SerializeData(this, _serviceData);
@@ -121,11 +121,11 @@ namespace Core
             _serviceData.drawingDistance = percent;
             _serviceData.settingWasChanged = true;
             OnDrawingDistanceChange?.Invoke(percent);
-            // _virtualCamera.m_Lens.FarClipPlane = _minDistance + (_baseDistance - _minDistance) * percent;
-            //
-            // RenderSettings.fogStartDistance =
-            //     _minFogStartDistance + (_baseFogStartDistance - _minFogStartDistance) * percent;
-            // RenderSettings.fogEndDistance = _minFogEndDistance + (_baseFogEndDistance - _minFogEndDistance) * percent;
+            _virtualCamera.m_Lens.FarClipPlane = _minDistance + (_baseDistance - _minDistance) * percent;
+            
+            RenderSettings.fogStartDistance =
+                _minFogStartDistance + (_baseFogStartDistance - _minFogStartDistance) * percent;
+            RenderSettings.fogEndDistance = _minFogEndDistance + (_baseFogEndDistance - _minFogEndDistance) * percent;
 
             if (dirty)
                 _playerDataService.SetDirty(this);

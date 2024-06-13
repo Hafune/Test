@@ -11,7 +11,7 @@ TagManager:
   - Minimap
   - Water
   - UI
-  - 
+  - CollectableCollision
   - DefaultTarget
   - CameraBounds
   - Collectable
@@ -20,17 +20,17 @@ TagManager:
   - EnemyDamageAreaTarget
   - 
   - Clickable
-  - 
-  - 
+  - Receiver
+  - ReceiverTarget
   - MapFog
   - PlayerDamageArea
   - PlayerDamageAreaTarget
   - Interference
   - InterferenceTarget
-  - 
+  - Receiver
   - ActivateArea
   - ActivateAreaTarget
-  - 
+  - ReceiverTarget
   - Platform
   - PlatformTarget
   - EnemyAgroArea

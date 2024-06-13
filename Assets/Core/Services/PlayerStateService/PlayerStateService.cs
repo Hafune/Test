@@ -143,16 +143,7 @@ namespace Core.Services
         private void ApplyCheckpointPosition()
         {
             var sceneName = SceneManager.GetActiveScene().name;
-            var position = sceneStartPosition switch
-            {
-                ScenePositionsEnum.LastCheckpointPosition => _sceneCheckpointsService.GetCheckpointPosition(
-                    in sceneName),
-                ScenePositionsEnum.StartPosition => _globalTeleportService.GetStartPosition(in sceneName),
-                ScenePositionsEnum.LastUsedBattlefieldTeleportPosition => _globalTeleportService
-                    .GetLastUsedTeleportPosition(
-                        in sceneName),
-                _ => throw new ArgumentOutOfRangeException()
-            };
+            var position = _globalTeleportService.GetStartPosition(in sceneName);
             
             _playerCharacter!.transform.position = position;
             var body = _playerCharacter!.transform.GetComponent<Rigidbody>();

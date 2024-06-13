@@ -70,7 +70,7 @@ namespace Core.Services
             return true;
         }
 
-        public void SetStartPosition(in string sceneName, Vector2 position)
+        public void SetStartPosition(in string sceneName, Vector3 position)
         {
             if (!_serviceData.scenes.TryGetValue(sceneName, out var data))
                 _serviceData.scenes[sceneName] = data = new();
@@ -82,10 +82,10 @@ namespace Core.Services
             _playerDataService.SetDirty(this);
         }
 
-        public Vector2 GetStartPosition(in string sceneName) =>
+        public Vector3 GetStartPosition(in string sceneName) =>
             _serviceData.scenes[sceneName].startPosition;
 
-        public Vector2 GetLastUsedTeleportPosition(in string sceneName) =>
+        public Vector3 GetLastUsedTeleportPosition(in string sceneName) =>
             _serviceData.scenes[sceneName].lastUsedTeleportPosition;
 
         public void SaveLastUsedTeleportPosition()
@@ -129,8 +129,8 @@ namespace Core.Services
 
         private class SceneData
         {
-            public Vector2 startPosition;
-            public Vector2 lastUsedTeleportPosition;
+            public Vector3 startPosition;
+            public Vector3 lastUsedTeleportPosition;
         }
     }
 }

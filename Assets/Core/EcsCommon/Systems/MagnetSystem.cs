@@ -1,12 +1,12 @@
 ﻿using Core.Components;
+using Core.Generated;
 using Leopotam.EcsLite;
 using Leopotam.EcsLite.Di;
-using Lib;
 using UnityEngine;
 
 namespace Core.Systems
 {
-    public class MagnetSystem : IEcsRunSystem
+    public class MagnetSystem<T> : IEcsRunSystem where T : struct, IAreaComponent
     {
         private float _acceleration = 10f;
         private float _maxSpeed = 15;
@@ -14,60 +14,41 @@ namespace Core.Systems
 
         private readonly EcsFilterInject<
             Inc<
-                MagnetTag,
+                T,
                 RigidbodyComponent,
-                EventMagnetAreaTouch>,
-            Exc<InProgressTag<MagnetTag>>> _filter;
+                ActiveArea<T>>> _filter;
 
-        private readonly EcsFilterInject<
-            Inc<
-                InProgressTag<MagnetTag>,
-                RigidbodyComponent>> _progressFilter;
-
-        private readonly EcsFilterInject<
-            Inc<
-                PlayerUniqueTag,
-                TransformCenterComponent>> _playerFilter;
-
-        private readonly EcsFilterInject<Inc<EventMagnetAreaTouch>> _eventTouchFilter;
-
-        private readonly EcsPoolInject<EventMagnetAreaTouch> _eventMagnetAreaTouchPool;
-        private readonly EcsPoolInject<RigidbodyComponent> _rigidbodyPool;
-        private readonly EcsPoolInject<InProgressTag<MagnetTag>> _progressPool;
-        private readonly EcsPoolInject<TransformCenterComponent> _transformCenterPool;
+        private readonly EcsPoolInject<T> _areaPool;
+        private readonly ComponentPools _pools;
+        private Rigidbody _rigidbody;
 
         public void Run(IEcsSystems systems)
         {
             foreach (var i in _filter.Value)
-                _progressPool.Value.Add(i);
-
-            foreach (var i in _progressFilter.Value)
-                UpdateEntity(i);
-
-            foreach (var i in _eventTouchFilter.Value)
-                _eventMagnetAreaTouchPool.Value.Del(i);
+            {
+                _rigidbody = _pools.Rigidbody.Get(i).rigidbody;
+                _areaPool.Value.Get(i).area.ForEachEntity(UpdateEntity);
+            }
         }
 
-        private void UpdateEntity(int entity)
+        private void UpdateEntity(int targetEntity)
         {
-            var playerEntity = _playerFilter.Value.GetFirst();
-            var transform = _transformCenterPool.Value.Get(playerEntity).transform;
-            var rigidbody = _rigidbodyPool.Value.Get(entity).rigidbody;
+            var targetTransform = _pools.TransformCenter.Get(targetEntity).transform;
 
-            var position = transform.position;
-            var line = position - rigidbody.position;
-            var freeVelocity = rigidbody.velocity - Physics.gravity * Time.deltaTime;
+            var position = targetTransform.position;
+            var line = position - _rigidbody.position;
+            var freeVelocity = _rigidbody.velocity - Physics.gravity * Time.deltaTime;
 
             if (freeVelocity.magnitude > _maxFreeSpeed)
                 freeVelocity = freeVelocity.normalized * _maxFreeSpeed;
 
             var velocity = freeVelocity +
-                           line.normalized * (rigidbody.velocity.magnitude + _acceleration * Time.deltaTime);
+                           line.normalized * (_rigidbody.velocity.magnitude + _acceleration * Time.deltaTime);
 
             if (velocity.magnitude > _maxSpeed)
                 velocity = velocity.normalized * _maxSpeed;
 
-            rigidbody.velocity = velocity;
+            _rigidbody.velocity = velocity;
         }
     }
 }
