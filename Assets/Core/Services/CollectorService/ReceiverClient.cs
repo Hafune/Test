@@ -1,21 +1,12 @@
-using Core;
 using Core.Lib;
-using Lib;
-using Reflex;
 using UnityEngine;
 
-public class ReceiverClient : MonoConstruct
+public class ReceiverClient : MonoBehaviour
 {
     private const float _destinationTime = .03f;
     private const float _receiverDestinationTime = .3f;
     private MyList<Rigidbody> _items = new();
     private Vector3 _itemOffset = new(0, .5f, 0);
-    private ReceiverService _receiverService;
-    private Context _context;
-
-    protected override void Construct(Context context) => _context = context;
-
-    private void Awake() => _receiverService = _context.Resolve<ReceiverService>();
 
     private void OnEnable() => _items.Clear();
 
@@ -38,6 +29,5 @@ public class ReceiverClient : MonoConstruct
             item.velocity = (other.transform.position - item.position) / _receiverDestinationTime;
         
         _items.Clear();
-        _receiverService.EnableReceiver(other.GetComponentInParent<ReceiverInstance>());
     }
 }

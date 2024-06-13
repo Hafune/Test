@@ -241,6 +241,7 @@ namespace Core.Generated
         public readonly EcsPool<LStickTag> LStick;
         public readonly EcsPool<MagicGemSlotComponent> MagicGemSlot;
         public readonly EcsPool<MagnetAreaComponent> MagnetArea;
+        public readonly EcsPool<MagnetTag> Magnet;
         public readonly EcsPool<ManaPointMaxValueComponent> ManaPointMaxValue;
         public readonly EcsPool<ManaPointValueComponent> ManaPointValue;
         public readonly EcsPool<MissileTag> Missile;
@@ -529,6 +530,7 @@ namespace Core.Generated
             LStick = world.GetPool<LStickTag>();
             MagicGemSlot = world.GetPool<MagicGemSlotComponent>();
             MagnetArea = world.GetPool<MagnetAreaComponent>();
+            Magnet = world.GetPool<MagnetTag>();
             ManaPointMaxValue = world.GetPool<ManaPointMaxValueComponent>();
             ManaPointValue = world.GetPool<ManaPointValueComponent>();
             Missile = world.GetPool<MissileTag>();

@@ -39,6 +39,7 @@ namespace Core.Systems
             _pools.CollectableArea.Get(entity).area.ForEachEntity(Pick);
             _pools.CollectableArea.Del(entity);
             _pools.MagnetArea.Del(entity);
+            _pools.Magnet.Del(entity);
         }
 
         private void Pick(int targetEntity)

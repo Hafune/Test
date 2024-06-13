@@ -9,10 +9,10 @@
     <ui:VisualElement style="flex-grow: 1; justify-content: center; align-items: center; background-image: url(&quot;project://database/Assets/Core/UI%20Toolkit%20schemas/MainMenuVT/Sprites/MainMenuBg.png?fileID=2800000&amp;guid=a748369127cf7d348bd8f809226791bd&amp;type=3#MainMenuBg&quot;);">
         <ui:VisualElement name="Penta" usage-hints="DynamicTransform" style="flex-grow: 1; position: absolute; left: -604px; top: -601px; right: 106px; bottom: -628px; background-image: url(&quot;project://database/Assets/Additionals/Tower/Assets/Texture2D/MagicCircle.png?fileID=2800000&amp;guid=c9e8269d5e723a94191f1305000bd023&amp;type=3#MagicCircle&quot;); -unity-background-scale-mode: scale-to-fit; -unity-background-image-tint-color: rgba(255, 255, 255, 0.1);" />
         <ui:Label tabindex="-1" text="tower of nightmares" parse-escape-sequences="true" display-tooltip-when-elided="true" class="text-color-base" style="-unity-font-definition: initial; -unity-font: url(&quot;project://database/Assets/Additionals/Tower/Assets/Font/NORTHWEST-B.otf?fileID=12800000&amp;guid=c8d41b8167ef9d9428a942f3d4ce91f3&amp;type=3#NORTHWEST-B&quot;); font-size: 100px; margin-top: 0; margin-right: 0; margin-bottom: 100px; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;" />
-        <Core.FocusableNodeElement name="MainMenuContainer" class="container text-font-base text-color-base">
+        <Core.FocusableNodeElement name="MainMenuContainer" class="container text-font-base text-color-base" style="scale: 2 2;">
             <Core.FocusableLabel tabindex="0" text="#continue_game" name="ContinueGame" focusable="true" enable-rich-text="false" class="focusable-label main-menu-item text-color-base" />
             <Core.FocusableLabel tabindex="0" text="#new_game" name="NewGame" focusable="true" enable-rich-text="false" class="focusable-label main-menu-item text-color-base" />
-            <Core.FocusableLabel tabindex="0" text="#settings" name="Settings" focusable="true" enable-rich-text="false" class="focusable-label main-menu-item text-color-base" />
+            <Core.FocusableLabel tabindex="0" text="#settings" name="Settings" focusable="true" enable-rich-text="false" class="focusable-label main-menu-item text-color-base" style="display: none;" />
         </Core.FocusableNodeElement>
         <ui:VisualElement name="LanguageIcons" class="icon-container">
             <ui:VisualElement tabindex="-1" focusable="true" name="LangRu" class="language-icon" />
