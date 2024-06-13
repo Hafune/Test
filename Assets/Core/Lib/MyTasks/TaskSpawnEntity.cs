@@ -14,7 +14,7 @@ namespace Core.Tasks
     [ExecuteInEditMode]
     public class TaskSpawnEntity : MonoBehaviour, IMyTask
     {
-        [SerializeField] private bool _waitDeath;
+        [SerializeField] private bool _waitRemove;
         [SerializeField] private ConvertToEntity _prefab;
 
         private Action<IMyTask> _onComplete;
@@ -83,14 +83,14 @@ namespace Core.Tasks
 
             _pool ??= context.Resolve<PoolService>().ScenePool.GetPullByPrefab(_prefab);
             _onComplete = onComplete;
-            InProgress = _waitDeath;
+            InProgress = _waitRemove;
 
             var entityRef = _pool.GetObject(transform.position, transform.rotation);
             entityRef.ManualConnection();
             
             payload.Set(entityRef);
 
-            if (_waitDeath)
+            if (_waitRemove)
                 entityRef.OnEntityWasDeleted += EntityRemoved;
             else
                 onComplete?.Invoke(this);

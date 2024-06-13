@@ -3,7 +3,7 @@ using UnityEngine.Assertions;
 
 namespace Core.Lib
 {
-    public class EffectTrigger : MonoBehaviour, ITriggerDispatcherTarget2D
+    public class EffectTrigger : MonoBehaviour, ITriggerDispatcherTarget
     {
         [SerializeField] private AbstractEffect _effect;
 
@@ -11,9 +11,9 @@ namespace Core.Lib
         private void Awake() => Assert.IsNotNull(_effect);
 #endif
 
-        public void OnTriggerEnter2D(Collider2D col) => _effect.Execute();
+        public void OnTriggerEnter(Collider col) => _effect.Execute();
 
-        public void OnTriggerExit2D(Collider2D col)
+        public void OnTriggerExit(Collider col)
         {
         }
     }

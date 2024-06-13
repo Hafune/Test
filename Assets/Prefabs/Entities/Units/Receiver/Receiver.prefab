@@ -63,7 +63,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8331922378518650818}
   - component: {fileID: 8886480039350794526}
-  m_Layer: 22
+  m_Layer: 15
   m_Name: ReceiveArea
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -80,7 +80,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 1, z: 0}
-  m_LocalScale: {x: 5, y: 5, z: 5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 3553025469888733073}

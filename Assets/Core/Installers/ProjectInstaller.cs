@@ -52,7 +52,7 @@ public class ProjectInstaller : Installer
         context.BindInstanceAs(componentPools);
         context.BindInstanceAs((Joystick)context.Resolve<FloatingJoystick>());
         context.BindInstanceAs(new BossHitPointBarService());
-        context.BindInstanceAs(new CollectorService());
+        context.BindInstanceAs(new ReceiverService());
         context.BindInstanceAs(new DarkScreenService());
         context.BindInstanceAs(new GlobalStateService());
         context.BindInstanceAs(new PlayerInputs().Player);

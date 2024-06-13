@@ -55,7 +55,7 @@ namespace Core.Systems
             {
                 if (_joystick.Direction != Vector2.zero)
                     continue;
-                
+
                 _pools.MoveDirection.Get(i).direction = Vector2.zero;
                 _pools.EventActionComplete.AddIfNotExist(i);
             }

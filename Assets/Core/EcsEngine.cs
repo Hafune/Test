@@ -105,7 +105,7 @@ namespace Core
 
                 //Обработка коллектебелс
                 .Add(new PickCollectableSystem())
-                .Add(new ReceiverSystem())
+                .Add(new ReceiverSystem(_context))
 
                 //Притягивание колектаблов
                 .Add(new MagnetSystem<MagnetAreaComponent>())
@@ -190,8 +190,8 @@ namespace Core
             _fixedUpdateSystems.Inject();
 
             var componentPools = _context.Resolve<ComponentPools>();
-            InjectGeneratedPoolsAndFilters(_updateSystems, componentPools);
-            InjectGeneratedPoolsAndFilters(_fixedUpdateSystems, componentPools);
+            InjectGeneratedPools(_updateSystems, componentPools);
+            InjectGeneratedPools(_fixedUpdateSystems, componentPools);
 
             _updateSystems.Init();
             _fixedUpdateSystems.Init();
@@ -216,7 +216,7 @@ namespace Core
 
         public void AddUiSystem(IEcsSystem system) => _globalUiSystems.Add(system);
 
-        private void InjectGeneratedPoolsAndFilters(
+        private void InjectGeneratedPools(
             IEcsSystems systems,
             ComponentPools pools)
         {

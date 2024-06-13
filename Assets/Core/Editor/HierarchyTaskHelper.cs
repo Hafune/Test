@@ -59,7 +59,7 @@ namespace Lib
                 TaskSequenceIfConditionValid => sequence,
                 TaskParallel => parallel,
                 TaskAwaitSecond => wait,
-                TaskWaitEntityDeath => wait,
+                TaskWaitEntityRemove => wait,
                 TaskChangeParent => changeParent,
                 TaskSpawnEntity => spawner,
                 SpawnPrefabTask => spawner,

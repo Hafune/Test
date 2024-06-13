@@ -44,6 +44,7 @@ MonoBehaviour:
     - Tayx.Graphy.Editor
     - GameAnalytics.Editor
     - Lib.Editor
+    - AllIn1VfxAssmebly
     - NaughtyAttributes.Editor
     - NaughtyAttributes.Test
     - Tayx.Graphy
@@ -51,6 +52,7 @@ MonoBehaviour:
     - BehaviorDesigner.EditorAsm
     - EasyPerformantOutline.Editor
     - DOTween.Modules
+    - AllIn1VfxDemoScriptAssemblies
     - MeshCombinerEditor
     - Assembly-CSharp
     - VHierarchy
@@ -60,6 +62,7 @@ MonoBehaviour:
     - Leopotam.EcsLite.Di
     - JoystickPack
     - Assembly-CSharp-firstpass
+    - AllIn1VfxTexDemoAssembly
     - Editor
     - SimpleMinMaxSlider
     showAdvancedSettings: 1

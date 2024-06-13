@@ -22,6 +22,7 @@ namespace Core.Generated
         public readonly EcsPool<ActiveArea<CollectableAreaComponent>> ActiveAreaCollectableArea;
         public readonly EcsPool<ActiveArea<DamageAreaComponent>> ActiveAreaDamageArea;
         public readonly EcsPool<ActiveArea<ImpactAreaComponent>> ActiveAreaImpactArea;
+        public readonly EcsPool<ActiveArea<ReceiverAreaComponent>> ActiveAreaReceiverArea;
         public readonly EcsPool<AddScoreOnDeathValueComponent> AddScoreOnDeathValue;
         public readonly EcsPool<AngularSpeedValueComponent> AngularSpeedValue;
         public readonly EcsPool<AnimatorComponent> Animator;
@@ -309,6 +310,7 @@ namespace Core.Generated
             ActiveAreaCollectableArea = world.GetPool<ActiveArea<CollectableAreaComponent>>();
             ActiveAreaDamageArea = world.GetPool<ActiveArea<DamageAreaComponent>>();
             ActiveAreaImpactArea = world.GetPool<ActiveArea<ImpactAreaComponent>>();
+            ActiveAreaReceiverArea = world.GetPool<ActiveArea<ReceiverAreaComponent>>();
             AddScoreOnDeathValue = world.GetPool<AddScoreOnDeathValueComponent>();
             AngularSpeedValue = world.GetPool<AngularSpeedValueComponent>();
             Animator = world.GetPool<AnimatorComponent>();

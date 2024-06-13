@@ -24,6 +24,12 @@ namespace Core.Systems
                 InProgressTag<ActionMoveComponent>
             >> _progressFilter;
 
+        private readonly EcsFilterInject<
+            Inc<
+                InProgressTag<ActionMoveComponent>,
+                EventActionComplete
+            >> _completeFilter;
+
         public void Run(IEcsSystems systems)
         {
             foreach (var i in _activateFilter.Value)
@@ -38,6 +44,9 @@ namespace Core.Systems
 
             foreach (var i in _progressFilter.Value)
                 UpdateEntity(i);
+            
+            foreach (var i in _completeFilter.Value)
+                _actionPool.Value.Get(i).logic?.CompleteStreamingLogic(i);
 
             CleanEventStart();
         }
