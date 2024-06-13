@@ -80,7 +80,7 @@
                 <ui:Label tabindex="-1" text="123" parse-escape-sequences="true" display-tooltip-when-elided="true" name="HitpointGemText" class="state_value" />
             </ui:VisualElement>
         </ui:VisualElement>
-        <ui:VisualElement style="position: absolute; justify-content: flex-start; flex-grow: 1; left: 0; bottom: 0; flex-direction: column; align-items: center;">
+        <ui:VisualElement style="position: absolute; justify-content: flex-start; flex-grow: 1; left: 0; bottom: 0; flex-direction: column; align-items: center; margin-bottom: 200px; margin-left: 50px;">
             <ui:VisualElement style="flex-direction: row; display: none;">
                 <ui:VisualElement style="background-image: url(&quot;project://database/Assets/Additionals/Tower/Assets/Resources_not_load/propsicon/goldKey.png?fileID=21300000&amp;guid=ea6dc2262029e5d4ba7b03db78fca81c&amp;type=3#goldKey&quot;); width: 40.92193px; height: 35.92388px; flex-direction: row; margin-right: 10px;" />
                 <ui:Label text="123" display-tooltip-when-elided="true" name="GoldKeyCount" enable-rich-text="false" style="font-size: 24px; -unity-font-style: bold;" />

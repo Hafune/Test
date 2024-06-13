@@ -1,3 +1,4 @@
+using Core;
 using Core.Lib;
 using UnityEngine;
 
@@ -29,5 +30,11 @@ public class ReceiverClient : MonoBehaviour
             item.velocity = (other.transform.position - item.position) / _receiverDestinationTime;
         
         _items.Clear();
+        other.gameObject.GetComponentInParent<ReceiverInstance>().Activate();
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        other.gameObject.GetComponentInParent<ReceiverInstance>().Deactivate();
     }
 }

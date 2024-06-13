@@ -30,7 +30,7 @@ TagManager:
   - 
   - ActivateArea
   - ActivateAreaTarget
-  - 
+  - UntouchableLayer
   - Platform
   - PlatformTarget
   - EnemyAgroArea

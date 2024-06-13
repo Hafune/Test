@@ -15,7 +15,6 @@ namespace Core.Systems
         private readonly EcsFilterInject<
             Inc<
                 T,
-                MagnetTag,
                 RigidbodyComponent,
                 ActiveArea<T>>> _filter;
 

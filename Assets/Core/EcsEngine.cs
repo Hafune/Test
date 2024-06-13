@@ -40,10 +40,6 @@ namespace Core
 
         public void SetupSystems()
         {
-            _updateSystems
-                .Add(new EventTimeDilationSystem(_context))
-                .Add(new EventCameraShakeSystem(_context));
-
             _fixedUpdateSystems
 #if UNITY_EDITOR
                 .Add(new DebugEnemySystem())

@@ -63,7 +63,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8331922378518650818}
   - component: {fileID: 8886480039350794526}
-  m_Layer: 15
+  m_Layer: 25
   m_Name: ReceiveArea
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -241,6 +241,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _receiveArea: {fileID: 8886480039350794526}
+  _workingLayer: 15
 --- !u!1 &6241532845360977966
 GameObject:
   m_ObjectHideFlags: 0
