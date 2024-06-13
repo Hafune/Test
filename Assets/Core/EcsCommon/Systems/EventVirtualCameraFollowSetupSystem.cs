@@ -6,7 +6,7 @@ using Reflex;
 
 namespace Core.Systems
 {
-    public class VirtualCameraEventsSystem : IEcsRunSystem
+    public class EventVirtualCameraFollowSetupSystem : IEcsRunSystem
     {
         private readonly EcsFilterInject<Inc<TransformComponent, EventVirtualCameraFollowSetup>> _filter;
 
@@ -15,7 +15,7 @@ namespace Core.Systems
 
         private CinemachineVirtualCamera _virtualCamera;
 
-        public VirtualCameraEventsSystem(Context context)
+        public EventVirtualCameraFollowSetupSystem(Context context)
         {
             _virtualCamera = context.Resolve<CinemachineVirtualCamera>();
         }
