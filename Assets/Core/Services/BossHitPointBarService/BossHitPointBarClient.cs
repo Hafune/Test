@@ -49,14 +49,15 @@ namespace Core.Services
 
             ref var value = ref _hitPointValuePool.GetOrInitialize(_convertToEntity.RawEntity);
             ref var valueMax = ref _hitPointMaxValuePool.GetOrInitialize(_convertToEntity.RawEntity);
-            value.data ??= new UiFloat();
-            valueMax.data ??= new UiFloat();
-            value.data.RefreshFunction -= _service.ChangeValue;
-            valueMax.data.RefreshFunction -= _service.ChangeValueMax;
-            value.data.RefreshFunction += _service.ChangeValue;
-            valueMax.data.RefreshFunction += _service.ChangeValueMax;
+            value.update -= UpdateValue;
+            value.update += UpdateValue;
+            valueMax.update -= UpdateMaxValue;
+            valueMax.update += UpdateMaxValue;
 
             _service.Show();
         }
+
+        private void UpdateValue<T>(T c) where T : struct, IValue => _service.ChangeValue(c.value);
+        private void UpdateMaxValue<T>(T c) where T : struct, IValue => _service.ChangeValueMax(c.value);
     }
 }

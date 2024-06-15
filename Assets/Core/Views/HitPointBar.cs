@@ -77,13 +77,14 @@ public class HitPointBar : MonoConstruct
 
         ref var value = ref _hitPointValuePool.GetOrInitialize(entity);
         ref var valueMax = ref _hitPointMaxValuePool.GetOrInitialize(entity);
-        value.data ??= new UiFloat();
-        valueMax.data ??= new UiFloat();
-        value.data.RefreshFunction -= SetValue;
-        valueMax.data.RefreshFunction -= SetValueMax;
-        value.data.RefreshFunction += SetValue;
-        valueMax.data.RefreshFunction += SetValueMax;
+        value.update -= UpdateValue;
+        value.update += UpdateValue;
+        valueMax.update -= UpdateMaxValue;
+        valueMax.update += UpdateMaxValue;
     }
+
+    private void UpdateValue<T>(T c) where T : struct, IValue => SetValue(c.value);
+    private void UpdateMaxValue<T>(T c) where T : struct, IValue => SetValueMax(c.value);
 
     private void SetValue(float value)
     {

@@ -57,7 +57,6 @@ namespace Core.Systems
                 _eventRefreshPool.Value.Del(i);
         }
 
-        private void UpdateEntity(int entity, int uiEntity) => _uiValuePool.Value.Get(uiEntity).data
-            .RefreshUiView(_valuePool.Value.Get(entity).value);
+        private void UpdateEntity(int entity, int uiEntity) => _uiValuePool.Value.Get(uiEntity).update(_valuePool.Value.Get(entity));
     }
 }

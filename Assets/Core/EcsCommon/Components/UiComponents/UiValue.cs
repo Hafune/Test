@@ -1,8 +1,10 @@
-﻿namespace Core.Components
+﻿using System;
+
+namespace Core.Components
 {
     [MyDoc("Ui значение")]
-    public struct UiValue<T> : IUiValue where T : struct, IValue
+    public struct UiValue<T> where T : struct
     {
-        public UiFloat data { get; set; }
+        public Action<T> update;
     }
 }
