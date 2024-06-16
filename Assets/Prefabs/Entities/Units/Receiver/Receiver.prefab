@@ -1,58 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &2747102768510932712
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 335950329791270555}
-  - component: {fileID: 6808872804619556300}
-  m_Layer: 24
-  m_Name: Activate_Area_Target
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &335950329791270555
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2747102768510932712}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: 0}
-  m_LocalScale: {x: 3, y: 3, z: 3}
-  m_ConstrainProportionsScale: 1
-  m_Children: []
-  m_Father: {fileID: 3553025469888733073}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!135 &6808872804619556300
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2747102768510932712}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2821833222536395487
 GameObject:
   m_ObjectHideFlags: 0
@@ -63,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8331922378518650818}
   - component: {fileID: 8886480039350794526}
-  m_Layer: 25
+  m_Layer: 15
   m_Name: ReceiveArea
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -240,8 +187,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c145b517be704590b74490d16068e658, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _receiveArea: {fileID: 8886480039350794526}
-  _workingLayer: 15
 --- !u!1 &6241532845360977966
 GameObject:
   m_ObjectHideFlags: 0
@@ -272,7 +217,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8331922378518650818}
-  - {fileID: 335950329791270555}
   m_Father: {fileID: 4127902835804904316}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7070094727378907386

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using Core.Components;
 using Leopotam.EcsLite;
 using Lib;
@@ -134,6 +135,8 @@ public abstract class AbstractArea : MonoConstruct, ITriggerDispatcherTarget
             }
         }
     }
+
+    public int GetFirst() => _entityContacts.FirstOrDefault().Key;
 
     private void EntityRefDisabled(ConvertToEntity entityRef)
     {

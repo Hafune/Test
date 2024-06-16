@@ -68,7 +68,7 @@ namespace Core
 
                 //Добавление обязательных компонентов
                 .Add(new InitSubComponentSystem())
-                //Удаление ивента иницыализации
+                //Удаление ивента инициализации
                 .Add(new DelHere<EventInit>())
                 //--------
 
@@ -77,6 +77,7 @@ namespace Core
 
                 //Обработка коллектебелс
                 .Add(new PickCollectableSystem())
+                .Add(new StackSystem())
                 .Add(new ReceiverSystem(_context))
 
                 //Притягивание колектаблов

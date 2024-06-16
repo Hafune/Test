@@ -280,6 +280,7 @@ namespace Core.Generated
         public readonly EcsPool<ShockWaveValueComponent> ShockWaveValue;
         public readonly EcsPool<ShotTriggerComponent> ShotTrigger;
         public readonly EcsPool<SpawnOnHealthPercentComponent> SpawnOnHealthPercent;
+        public readonly EcsPool<StackComponent> Stack;
         public readonly EcsPool<TargetComponent> Target;
         public readonly EcsPool<TargetInAgroRangeTag> TargetInAgroRange;
         public readonly EcsPool<TestSlotComponent> TestSlot;
@@ -569,6 +570,7 @@ namespace Core.Generated
             ShockWaveValue = world.GetPool<ShockWaveValueComponent>();
             ShotTrigger = world.GetPool<ShotTriggerComponent>();
             SpawnOnHealthPercent = world.GetPool<SpawnOnHealthPercentComponent>();
+            Stack = world.GetPool<StackComponent>();
             Target = world.GetPool<TargetComponent>();
             TargetInAgroRange = world.GetPool<TargetInAgroRangeTag>();
             TestSlot = world.GetPool<TestSlotComponent>();
